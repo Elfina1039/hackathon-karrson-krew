@@ -162,17 +162,17 @@ if(this._drawingSvc.animations.length>0){
          //z.cat!="movement" && 
   this.displayedZones.filter((z)=>(z!=ref.selectedZone && z.category!="Mrak")).forEach(function(zone, zid) {
 
-    let points = zone.points;
+    //let points = zone.points;
+    //  console.log(zone.fingerCoords);
+    let points = zone.fingerCoords;
+      
     ctx.beginPath();
     ctx.moveTo(points[0].x, points[0].y);
 
     //console.log(zone.WORD["#text"]+"="+points[0].x+":"+ points[0].y);
 
     for (let p = 1; p < points.length; p++) {
-      //  console.log(zone);
       ctx.lineTo(points[p].x, points[p].y);
-
-      //console.log(points[p].x+":"+ points[p].y);
     }
 
     ctx.closePath();
@@ -195,9 +195,7 @@ if(this._drawingSvc.animations.length>0){
      if(display==true){
       //   console.log(rZone);
            
-        this.clicked.emit(rZone); 
-       
-      
+            this.clicked.emit(rZone); 
              this.focusOn(rZone); 
              this.selectedZone = rZone;
          
@@ -343,7 +341,7 @@ let nh : number=parseInt(this.imgData.height)*zoom;
     this.zoomChng(nzm-this.zoom);
      // ref.moveScreen(xtr,ox,oy, nzm, zone);
      
-   setTimeout(function(){ref.moveScreen(xtr,ox,oy, nzm, zone)},700);
+   this.canvas.nativeElement.addEventListener("transitionend",function(){ref.moveScreen(xtr,ox,oy, nzm, zone)});
    
                 };
     
@@ -358,8 +356,9 @@ moveScreen(xy, ox, oy, nzm, zone) {
  // console.log(x + "-ss-" + y);
   //  console.log( this.outer);
 
-  this.wrapper.nativeElement.scrollTop = y;
-  this.wrapper.nativeElement.scrollLeft = x;
+ // this.wrapper.nativeElement.scrollTop = y;
+  //this.wrapper.nativeElement.scrollLeft = x;
+    this.wrapper.nativeElement.scroll(x,y);
      zone.activate(this.ctx,this.magicGlass, nzm);
     
            // this.displayedZones = this.zones.filter((z)=>z.word!=zone.word);

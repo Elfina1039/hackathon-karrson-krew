@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { Translation } from '../interfaces/translation';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-magic-glass',
@@ -15,7 +16,7 @@ export class MagicGlassComponent implements OnInit {
     @ViewChild("container") container : any;
     width : number = 0;
     mode : "none";
-  constructor(private data : DataService) { }
+  constructor(private data : DataService, private router : Router) { }
 
   ngOnInit() {
   }
@@ -61,5 +62,11 @@ placeFrame(source, zoom){
     showInfo(){
         this.infoWindow.open();
     }
+    
+     navigate(set, part){
+        console.log("going to map");
+        this.router.navigate(['interaction/'+set+'/'+part+"/0w"])
+    }
+    
     
 }

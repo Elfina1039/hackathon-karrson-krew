@@ -15,12 +15,16 @@
     "shape": " 1125,303 1799,303 1799,769 1125,769",
     "cat": "Script",
     "fields": {
+        "link": {
+            "name": "link",
+            "value": "Te script."
+        },
         "title": {
             "name": "title",
             "value": "A Greek word"
         },
-        "description": {
-            "name": "description",
+        "text": {
+            "name": "text",
             "value": "Greek uncial script "
         },
         "image": {
@@ -35,8 +39,8 @@
             "name": "drawingSetting",
             "value": "region_red"
         },
-        "music": {
-            "name": "music",
+        "video": {
+            "name": "video",
             "value": ""
         },
         "transcription": {
@@ -51,9 +55,13 @@
             "name": "path",
             "value": ""
         },
-        "timeSpan": {
-            "name": "timeSpan",
-            "value": "6-12"
+        "map": {
+            "name": "map_link",
+            "value": ""
+        },
+         "map_link": {
+            "name": "map_link",
+            "value": ""
         }
     }
 },
@@ -61,14 +69,18 @@
     "word": "Translation",
     "color": "#0000ff",
     "shape": " 1263,815  1689,820  1732,1228  1092,1232  1095,876  1267,877 ",
-    "cat": "Content",
+    "cat": "Text",
     "fields": {
         "title": {
             "name": "title",
             "value": "Aquila's Translation"
         },
-        "description": {
-            "name": "description",
+        "link": {
+            "name": "link",
+            "value": "Aquila's translation"
+        },
+        "text": {
+            "name": "text",
             "value": "Aquila’s translation is most notable for its literalness. He translated word for word from the Hebrew Bible, and as such the Greek is only readable with a knowledge of the Hebrew grammar underpinning it. This manuscript preserves a fragment written in the sixth century, recounting the story of Naboth’s vineyard. No complete Aquila translation survives, and instead his work has been constructed from fragments like this, and citations from other authors. As such, it is difficult to say what exactly Aquila translated, whether he wrote a translation, and whether there was a standardised ‘Aquila Bible’ in circulation. Plausibly, his work began as professional ad hoc translations, that only developed over time into a fuller translation. In its Jewish use, Aquila’s work was largely used by scholars to explain difficult Biblical passages. While the Jewish community seemed happy to simply view the work as translation, Christian readers interrogated the work critically. Irenaeus, a near contemporary to Aquila, accused him of being ‘impudent and presumptuous’, as well as heretical, for daring to translate the Bible so literally. Origen, writing about a century later, is more open, and relies on Aquila among other translators for his Hexapla, a comparison of six different versions of the Bible. In the Genizah, the palimpsests tend to be written over Christian texts. As such, while Aquila’s work was actively used by both communities, the Genizah context of this fragment has led historians to assume it was written for a Christian audience."
         },
         "image": {
@@ -83,8 +95,8 @@
             "name": "drawingSetting",
             "value": "region_yellow"
         },
-        "music": {
-            "name": "music",
+        "video": {
+            "name": "video",
             "value": ""
         },
         "transcription": {
@@ -99,9 +111,13 @@
             "name": "path",
             "value": ""
         },
-        "timeSpan": {
+        "map": {
             "name": "timeSpan",
-            "value": "6-12"
+            "value": "1"
+        },
+         "map_link": {
+            "name": "timeSpan",
+            "value": "Aquila's time"
         }
     }
 }

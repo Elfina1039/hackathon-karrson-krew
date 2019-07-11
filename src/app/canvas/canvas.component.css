@@ -7,12 +7,14 @@
 }
 #msWrapper{position:absolute;
     overflow:scroll;
-
+scroll-behavior: smooth;
 background-color: rgb(20,20,20);
   /*  background-image:url("https://www.draconica.net/ft2019/wp-content/uploads/sites/21/2019/02/bg3.jpg");*/
 width: 98%;
 height: 98%;
-margin: 0.1em;}
+margin: 0.1em;
+transition: transform 2s ease-out;
+}
 
 
 

@@ -1,8 +1,8 @@
 {
     "name": "Yannai",
     "imgData": {
-        "url": "/assets/images/aquila_v_y.jpg",
-        "url2": "assets/images/aquila_v_a.jpg",
+        "url": "/assets/images/aquila_r_y.jpg",
+        "url2": "assets/images/aquila_r_a.jpg",
         "width": "2000px",
         "height": "2345px",
         "title": "Yannai",
@@ -10,7 +10,7 @@
     },
     "slides": [
         {
-    "word": "Yannai",
+    "word": "Piyyut",
     "color": "#ffffff",
     "shape": " 410,1379  848,1379  848,1721  410,1721 ",
     "cat": "Script",
@@ -19,8 +19,12 @@
             "name": "title",
             "value": "Piyyut"
         },
-        "description": {
-            "name": "description",
+        "link": {
+            "name": "link",
+            "value": "Jewish liturgical poems"
+        },
+        "text": {
+            "name": "text",
             "value": "Piyyut  are liturgical poems to be sung or chanted during services in the  Synagogue. They are usually performed by a cantor, with the congregation  providing a response. Unlike other genres of Jewish liturgical poetry,  piyyut directly involved the congregation in their performance. The main body of the  poem was performed by a cantor, often with the congregation chanted a refrain. As a part of the liturgy,  piyyut  were not just poems but also a form of prayer and  a means of commenting on the Torah readings. They were often highly dramatic,  bringing the biblical texts to life for the congregation. The  piyyut  had an  important religious role for the medieval Jewish congregation: through their  performance, the members of the congregation developed their spiritual  relationship to God through understanding the Torah, and strengthened their  sense of being part of a community through the shared experience of communal  prayer. Piyyut  were evidently important to the medieval Jewish community: over 40% of  the texts in the Genizah are poetry."
         },
         "image": {
@@ -35,8 +39,8 @@
             "name": "drawingSetting",
             "value": "region_red"
         },
-        "music": {
-            "name": "music",
+        "video": {
+            "name": "video",
             "value": "_t5bK53Q0Ic"
         },
         "comment": {
@@ -47,32 +51,36 @@
             "name": "animation",
             "value": ""
         },
-        "timeSpan": {
-            "name": "timeSpan",
-            "value": ""
+        "map": {
+            "name": "map_link",
+            "value": "2"
+        },
+         "map_link": {
+            "name": "map_link",
+            "value": "Medieval Palestina"
         }
     }},
         {
-    "word": "Piyyut",
+    "word": "Yannai",
     "color": "#ffffff",
     "shape": " 442,870  435,912  643,910  961,912  1203,933  1402,949  1403,891  1174,893  658,864 ",
-    "cat": "Content",
+    "cat": "Author",
     "fields": {
+         "link": {
+            "name": "link",
+            "value": "Yannai the poet"
+        },
         "title": {
             "name": "title",
             "value": "Text"
         },
-        "description": {
-            "name": "description",
+        "text": {
+            "name": "text",
             "value": ""
         },
         "image": {
             "name": "image",
             "value": ""
-        },
-         "icon": {
-            "name": "icon",
-            "value": "And he spoke to Moses and to Aaron, saying, Speak unto the children of Israel, and say unto them each man’"
         },
         "translation": {
             "name": "icon",
@@ -82,8 +90,8 @@
             "name": "drawingSetting",
             "value": "region_yellow"
         },
-        "music": {
-            "name": "music",
+        "video": {
+            "name": "video",
             "value": ""
         },
         "transcription": {
@@ -94,12 +102,66 @@
             "name": "animation",
             "value": ""
         },
-        "timeSpan": {
-            "name": "timeSpan",
-            "value": "4-6"
+         "map": {
+            "name": "map_link",
+            "value": "2"
+        },
+         "map_link": {
+            "name": "map_link",
+            "value": "Medieval Palestine"
+        }
+    }
+},
+        {
+    "word": "Parchment",
+    "color": "#ffffff",
+    "shape": "615,2924  1375,2934  1355,3884  665,3874 ",
+    "cat": "Material",
+    "fields": {
+        "title": {
+            "name": "title",
+            "value": "Text"
+        },
+        "text": {
+            "name": "text",
+            "value": "Parchment is made from cow, sheep, or goat skin. The hide is treated with lime, the hair scraped away, and the bare hide scraped and stretched until thin. It is an extremely durable material: if kept dry, it will last for centuries. Its durability means that, unlike papyrus, the ink can be removed by scraping or washing, and the parchment reused. As parchment was expensive and was time-consuming to make, there was a incentive to remove old texts and reuse parchment."
+        },
+        "image": {
+            "name": "image",
+            "value": ""
+        },
+        "icon": {
+            "name": "icon",
+            "value": ""
+        },
+        "translation": {
+            "name": "icon",
+            "value": ""
+        },
+        "video": {
+            "name": "video",
+            "value": "2-SpLPFaRd0"
+        },
+        "transcription": {
+            "name": "transcription",
+            "value": "וידבר י'י אל משה ואל אהרן לאמר: דברו אל בני ישראל ואמרתם אלהם איש איש כי"
+        },
+        "animation": {
+            "name": "animation",
+            "value": ""
+        },
+         "map": {
+            "name": "map_link",
+            "value": ""
+        },
+         "map_link": {
+            "name": "map_link",
+            "value": ""
         }
     }
 }
+ 
+
             
     ]
 }

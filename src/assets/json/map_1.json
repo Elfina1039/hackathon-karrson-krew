@@ -1,0 +1,56 @@
+{
+    "name": "Africa",
+    "imgData": {
+        "url": "/assets/images/maps/1_AquilaMap.png",
+        "url2": "/assets/images/maps/2_YannaiMap.png",
+        "width": "3507px",
+        "height": "2480px",
+        "title": "Africa"
+    },
+    "slides": [
+        {
+            "word": "Rome",
+            "color": "#ffffff",
+            "shape": " 107,508  87,540  50,537  32,504  44,470  73,461  100,475 ",
+            "cat": "City",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Map 1: The Roman Empire, c. 117 CE"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "Aquila of Sinope lived in the early second century CE, and came from the Roman imperial province of Pontus in Asia Minor, in modern-day Turkey. Though later writers referred to him as having been employed by the Emperor Hadrian in Jerusalem, there is very little documentary evidence on his life."
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        }
+    ]
+}

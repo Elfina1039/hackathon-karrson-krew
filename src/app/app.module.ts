@@ -18,6 +18,7 @@ import { MagicGlassComponent } from './magic-glass/magic-glass.component';
 import { SplitScreenComponent } from './split-screen/split-screen.component'; 
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { QrReaderComponent } from './qr-reader/qr-reader.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import {MatIconModule} from '@angular/material/icon';
     AudioComponent,
    CanvasControlsComponent,
    MagicGlassComponent,
-   SplitScreenComponent
+   SplitScreenComponent,
+   QrReaderComponent
    
   ],
     

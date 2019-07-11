@@ -2,32 +2,33 @@
 
 <div id="zoom" role="group" aria-label="Manuscript zoom">
 
-            <button  id="zoomIn" (click)="zoomChng(0.1)">
+            <button  id="zoomIn" (click)="zoomChng(0.1)" class="iconButton">
               +
             </button>
-            <button  cid="zoomOut" (click)="zoomChng(-0.1)">
+            <button  cid="zoomOut" (click)="zoomChng(-0.1)" class="iconButton">
               -
             </button>
     
 
         
-     <button  type="button"  id="zoomToFit" (click)="zoomChng(fitZoom-zoom)" *ngIf="zoom>fitZoom">
-             X
+     <button  (click)="zoomChng(fitZoom-zoom)" *ngIf="zoom>fitZoom" class="iconButton icon_back">
+          
             </button>
     
-    <button (click)="navigate('map',0)">Map</button>
     
-    <button  (click)="navigate('aquila_v','0,1')" >
-             Home
+    
+    <button  (click)="navigate('aquila_v','0,1')" class="iconButton icon_home">
+        
             </button>
     
           </div>
-    <ng-container  *ngFor="let zc of zoneCategories" >
+    <div id=cats>
+    <ng-container  *ngFor="let zc of zoneCategories">
    
-        <button [style.border-color]=catColors[zc.name] [style.color]=catColors[zc.name] class="dspButton" (click)="zc.selected=!zc.selected; selectionChng()" [ngClass]="zc.selected ? 'hideButton' : 'showButton'">{{zc.name}} ({{zc.zoneCount}})</button>
+        <button  class="iconButton" (click)="zc.selected=!zc.selected; selectionChng()" [ngClass]="zc.selected ? zc.name+'_on':zc.name" ></button>
     
     </ng-container>
-    
+    </div>
     
     
 </div>  

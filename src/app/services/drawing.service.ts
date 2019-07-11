@@ -23,11 +23,11 @@ constructor(
     this.drawingSettings.Flora=<DrawingSettings>{fillStyle:"rgba(0,255,0,0.5)", strokeStyle:"transparent", lineWidth:1, shadowColor:"transparent", shadowBlur:0};
     this.drawingSettings.region_white=<DrawingSettings>{fillStyle:"rgba(255,255,255,0.2)", strokeStyle:"black", lineWidth:3, shadowColor:"transparent", shadowBlur:0};
         this.drawingSettings.region_green=<DrawingSettings>{fillStyle:"rgba(0,255,0,0.2)", strokeStyle:"black", lineWidth:3, shadowColor:"transparent", shadowBlur:0};
-         this.drawingSettings.region_blue=<DrawingSettings>{ fillStyle:"rgba(0,0,255,0.2)", strokeStyle:"black", lineWidth:3, shadowColor:"transparent", shadowBlur:0};
-          this.drawingSettings.region_red=<DrawingSettings>{ fillStyle:"rgba(255,0,0,0.2)", strokeStyle:"transparent", lineWidth:0, shadowColor:"rgba(255,255,255,0.8)", shadowBlur:50};
+         this.drawingSettings.region_blue=<DrawingSettings>{ fillStyle:"rgba(0,0,255,0.2)", strokeStyle:"black", lineWidth:3, shadowColor:"black", shadowBlur:0};
+          this.drawingSettings.region_red=<DrawingSettings>{ fillStyle:"rgba(255,0,0,0.2)", strokeStyle:"transparent", lineWidth:0, shadowColor:"black", shadowBlur:50};
        
          this.drawingSettings.region_purple=<DrawingSettings>{ fillStyle:"rgba(255,0,255,0.2)", strokeStyle:"black", lineWidth:3, shadowColor:"transparent", shadowBlur:0};
-         this.drawingSettings.region_yellow=<DrawingSettings>{ fillStyle:"rgba(239, 222, 28, 0.2)", strokeStyle:"transparent", lineWidth:0, shadowColor:"rgba(255,255,255,0.8)", shadowBlur:50};
+         this.drawingSettings.region_yellow=<DrawingSettings>{ fillStyle:"rgba(239, 222, 28, 0.2)", strokeStyle:"transparent", lineWidth:0, shadowColor:"black", shadowBlur:50};
          this.drawingSettings.border_black=<DrawingSettings>{ fillStyle:"transparent", strokeStyle:"black", lineWidth:3, shadowColor:"transparent", shadowBlur:0};
     this.drawingSettings.text=<DrawingSettings>{fillStyle:"yellow", strokeStyle:"black", lineWidth:3, shadowColor:"transparent", shadowBlur:0};
     this.drawingSettings.highlight=<DrawingSettings>{ fillStyle:"rgba(255,255,255,0.2)", strokeStyle:"transparent", lineWidth:5, shadowColor:"white", shadowBlur:10};

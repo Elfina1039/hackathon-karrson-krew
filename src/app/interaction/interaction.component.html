@@ -1,11 +1,19 @@
 
-    
    <app-image [imgUrl]="imgUrl" [name]="name" [description]="description" [youTubeId]=youTubeId #infoWindow></app-image>
 
     <app-canvas [height]="getHeight(ci)" [top]="getTop(ci)" *ngFor="let ci of cis" [imgData]=imgData[ci] [zones]=zones[ci]  [zoneCategories]=zoneCategories[ci]  [mode]="mode"  (clicked)="displayClicked($event)"  [infoWindow]=infoWindow #canvas > </app-canvas>  
 
- <input id="timeMachine" type="range" min=0 max=1 step=0.5 (change)="moveInTime($event)" style="width:100%" [style.bottom]=0>
+<div *ngIf="mode=='preview'" id="timeMachine">
+    <div (click)="moveInTime(0)" id="aquila" class="selectButton"><h3>Aquila</h3></div>
+    <div (click)="moveInTime(1)" id="yannai" class="selectButton"><h3>Yannai</h3></div>
+    
+    <h2> The Aquila Palimpsest</h2>
+<p>
+    This manuscript contains two texts: a 10th century copy of 6th-7th century liturgical poetry by the Jewish poet Yannai, written over a 6th century copy of a literal Greek translation of the Hebrew bible by the 2nd century Jewish translator Aquila. In this manuscript, the Greek under-text is upside-down in relation to the upper Hebrew text. </p>
+    
+    
 
+</div>
 
 
 

@@ -1,0 +1,100 @@
+{
+    "name": "Africa",
+    "imgData": {
+        "url": "/assets/images/maps/3_ManuscriptMap.png",
+        "url2": "/assets/images/maps/3_ManuscriptMap.png",
+        "width": "3507px",
+        "height": "2480px",
+        "title": "Africa"
+    },
+    "slides": [
+        {
+            "word": "Roman Empire",
+            "color": "#ffffff",
+            "shape": " 14,1764  902,1864  2014,1832  1978,1768  1922,1712  1942,1644  1962,1688  1974,1704  2086,1816  2114,1772  2142,1800  2166,1800  2190,1848  2242,1848  2222,1872  2366,2060  2366,2140  2462,2184  2470,2216  2526,2352  2554,2424  3506,2428  3502,1884  3370,1688  3418,1628  3478,1600  3498,1624  3502,456  3394,540  3334,568  3294,540  3206,504  3158,472  3126,444  2998,440  2978,420  2850,376  2766,376  2634,348  2630,368  2758,432  2786,524  2702,564  2690,588  2482,592  2294,560  2158,496  1998,500  1834,556  1702,576  1626,560  1566,560  1506,488  1462,444  1390,508  1342,544  1218,560  1142,560  1082,504  994,436  986,388  906,316  866,248  826,224  778,248  714,376  662,380  674,468  726,512  718,592  714,652  766,696  834,784  850,820  898,908  934,964  954,1004  1002,1028  1062,996  1062,956  1046,924  1082,912  1074,876  1162,904  1166,860  1146,824  1042,792  1078,764  1030,652  1098,668  1162,620  1254,608  1374,624  1402,648  1346,700  1350,752  1386,796  1330,828  1350,852  1422,884  1438,936  1422,952  1446,992  1498,972  1546,972  1598,1008  1658,1048  1742,1056  1758,1000  1798,980  1838,1020  1906,1012  1898,1064  2002,1068  2114,1012  2146,992 ",
+            "cat": "Region",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Map 3: Egypt and the Levant, c. 814"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "The Aquila palimpsest comes from the medieval Jewish community of Fustat (Old Cairo). Between 750 and 905, Fustat was part of the Abbasid Caliphate, whosecapital was located in Baghdad. Abbasid Egypt was home to large Jewish and Christian minorities, who were subject to restrictions and regulations of their communal life, but had certain privileges and protections. The significant intellectual and economic activity of the Jewish community in Fustat is demonstrated by thecontents of the Cairo Genizah, a store room for discarded documents in the Ben Ezra Synagogue."
+                },
+                "link": {
+                    "name": "link",
+                    "value": "Roman Empire"
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        },
+        {
+            "word": "Cairo",
+            "color": "#ffffff",
+            "shape": " 1823,1646  1849,1610  1839,1576  1809,1572  1771,1592  1777,1624  1795,1636 ",
+            "cat": "City",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Cairo"
+                },
+                "text": {
+                    "name": "text",
+                    "value": ""
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        }
+    ]
+}

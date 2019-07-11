@@ -51,6 +51,9 @@ export class InteractionComponent implements OnInit{
       
       let source=this._activatedRoute.snapshot.params['source'];
       let canvases=this._activatedRoute.snapshot.params['canvases'].split(",");
+      let annotation=this._activatedRoute.snapshot.params['annotation'];
+      
+      console.log(annotation);
       
       if(canvases.length>1){
            
@@ -69,6 +72,10 @@ this.mode="preview";
         console.log(imgData);
         
 console.log("processing loop");
+                  
+        if(annotation){
+            data.slides=[data.slides[annotation]];
+        }
         
       let zoneLoader=ref.processIcons(data);
         console.log(ref.zoneLoader);
@@ -80,20 +87,23 @@ console.log("processing loop");
                   
       let catList=ref.zones.map((zone)=>zone.category);
      // this.cats=new Set(catList);
-           
+        
     ref.zones[i]=zoneLoader.zones;
      ref.zoneCategories[i]=zoneLoader.zoneCategories;
       ref.imgData[i]=imgData;
-            console.log(ref.zones);   
+      
+        if(annotation){
+           ref.displayClicked(ref.zones[i][annotation]);
+            ref.infoWindow.open();
+        }
+
     });
           
  
       }
      
-    
+   
       
-       console.log(ref.zones);
-
        // let id=<string>this._activatedRoute.snapshot.params['zid'];
   
       
@@ -104,7 +114,7 @@ displayClicked(e){
     //console.log("clicked");
     //console.log(e);
    // this.infoWindow.open();
-    this.name=e.word;
+    this.name=e.title;
     this.description=e.description;
     this.imgUrl=e.image;
 
@@ -112,7 +122,6 @@ displayClicked(e){
             this.youTubeId=e.music;
             this.songUrl="";
      
-      
 
 
 }
@@ -132,8 +141,12 @@ displayClicked(e){
                 case "translation" : newZone= new Region(slide, slideSet.imgData); break;
                     case "Script" : newZone= new Region(slide, slideSet.imgData); break;
                     case "Content" : newZone= new Region(slide, slideSet.imgData); break;
+                     case "Author" : newZone= new Region(slide, slideSet.imgData); break;
+                     case "Text" : newZone= new Region(slide, slideSet.imgData); break;
+                     case "Material" : newZone= new Region(slide, slideSet.imgData); break;
                     case "Region" : newZone= new Region(slide, slideSet.imgData); break;
-                 
+                 case "Discovery" : newZone= new Region(slide, slideSet.imgData); break;
+                    case "City" : newZone= new Region(slide, slideSet.imgData); break;
             }
             
             if(!categories[slide.cat]){
@@ -166,11 +179,18 @@ displayClicked(e){
     }
     
     moveInTime(e){
-        console.log(e.srcElement.value);
       //  this.canvases._results.forEach((c)=>c.moveInTime(e.srcElement.value));
+        let ref = this;
         
-        this.router.navigate(['single/aquila_v/'+e.srcElement.value])
+       // console.log(this.canvases._results[0]);
         
+        
+        this.canvases._results[1].wrapper.nativeElement.addEventListener("transitionend", function(){ref.navigate(['single/aquila_v/'+e]),3000});
+            this.canvases._results[1].wrapper.nativeElement.style.transform="rotate(180deg)";
+    }
+    
+    navigate(r){
+        this.router.navigate(r);
     }
     
     getTop(ci){
@@ -178,7 +198,11 @@ displayClicked(e){
     }
     
     getHeight(ci){
-        return 100/ci+"%";
+        return (100/(ci+1))+"%";
+    }
+    
+    onSwipe(e){
+        alert("swipe");
     }
 
 }

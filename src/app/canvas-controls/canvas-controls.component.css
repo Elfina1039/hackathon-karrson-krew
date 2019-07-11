@@ -3,7 +3,7 @@
     flex-flow: row nowrap;
     align-items: center;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 #zoom{
@@ -16,6 +16,8 @@
     align-items: center;
     color:white;
 }
+
+
 
 #zoom button{
     color:white;
@@ -32,27 +34,96 @@
     background-size: 100% 100%;
 }
 
+#cats{margin-right:5%}
 
-.dspButton{
-    border-radius: 0.2em;
-font-weight:bold;
-    margin:0.25em;
-  
-}
 
 .showButton{
     background-color:black;
     color:white;
     opacity:0.5;
+      width:2em;
+    height:2em;
 }
 
 .hideButton{
     background-color:black;
     color:black;
+    width:2em;
+    height:2em;
 }
+
 
 .categorySwitch{
  margin-left:1em;
     padding-left:0.5em;
     border-left: 2px solid white;
+}
+
+
+.iconButton{
+    border-radius: 0.2em;
+    border:2px outset rgb(20,20,20);
+    width:3em;
+    height:3em;
+    margin:0.25em;
+     background-size: 100% 100%;
+    transition : background-image 1s ease-out;
+  
+}
+
+
+.icon_back{
+    background-image:url("/assets/images/icons/returnv2.png");
+}
+
+
+.icon_home{
+    background-image:url("/assets/images/icons/home%20key%20blue.png");
+}
+
+.icon_home:hover{
+    background-image:url("/assets/images/icons/home%20yellow.png");
+}
+
+
+
+.Script{
+    background-image: url('/assets/images/icons/script blue.png');
+}
+
+.Script_on{
+    background-image: url('/assets/images/icons/script yellow.png');
+}
+
+.Text{
+    background-image: url('/assets/images/icons/text blue.png');
+}
+
+.Text_on{
+    background-image: url('/assets/images/icons/text yellow.png');
+}
+
+.Author{
+    background-image: url('/assets/images/icons/author blue.png');
+}
+
+.Author_on{
+    background-image: url('/assets/images/icons/author yellow.png');
+}
+
+.Material{
+    background-image: url('/assets/images/svg/material blue.png');
+}
+
+.Material_on{
+    background-image: url('/assets/images/svg/material yellow.png');
+}
+
+
+.City, .Region{
+    background-image:url("/assets/images/icons/map%20blue.png");
+}
+
+.CIty_on, .Region_on{
+    background-image:url("/assets/images/icons/map%20yellow.png");
 }

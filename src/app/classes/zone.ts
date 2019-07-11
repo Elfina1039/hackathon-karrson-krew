@@ -4,6 +4,11 @@ import { TransformSettings } from '../interfaces/transform-settings';
 
 import { DrawingSvc } from '../services/drawing.service';
 
+
+var settingsDict={Script:"region_green", Author:"region_blue", Discovery:"region_yellow", Text:"region_white", Material:"region_purple"};
+
+
+
 export class Zone {
     drawing : DrawingSvc  = new DrawingSvc();
     word: string;
@@ -20,6 +25,7 @@ export class Zone {
     
     points: Point[]; 
     imgCoords : any;
+    fingerCoords : Point[];
     drawingSetting: string;
     static: boolean;
     
@@ -28,6 +34,8 @@ export class Zone {
     
     startDate : number;
     endDate : number;
+    
+    visited : boolean = false;
     
     
     constructor(slide){
@@ -38,30 +46,28 @@ export class Zone {
         
         this.title = slide.fields.title.value;
         this.image=slide.fields.image.value;
-        this.description = slide.fields.description.value;
-        this.music = slide.fields.music.value;
+        this.description = slide.fields.text.value;
+        this.music = slide.fields.video.value;
        // this.comment = slide.fields.comment.value;
         
         this.points=this.drawing.stringToPath(slide.shape);
         this.imgCoords=this.calcImgCoords(this.points); 
+         this.fingerCoords=this.calcFingerCoords(); 
         console.log(this.imgCoords);
         
-        let timeSpan = slide.fields.timeSpan.value.split("-");
+     //   let timeSpan = slide.fields.timeSpan.value.split("-");
         
-        this.startDate=timeSpan[0];
-        this.endDate=timeSpan[1];
+      //  this.startDate=timeSpan[0];
+    //    this.endDate=timeSpan[1];
         
-        if(slide.fields.drawingSetting){
-            this.drawingSetting = slide.fields.drawingSetting.value;
-        }else{
-            this.drawingSetting = slide.cat;
-        }
+            this.drawingSetting = settingsDict[slide.cat];
+      
        
              if(slide.fields.image.value){
             this.img=new Image();
                 this.img.src=slide.fields.image.value;
               //console.log("image loaded: " + this.img.src);
-           this.source=slide.fields.icon.value;
+           //this.source=slide.fields.icon.value;
            
             }
         
@@ -75,6 +81,17 @@ export class Zone {
     }
     
 
+    calcFingerCoords(){
+        let a = {x:this.imgCoords.topLeft.x-25, y:this.imgCoords.topLeft.y-25};
+        let b = {x:this.imgCoords.topLeft.x-25+250, y:this.imgCoords.topLeft.y-25};
+        let c = {x:this.imgCoords.topLeft.x-25+250, y:this.imgCoords.topLeft.y-25+280};
+        let d = {x:this.imgCoords.topLeft.x-25, y:this.imgCoords.topLeft.y-25+280};
+        
+        return [a,b,c,d];
+    }
+    
+    
+    
     
      calcImgCoords(points){
         let xs=points.map((p)=>p.x);
@@ -96,6 +113,9 @@ export class Zone {
     myArrayMax(arr) {
   return Math.max.apply(null, arr);
 }
+    
+    
+    
     
     
 }
@@ -177,17 +197,34 @@ duration : number = 8000;
         
        
         
-        this.msText = {transcription:transcription, translation:translation, bgImage:imgData.url, bgImage2:imgData.url2 };
+        this.msText = {transcription:transcription, translation:translation, bgImage:imgData.url, bgImage2:imgData.url2, map : slide.fields.map.value, mapLink:slide.fields.map_link.value , link:slide.fields.link.value };
         
         console.log(this);
     }
         
 
-    draw(ctx){
+    draw_polygon(ctx){
       //console.log("drawing Region");
          this.drawing.applySetting(ctx, this.drawingSetting);
         this.drawing.drawPolygon(ctx, this.points, this.drawingSetting);
     }
+    
+    draw(ctx){
+      //  this.draw_polygon(ctx);
+        let finger = new Image();
+        if(this.visited==false){
+            finger.src = "/assets/images/svg/interface_clickers_green.svg";
+        }else{
+            finger.src = "/assets/images/svg/interface_clickers_red.svg";
+        }
+        
+        let ref = this;
+        finger.onload=function(){
+            ctx.drawImage(finger,ref.imgCoords.topLeft.x-50,ref.imgCoords.topLeft.y-50, 250, 280);
+        }
+        
+    }
+    
     
         addToAnimations(canvas, zoom){
      console.log("adding" + this.word);
@@ -199,7 +236,7 @@ duration : number = 8000;
          ctx.save();
         this.drawing.applySetting(ctx, this.drawingSetting);
         ctx.globalAlpha=stage;
-        this.draw(ctx);
+        this.draw_polygon(ctx);
          ctx.restore();
      
     }
@@ -210,7 +247,9 @@ duration : number = 8000;
        // ctx.clearRect(this.imgCoords.topLeft.x, this.imgCoords.topLeft.y, this.imgCoords.width, this.imgCoords.height);
         component.placeFrame(this, zoom);
         
-        console.log(component);
+        this.visited = true;
+           this.draw(ctx);
+           
         
     }
     

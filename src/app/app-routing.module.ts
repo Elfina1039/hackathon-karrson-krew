@@ -8,6 +8,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 const routes: Routes = [
+     {path:'interaction/:source/:canvases/:annotation', component: InteractionComponent},
     {path:'single/:source/:canvases', component: InteractionComponent},
      {path:'interaction/:source/:canvases', component: InteractionComponent},
     {path:'interaction/:map', component: InteractionComponent},

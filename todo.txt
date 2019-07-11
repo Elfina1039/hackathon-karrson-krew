@@ -1,23 +1,54 @@
+- make scroll smooth - use event listener   
+  
+  Genizah pictures!!
+  
+  - animate fingerprints
+  
+- highlight key words
+close magic glass on click + zoom out
+   
+   
+
+    
+7. fix redirect bug
+- jigsaw puzzle
+- calculate appropriate text size for transcription + css
+- go back from map to ms annotation
+- smoother zone rendering (draw multiple layers)
+- magic glass - translation in red + invite translation
+- icon buttons
+
+- how to go about combining bubbles?
+
+
+
+
+
+    - display titles - css
+    - display categories as icons
+
+    -  nice presentation of the split screen
+    - magic glass should not interfere with categories
+
+
     - close infowindow
     - make infowindow scrollable
     - transition on infowindow
 
-- arrow back
-- home button
+    - arrow back
+    - home button
+   - go to the right manuscript
 
-- display titles
-- display categories as icons
+    - css magic glass ISTEAD OF annotations
+    - nicer drawing setting for annotations
+   
+   1. touch aywhere to interact
+    2. fingerprint symbbols (possibly glowing)
+    3. better titles + basic info on the home screen
+    4. rotate hebrew text - hebrew should be the right side up on the homescreen
+    5. put tisk to used annotations
+    6. link maps to annotations
 
-- nice presentation of the split screen
-- magic glass should not interfere with categories
-
-- icon buttons
-
-
-- css magic glass ISTEAD OF annotations
-- nicer drawing setting for annotations
-- how to go about combining bubbles?
-- display category pickers for each canvas separately
 
 ----
 content

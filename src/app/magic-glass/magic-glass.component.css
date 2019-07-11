@@ -5,7 +5,7 @@ border:4px outset black;
     background-color:transparent;
     font-size:45px;
     display:none;
-    z-index:5000;
+    z-index:2000;
     padding:0;
     margin:0;
     transform:scale(1.05,1.05);
@@ -53,4 +53,59 @@ button{
     position:absolute;
     top:0;
     right:0;
+}
+
+.iconButton{
+    border-radius: 0.2em;
+    border:2px outset rgb(20,20,20);
+    width:3em;
+    height:3em;
+    margin:0.25em;
+     background-size: 100% 100%;
+    transition : background-image 1s ease-out;
+  
+}
+
+.icon_close{
+    background-image:url("/assets/images/icons/close.png");
+}
+
+
+.icon_translation{
+    background-image:url("/assets/images/icons/translate%20blue.png");
+}
+
+.icon_translation:hover{
+    background-image:url("/assets/images/icons/translate%20yellow.png");
+}
+
+.icon_transcription{
+    background-image:url("/assets/images/icons/transcribe%20blue.png");
+}
+
+.icon_transcription:hover{
+    background-image:url("/assets/images/icons/transcribe%20yellow.png");
+}
+
+.icon_layers{
+    background-image:url("/assets/images/icons/material%20blue.png");
+}
+
+.icon_layers:hover{
+    background-image:url("/assets/images/icons/material%20yellow.png");
+}
+
+.icon_map{
+    background-image:url("/assets/images/icons/map%20blue.png");
+}
+
+.icon_map:hover{
+    background-image:url("/assets/images/icons/map%20yellow.png");
+}
+.icon_more{
+    background-image:url("/assets/images/icons/text%20blue.png");
+}
+
+.icon_more:hover{
+    background-image:url("/assets/images/icons/text%20yellow.png");
 }
