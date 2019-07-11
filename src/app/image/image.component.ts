@@ -29,7 +29,7 @@ export class ImageComponent implements OnChanges {
     
       open(){
         console.log("opening infowindow");
-        this.container.nativeElement.style.height="50%";
+        this.container.nativeElement.style.height="70%";
           this.opened=true;
     }
     

@@ -37,7 +37,7 @@ export class Zone {
         this.category = slide.cat;
         
         this.title = slide.fields.title.value;
-        this.image="assets/images/"+slide.fields.image.value;
+        this.image=slide.fields.image.value;
         this.description = slide.fields.description.value;
         this.music = slide.fields.music.value;
        // this.comment = slide.fields.comment.value;
@@ -59,7 +59,7 @@ export class Zone {
        
              if(slide.fields.image.value){
             this.img=new Image();
-                this.img.src="assets/images/"+slide.fields.image.value;
+                this.img.src=slide.fields.image.value;
               //console.log("image loaded: " + this.img.src);
            this.source=slide.fields.icon.value;
            
@@ -277,7 +277,7 @@ export class Poster extends Zone {
         
            this.position=this.imgCoords.topLeft;
             this.img=new Image();
-                this.img.src="assets/images/"+slide.fields.image.value;
+                this.img.src=slide.fields.image.value;
               //console.log("image loaded: " + this.img.src);
         
            this.source=slide.fields.icon.value;

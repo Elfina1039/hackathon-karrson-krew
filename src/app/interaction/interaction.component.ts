@@ -107,7 +107,7 @@ displayClicked(e){
     this.name=e.word;
     this.description=e.description;
     this.imgUrl=e.image;
-    
+
 
             this.youTubeId=e.music;
             this.songUrl="";

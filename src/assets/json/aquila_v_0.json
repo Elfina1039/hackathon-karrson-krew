@@ -6,9 +6,57 @@
         "width": "2000px",
         "height": "2345px",
         "title": "Aquila",
-         "fontSize" : "45px"
+         "fontSize" : "35px"
     },
     "slides": [
+        {
+    "word": "Greek",
+    "color": "#0000ff",
+    "shape": " 1125,303 1799,303 1799,769 1125,769",
+    "cat": "Script",
+    "fields": {
+        "title": {
+            "name": "title",
+            "value": "A Greek word"
+        },
+        "description": {
+            "name": "description",
+            "value": "Greek uncial script "
+        },
+        "image": {
+            "name": "image",
+            "value": "http://www.katapi.org.uk/images/G&LPalaeography/G&LPalaeography11-150aC.jpg"
+        },
+        "icon": {
+            "name": "icon",
+            "value": ""
+        },
+        "drawingSetting": {
+            "name": "drawingSetting",
+            "value": "region_red"
+        },
+        "music": {
+            "name": "music",
+            "value": ""
+        },
+        "transcription": {
+            "name": "transcription",
+            "value": "ΤΗ ΠΟΙΗΣΩ ΚΑΙ ΤΟ ΡΗΜΑ ΤΟΥΤΟ ΟΥ ΔΥ-ΝΗΣΟΜΑΙ ΤΟΥ ΠΟΙ-ΗΣΕ ΚΑΙ ΕΠΟΡΕΥ-ΘΗΣΑΝ ΟΙ ΑΓΓΕΛΟ ΚΑΙ ΕΠΕΣΤΡΕΨΑΝ ΑΥΤΩ"
+        },
+        "animation": {
+            "name": "animation",
+            "value": ""
+        },
+        "translation": {
+            "name": "path",
+            "value": ""
+        },
+        "timeSpan": {
+            "name": "timeSpan",
+            "value": "6-12"
+        }
+    }
+},
         {
     "word": "Translation",
     "color": "#0000ff",

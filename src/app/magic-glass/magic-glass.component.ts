@@ -10,6 +10,7 @@ import { Translation } from '../interfaces/translation';
 export class MagicGlassComponent implements OnInit {
   msText : any = {};
 @Input("fontSize") fontSize : any;
+@Input("manuscript") manuscript : any;
 @Input("infoWindow") infoWindow : any;
     @ViewChild("container") container : any;
     width : number = 0;
@@ -21,6 +22,7 @@ export class MagicGlassComponent implements OnInit {
 
     
 placeFrame(source, zoom){
+    this.manuscript.nativeElement.style["background-color"] = "rgba(0,0,0,0.5)";
     console.log(this.msText);
     this.container.nativeElement.style["background-image"]="url('"+source.msText.bgImage+"')";
      this.container.nativeElement.style["background-position"]=-source.imgCoords.topLeft.x+"px "+-source.imgCoords.topLeft.y+"px";
@@ -37,6 +39,7 @@ placeFrame(source, zoom){
 }    
     
     hideFrame(){
+        this.manuscript.nativeElement.style["background-color"] = "transparent";
         console.log("hiding magic glass");
         this.container.nativeElement.style.display="none";
     }

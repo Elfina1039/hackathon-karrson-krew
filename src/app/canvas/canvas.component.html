@@ -16,7 +16,7 @@
             
                  <app-canvas-controls *ngIf="mode=='interaction'" [opacityRatio]=opacityRatio [zoom]="zoom" [fitZoom]="fitZoom" [zoneCategories]="zoneCategories" (changeZoom)="zoomChng($event)" (changeSelection)="redrawSelected($event)"  (changeOpacity)="opacityChng($event)" ></app-canvas-controls>
                 
-                 <app-magic-glass [fontSize]="imgData.fontSize" [infoWindow]=infoWindow #magicglass></app-magic-glass>
+                 <app-magic-glass [fontSize]="imgData.fontSize" [infoWindow]=infoWindow [manuscript]=animation #magicglass></app-magic-glass>
                 
             </div>
      
