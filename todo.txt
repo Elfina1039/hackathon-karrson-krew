@@ -1,0 +1,41 @@
+    - close infowindow
+    - make infowindow scrollable
+    - transition on infowindow
+
+- arrow back
+- home button
+
+- display titles
+- display categories as icons
+
+- nice presentation of the split screen
+- magic glass should not interfere with categories
+
+- icon buttons
+
+
+- css magic glass ISTEAD OF annotations
+- nicer drawing setting for annotations
+- how to go about combining bubbles?
+- display category pickers for each canvas separately
+
+----
+content
+-----
+info about pyyut
+
+
+http://hackathon-qmul.delfiin.net/#/interaction/aquila_v/0
+http://hackathon-qmul.delfiin.net/#/interaction/aquila_v/0/0
+http://hackathon-qmul.delfiin.net/#/interaction/aquila_v/0/1
+http://hackathon-qmul.delfiin.net/#/interaction/aquila_v/0/2
+
+http://hackathon-qmul.delfiin.net/#/interaction/aquila_v/1
+http://hackathon-qmul.delfiin.net/#/interaction/aquila_v/1/0
+http://hackathon-qmul.delfiin.net/#/interaction/aquila_v/1/1
+http://hackathon-qmul.delfiin.net/#/interaction/aquila_v/1/2
+
+http://hackathon-qmul.delfiin.net/#/interaction/map/0
+http://hackathon-qmul.delfiin.net/#/interaction/map/1
+http://hackathon-qmul.delfiin.net/#/interaction/map/2
+http://hackathon-qmul.delfiin.net/#/interaction/map/3

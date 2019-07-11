@@ -1,0 +1,17 @@
+<div id=container #container>
+    <button (click)="close()" *ngIf="opened==true" style="float:right" id="closeButton">X</button>
+    
+    <img [src]="imgUrl" id=image *ngIf="imgUrl"/>
+    
+    <div id=description *ngIf="description">
+        <h2 id=imgHeadline>{{name}}</h2>
+        <p class=description>
+    {{description}}
+        </p>
+    </div>
+    
+
+    <app-audio [songUrl]="songUrl" mode="interaction" [youTubeId]="youTubeId"></app-audio>
+
+
+</div>

@@ -1,0 +1,20 @@
+<div id="container" #container >
+    
+    <button id=hideButton (click)="hideFrame()">X</button>
+    
+    <div *ngIf="mode=='transcription'" class=textBox [style.font-size]=fontSize>
+        <span class="transcription" *ngFor="let w of msText.transcription" (click)="translate(w)">{{w.transcript}}/{{w.translation}}</span>
+    </div>
+    
+     <div *ngIf="mode=='translation'" class=textBox [style.font-size]=fontSize>
+        <span class="translation" *ngFor="let w of msText.translation" >{{w.transcript}}</span>
+    </div>
+    
+    <div id="controls">
+    <button (click)="mode='transcription'" *ngIf="msText.transcription">Transcribe</button>
+     <button (click)="mode='translation'" *ngIf="msText.translation">Translate</button>
+    <button (click)="layers()">Layers</button>
+     <button (click)="clear()">Clear</button>
+     <button (click)="showInfo($event)">Learn more</button>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+
+    
+   <app-image [imgUrl]="imgUrl" [name]="name" [description]="description" [youTubeId]=youTubeId #infoWindow></app-image>
+
+    <app-canvas [height]="getHeight(ci)" [top]="getTop(ci)" *ngFor="let ci of cis" [imgData]=imgData[ci] [zones]=zones[ci]  [zoneCategories]=zoneCategories[ci]  [mode]="mode"  (clicked)="displayClicked($event)"  [infoWindow]=infoWindow #canvas > </app-canvas>  
+
+ <input id="timeMachine" type="range" min=0 max=1 step=0.5 (change)="moveInTime($event)" style="width:100%" [style.bottom]=0>
+
+
+
+
+<!--<app-controls [cats]="cats"></app-controls>
+
+<app-audio [songUrl]="songUrl" [mode]="mode" [youTubeId]="youTubeId"></app-audio>
+-->

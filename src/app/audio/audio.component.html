@@ -1,0 +1,20 @@
+<youtube-player *ngIf="youTubeId"
+          [videoId]="youTubeId"
+          (ready)="saveYT($event)"
+          (change)="changeYT($event)"
+                 width="50%" 
+       >
+        </youtube-player>
+
+
+<div id=audio>
+     <audio id=music controls #music>
+        <source id=song [src]="songUrl" type="audio/mpeg" #song>
+    </audio>
+    
+     <audio id=voice controls #voice>
+        <source id=comment [src]="commentUrl" type="audio/mpeg" #comment>
+    </audio>
+    
+</div>
+    

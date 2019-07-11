@@ -1,0 +1,58 @@
+#wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+#zoom{
+    padding: .4rem;
+    margin: 0.2em;
+    display: inline-flex;
+    color: black;
+    min-width: 2em;
+    flex-flow: row nowrap;
+    align-items: center;
+    color:white;
+}
+
+#zoom button{
+    color:white;
+    background-color:black;
+    border-radius:0.5em;
+    font-weight:bold;
+}
+
+#zoomToFit{
+    background-image:url("/assets/images/graphics/arrow_back.png");
+    width:1.5em;
+    height:2em;
+        background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.dspButton{
+    border-radius: 0.2em;
+font-weight:bold;
+    margin:0.25em;
+  
+}
+
+.showButton{
+    background-color:black;
+    color:white;
+    opacity:0.5;
+}
+
+.hideButton{
+    background-color:black;
+    color:black;
+}
+
+.categorySwitch{
+ margin-left:1em;
+    padding-left:0.5em;
+    border-left: 2px solid white;
+}

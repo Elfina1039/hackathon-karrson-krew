@@ -1,0 +1,56 @@
+#container{
+    position:absolute;
+border:4px outset black;
+    border-radius:0.2em;
+    background-color:transparent;
+    font-size:45px;
+    display:none;
+    z-index:5000;
+    padding:0;
+    margin:0;
+    transform:scale(1.05,1.05);
+    transition: display 2s smooth;
+}
+
+#controls{
+    height: 25px;
+    position:absolute;
+    bottom: 0px;
+}
+
+
+span.transcription{
+    color:navy;
+    font-weight:bold;
+    margin-right: 0.3em;
+}
+
+span.translation{
+    color:darkred;
+    font-weight:bold;
+    margin-right: 0.3em;
+}
+
+.textBox{
+    display:flex;
+    flex-flow: row wrap;
+    background-color: rgba(255,255,255,0.3);
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+button{
+    color:white;
+    background-color:black;
+    border-radius:0.5em;
+    font-weight:bold;
+}
+
+#hideButton{
+    margin:0;
+    position:absolute;
+    top:0;
+    right:0;
+}

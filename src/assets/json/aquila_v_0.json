@@ -1,0 +1,61 @@
+{
+    "name": "Aquila",
+    "imgData": {
+        "url": "assets/images/aquila_v_a.jpg",
+        "url2": "assets/images/aquila_v_y.jpg" ,
+        "width": "2000px",
+        "height": "2345px",
+        "title": "Aquila",
+         "fontSize" : "45px"
+    },
+    "slides": [
+        {
+    "word": "Translation",
+    "color": "#0000ff",
+    "shape": " 1263,815  1689,820  1732,1228  1092,1232  1095,876  1267,877 ",
+    "cat": "Content",
+    "fields": {
+        "title": {
+            "name": "title",
+            "value": "Aquila's Translation"
+        },
+        "description": {
+            "name": "description",
+            "value": "Aquila’s translation is most notable for its literalness. He translated word for word from the Hebrew Bible, and as such the Greek is only readable with a knowledge of the Hebrew grammar underpinning it. This manuscript preserves a fragment written in the sixth century, recounting the story of Naboth’s vineyard. No complete Aquila translation survives, and instead his work has been constructed from fragments like this, and citations from other authors. As such, it is difficult to say what exactly Aquila translated, whether he wrote a translation, and whether there was a standardised ‘Aquila Bible’ in circulation. Plausibly, his work began as professional ad hoc translations, that only developed over time into a fuller translation. In its Jewish use, Aquila’s work was largely used by scholars to explain difficult Biblical passages. While the Jewish community seemed happy to simply view the work as translation, Christian readers interrogated the work critically. Irenaeus, a near contemporary to Aquila, accused him of being ‘impudent and presumptuous’, as well as heretical, for daring to translate the Bible so literally. Origen, writing about a century later, is more open, and relies on Aquila among other translators for his Hexapla, a comparison of six different versions of the Bible. In the Genizah, the palimpsests tend to be written over Christian texts. As such, while Aquila’s work was actively used by both communities, the Genizah context of this fragment has led historians to assume it was written for a Christian audience."
+        },
+        "image": {
+            "name": "image",
+            "value": ""
+        },
+        "icon": {
+            "name": "icon",
+            "value": ""
+        },
+        "drawingSetting": {
+            "name": "drawingSetting",
+            "value": "region_yellow"
+        },
+        "music": {
+            "name": "music",
+            "value": ""
+        },
+        "transcription": {
+            "name": "transcription",
+            "value": "ΑΔΑΔ· ΚΑΙ ΕΙ- ΠΕΝ ΤΑΔΕ ΠΟΙΗΣΕ- ΣΑΝ ΜΟΙ ΘΕΟΙ ΚΑΙ ΤΑΔΕ ΠΡΟΣΘΙΗΣΑΝ  ΕΙ ΕΞΑΡΚΕΣΕΙ ΧΟΥΣ ΣΑ- ΜΑΡΙΑΣ ΤΑΙΣ ΧΕΙΛΙ- ΑΣΙΝ ΤΟΥ ΠΑΝΤΟΣ"
+        },
+        "animation": {
+            "name": "animation",
+            "value": ""
+        },
+        "translation": {
+            "name": "path",
+            "value": ""
+        },
+        "timeSpan": {
+            "name": "timeSpan",
+            "value": "6-12"
+        }
+    }
+}
+    ]
+}
