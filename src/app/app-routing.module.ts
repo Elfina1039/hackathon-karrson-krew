@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { PortalComponent } from './portal/portal.component';
 import { InteractionComponent } from './interaction/interaction.component';
+import { QrReaderComponent} from './qr-reader/qr-reader.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
@@ -12,8 +12,8 @@ const routes: Routes = [
     {path:'single/:source/:canvases', component: InteractionComponent},
      {path:'interaction/:source/:canvases', component: InteractionComponent},
     {path:'interaction/:map', component: InteractionComponent},
-    {path:'portal', component: PortalComponent}, 
-    {path:'./', component: PortalComponent} 
+     {path:'home', component: QrReaderComponent}, 
+    {path:'./', component: QrReaderComponent} 
    
 ];
 

@@ -1,3 +1,3 @@
-<p>
-  qr-reader works!
-</p>
+
+<h1>Hold your device over a QR code.
+<zxing-scanner #scanner class="test-class" start="true" [device]="selectedDevice" (scanSuccess)="handleQrCodeResult($event)"></zxing-scanner>

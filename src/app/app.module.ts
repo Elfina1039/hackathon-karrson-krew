@@ -19,7 +19,8 @@ import { SplitScreenComponent } from './split-screen/split-screen.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { QrReaderComponent } from './qr-reader/qr-reader.component';
-
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { QrReaderComponent } from './qr-reader/qr-reader.component';
       NgxYoutubePlayerModule.forRoot(),
       MatSliderModule,
          MatButtonModule,
-      MatIconModule
+      MatIconModule,
+       ZXingScannerModule,
+      MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

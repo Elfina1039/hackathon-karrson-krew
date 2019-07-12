@@ -5,7 +5,7 @@ import { TransformSettings } from '../interfaces/transform-settings';
 import { DrawingSvc } from '../services/drawing.service';
 
 
-var settingsDict={Script:"region_green", Author:"region_blue", Discovery:"region_yellow", Text:"region_white", Material:"region_purple"};
+var settingsDict={Script:"region_green", Author:"region_blue", Discovery:"region_yellow", Text:"region_white", Material:"region_purple", Region:"region_purple", City:"region_yellow"};
 
 
 
@@ -174,8 +174,58 @@ export class Icon extends Zone {
     
 }
 
-
 export class Region extends Zone {
+
+offset : number = 0;
+duration : number = 8000;
+    
+    constructor(slide, imgData){
+        super(slide);
+      //console.log("constructing region");
+        
+    }
+        
+
+    draw(ctx){
+      //console.log("drawing Region");
+         this.drawing.applySetting(ctx, this.drawingSetting);
+        this.drawing.drawPolygon(ctx, this.points, this.drawingSetting);
+    }
+    
+
+    
+        addToAnimations(canvas, zoom){
+     console.log("adding" + this.word);
+       return [this];
+    }
+    
+    animate(ctx, stage, canvas, zoom){
+       // console.log("animating region");
+         ctx.save();
+        this.drawing.applySetting(ctx, this.drawingSetting);
+        ctx.globalAlpha=stage;
+        this.draw(ctx);
+         ctx.restore();
+    }
+    
+
+    
+       activate(ctx, component, zoom){
+        console.log("activating");
+        console.log(component.container.nativeElement);
+       // ctx.clearRect(this.imgCoords.topLeft.x, this.imgCoords.topLeft.y, this.imgCoords.width, this.imgCoords.height);
+        component.placeFrame(this, zoom);
+        
+        this.visited = true;
+           this.draw(ctx);
+           
+        
+    }
+    
+   
+}
+
+export class Annotation extends Zone {
 msText : any;
 offset : number = 0;
 duration : number = 8000;
@@ -231,12 +281,45 @@ duration : number = 8000;
        return [this];
     }
     
-    animate(ctx, stage, canvas, zoom){
+    animate_old(ctx, stage, canvas, zoom){
        // console.log("animating region");
          ctx.save();
         this.drawing.applySetting(ctx, this.drawingSetting);
         ctx.globalAlpha=stage;
         this.draw_polygon(ctx);
+         ctx.restore();
+     
+    }
+    
+      animate(ctx, stage, canvas, zoom){
+       // console.log("animating region");
+          let x = this.imgCoords.topLeft.x -25+this.imgCoords.width/2*zoom;
+            let y = this.imgCoords.topLeft.y+25+this.imgCoords.height/2*zoom;
+          
+          let small = (250 + (100*stage))*zoom;
+          let big = (340 + (100*stage))*zoom;
+          
+         // console.log(small);
+          
+         ctx.save();
+        ctx.lineWidth = 9;
+         ctx.strokeStyle = "green";
+        ctx.globalAlpha=0.3+stage;
+        ctx.beginPath();
+ctx.arc(x, y , small, -Math.PI/3,  Math.PI/3);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(x, y , big, -Math.PI/3,  Math.PI/3);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(x, y , small, Math.PI/1.5,  -Math.PI/1.5);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(x, y , big, Math.PI/1.5,  -Math.PI/1.5);
+ctx.stroke();
          ctx.restore();
      
     }

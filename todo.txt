@@ -1,15 +1,12 @@
-- make scroll smooth - use event listener   
-  
-  Genizah pictures!!
+
   
   - animate fingerprints
   
 - highlight key words
-close magic glass on click + zoom out
-   
-   
 
-    
+
+
+close magic glass on click + zoom out
 7. fix redirect bug
 - jigsaw puzzle
 - calculate appropriate text size for transcription + css
@@ -20,7 +17,9 @@ close magic glass on click + zoom out
 
 - how to go about combining bubbles?
 
-
+    - make scroll smooth - use event listener   
+  
+    Genizah pictures!!
 
 
 

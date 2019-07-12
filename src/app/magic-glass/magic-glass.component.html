@@ -3,7 +3,7 @@
     <button id=hideButton (click)="hideFrame()" class="iconButton icon_close"></button>
     
     <div *ngIf="mode=='transcription'" class=textBox [style.font-size]=fontSize>
-        <span class="transcription" *ngFor="let w of msText.transcription" (click)="translate(w)">{{w.transcript}}/{{w.translation}}</span>
+        <span class="transcription" *ngFor="let w of msText.transcription" (click)="translate(w)">{{w.transcript}}<span class=translation>{{w.translation}}</span></span>
     </div>
     
      <div *ngIf="mode=='translation'" class=textBox [style.font-size]=fontSize>
@@ -14,8 +14,8 @@
     <button (click)="mode='transcription'" *ngIf="msText.transcription" class="iconButton icon_transcription"></button>
      <button (click)="mode='translation'" *ngIf="msText.translation" class="iconButton icon_translation"></button>
         <button (click)="layers()" class="iconButton icon_layers"></button>
-     <button  *ngIf="msText.link" (click)="showInfo($event)" class="iconButton icon_more" [title]="msText.link"></button>
-        <button *ngIf="msText.mapLink" (click)="navigate('map',msText.map)" class="iconButton icon_map" [title]="msText.mapLink"></button>
+     <button  *ngIf="msText.link" (click)="showInfo($event)" class="iconButton icon_more" matTooltip="msText.link"></button>
+        <button *ngIf="msText.mapLink" (click)="navigate('map',msText.map)" class="iconButton icon_map" matTooltip="msText.mapLink"></button>
              <button (click)="clear()" class="iconButton icon_close"></button>
     </div>
 </div>

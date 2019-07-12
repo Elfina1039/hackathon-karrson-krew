@@ -4,7 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 import { Islide } from '../interfaces/Islide';
 import { MapData } from '../interfaces/map-data';
-import { Zone, Region, Icon, Slide, Poster, Cover} from '../classes/zone';
+import { Zone, Region, Icon, Slide, Poster, Cover, Annotation} from '../classes/zone';
 import { ImgData} from '../interfaces/img-data';
 import { ZoneCategory } from '../interfaces/zone-category';
 
@@ -136,18 +136,26 @@ displayClicked(e){
             console.log("PROCESSING "+ slide.word);
             let newZone;
             slide.component = ref;
-            switch(slide.cat){
+            
+            if(ref.mode!="preview"){
+                   switch(slide.cat){
            
-                case "translation" : newZone= new Region(slide, slideSet.imgData); break;
-                    case "Script" : newZone= new Region(slide, slideSet.imgData); break;
-                    case "Content" : newZone= new Region(slide, slideSet.imgData); break;
-                     case "Author" : newZone= new Region(slide, slideSet.imgData); break;
-                     case "Text" : newZone= new Region(slide, slideSet.imgData); break;
-                     case "Material" : newZone= new Region(slide, slideSet.imgData); break;
+                case "translation" : newZone= new Annotation(slide, slideSet.imgData); break;
+                    case "Script" : newZone= new Annotation(slide, slideSet.imgData); break;
+                    case "Content" : newZone= new Annotation(slide, slideSet.imgData); break;
+                     case "Author" : newZone= new Annotation(slide, slideSet.imgData); break;
+                     case "Text" : newZone= new Annotation(slide, slideSet.imgData); break;
+                     case "Material" : newZone= new Annotation(slide, slideSet.imgData); break;
                     case "Region" : newZone= new Region(slide, slideSet.imgData); break;
-                 case "Discovery" : newZone= new Region(slide, slideSet.imgData); break;
+                 case "Discovery" : newZone= new Annotation(slide, slideSet.imgData); break;
                     case "City" : newZone= new Region(slide, slideSet.imgData); break;
             }
+            }else{
+                newZone= new Region(slide, slideSet.imgData);
+            }
+                
+            
+         
             
             if(!categories[slide.cat]){
                 let selectedVal: boolean;

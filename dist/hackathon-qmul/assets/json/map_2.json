@@ -1,0 +1,56 @@
+{
+    "name": "Africa",
+    "imgData": {
+        "url": "/assets/images/maps/2_YannaiMap.png",
+        "url2": "/assets/images/maps/1_AquilaMap.png",
+        "width": "3507px",
+        "height": "2480px",
+        "title": "Africa"
+    },
+    "slides": [
+        {
+            "word": "Islamic conquest",
+            "color": "#ffffff",
+            "shape": " 2222,1212  2166,1344  2138,1444  2038,1504  2122,1544  2190,1484  2242,1404  2270,1288 ",
+            "cat": "Region",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Map 2: The Islamic Conquests, 622-750"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "Yannai lived in the first half of the seventh century, and is thought to have come from Palestine. This means that his life was possibly contemporaneous with the Islamic Conquests, which began in the year 622 under Muhammad and were continued under the Rashidun Caliphate (632-61) and the Ummayad Caliphate (661-750), the latter of which established its capital in Damascus. These conquests encompassed a a huge expanse of territory from Iberia and North Africa in the west to Sindh in modern-day Pakistan. The former Roman territories of the Levant and Egypt were brought under Islamic jurisdiction relatively early, in the 630s and 640s, and in 641 the city of Fustat was founded as the new capital of Islamic Egypt."
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        }
+    ]
+}

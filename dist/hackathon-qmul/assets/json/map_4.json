@@ -1,0 +1,56 @@
+{
+    "name": "Africa",
+    "imgData": {
+        "url": "/assets/images/maps/4_CairoToCambridge.png",
+        "url2": "/assets/images/maps/3_ManuscriptMap.png",
+        "width": "3507px",
+        "height": "2480px",
+        "title": "Africa"
+    },
+    "slides": [
+      {
+    "word": "Cambridge",
+    "color": "#ffffff",
+    "shape": " 819,656  806,691  825,715  873,714  884,677  860,643 ",
+    "cat": "City",
+    "fields": {
+        "title": {
+            "name": "title",
+            "value": "Map 4: The journey of the Genizah fragments to Cambridge, c. 1897"
+        },
+        "text": {
+            "name": "text",
+            "value": "Having received permission from the Jewish community in Cairo to remove documents from the Genizah and take them with him, Dr Soloman Schechter transported a large number of the Genizah fragments to the Cambridge University Library. Other collections of Genizah manuscripts are also held in Oxford and Manchester."
+        },
+        "link": {
+            "name": "link",
+            "value": ""
+        },
+        "image": {
+            "name": "image",
+            "value": "https://www.cam.ac.uk/sites/www.cam.ac.uk/files/news/research/features/151119schechteratworkincambridge.jpg"
+        },
+        "video": {
+            "name": "video",
+            "value": ""
+        },
+        "transcription": {
+            "name": "transcription",
+            "value": ""
+        },
+        "translation": {
+            "name": "translation",
+            "value": ""
+        },
+        "map": {
+            "name": "map",
+            "value": ""
+        },
+        "map_link": {
+            "name": "map_link",
+            "value": ""
+        }
+    }
+}
+    ]
+}

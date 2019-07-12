@@ -36,6 +36,7 @@ box-shadow: 0 0 15px rgba(0,0,0,0.7);
 
 #description h2{
     border-bottom : 1px solid white;
+    color:rgb(255,242,204);
 }
 
 
@@ -58,6 +59,11 @@ box-shadow: 0 0 15px rgba(0,0,0,0.7);
 
 .iconButton:hover{
     box-shadow:0 0 5px yellow;
+}
+
+span.keyWord{
+   font-weight:bold;
+    color:#5d91b6
 }
 
 /* CUSTOM SCROLLBAR */

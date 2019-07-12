@@ -1,8 +1,8 @@
 {
     "name": "Yannai",
     "imgData": {
-        "url": "/assets/images/aquila_r_y.jpg",
-        "url2": "assets/images/aquila_r_a.jpg",
+        "url": "/assets/images/aquila_v_y_180.jpg",
+        "url2": "assets/images/aquila_v_a.jpg",
         "width": "2000px",
         "height": "2345px",
         "title": "Yannai",
@@ -12,7 +12,7 @@
         {
     "word": "Piyyut",
     "color": "#ffffff",
-    "shape": " 410,1379  848,1379  848,1721  410,1721 ",
+    "shape": "  402,604  554,593  747,609  900,599  943,673  942,870  934,980  867,995  803,963  568,966  412,956 ",
     "cat": "Script",
     "fields": {
         "title": {
@@ -63,7 +63,7 @@
         {
     "word": "Yannai",
     "color": "#ffffff",
-    "shape": " 442,870  435,912  643,910  961,912  1203,933  1402,949  1403,891  1174,893  658,864 ",
+    "shape": " 1270,1464  1286,1417  1241,1391  1040,1409  785,1419  592,1428  429,1420  420,1452  430,1484  570,1475  724,1475  905,1471",
     "cat": "Author",
     "fields": {
          "link": {
@@ -129,6 +129,10 @@
         "image": {
             "name": "image",
             "value": ""
+        },
+        "link": {
+            "name": "link",
+            "value": "making of parchment"
         },
         "icon": {
             "name": "icon",

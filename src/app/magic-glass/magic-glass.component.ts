@@ -65,7 +65,7 @@ placeFrame(source, zoom){
     
      navigate(set, part){
         console.log("going to map");
-        this.router.navigate(['interaction/'+set+'/'+part+"/0w"])
+        this.router.navigate(['interaction/'+set+'/'+part+"/0"])
     }
     
     

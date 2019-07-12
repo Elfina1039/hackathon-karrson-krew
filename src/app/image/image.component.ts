@@ -14,6 +14,7 @@ export class ImageComponent implements OnChanges {
     @Input('mapTitle') mapTitle : string;
     @ViewChild("container") container : any;
     opened : boolean = false;
+    keyWords : string[] = ["Aquila", "Genizah" , "palimpsest", "Pyyut", "Palestine", "poetry", "Yannai"];
 
   constructor() { }
 
@@ -31,6 +32,13 @@ export class ImageComponent implements OnChanges {
         console.log("opening infowindow");
         this.container.nativeElement.style.height="70%";
           this.opened=true;
+    }
+    
+    highlightKws(text){
+        let result :string = text;
+        this.keyWords.forEach((kw)=>result=result.replace(kw,"<strong>"+kw+"</strong>"));
+        
+        return result;
     }
     
 }

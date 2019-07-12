@@ -40,7 +40,6 @@ export class CanvasComponent implements OnInit, OnChanges, AfterViewInit {
     fitZoom : number;
     selectedZone : Zone;
     displayedZones : Zone[] = [];
-    
     ctx: any;
     interCtx: any;
     animCtx: any;
@@ -117,15 +116,15 @@ processZones(zones){
     //    console.log("canvas drawing zones: ");
       //  console.log(zone);
         
-        
-            if(this.mode=="preview"){
-              //  console.log("adding to animations");
-            //    console.log(zone);
-             //   this._drawingSvc.animations.push({img:zone.img,imgCoords:zone.imgCoords,cat:zone.cat, source:zone.fields.icon.value, destination:zone.fields.destination.value.split(","),shift:[<number>0,<number>0] });
-                this._drawingSvc.animations=this._drawingSvc.animations.concat(zone.addToAnimations(this.canvas, this.zoom));
-            }else{
-                zone.draw(this.ctx);
-            }
+      
+               
+ if(this.mode!="preview"){
+       zone.draw(this.ctx);
+ }else{
+      this._drawingSvc.animations=this._drawingSvc.animations.concat(zone.addToAnimations(this.canvas, this.zoom));
+ }
+              
+           
         
     });
      
@@ -143,8 +142,13 @@ if(this._drawingSvc.animations.length>0){
     //this.zoomChng(0.2);
     console.log("running animations");
     let ref = this;
-    ref._drawingSvc.runAnimations(ref.ctx,ref.animCtx, ref.animation, ref.zoom,Date.now(), 8000);
-    setInterval(function(){ref._drawingSvc.runAnimations(ref.ctx,ref.animCtx, ref.animation, ref.zoom,Date.now(), 8000);},8500);
+    
+    if(this.mode=="preview"){
+         ref._drawingSvc.runAnimations(ref.ctx,ref.animCtx, ref.animation, ref.zoom,Date.now(), 5000);
+    }
+          
+ 
+  
     
 }  
     
@@ -336,13 +340,13 @@ let nh : number=parseInt(this.imgData.height)*zoom;
     //  console.log("new zoom: "+nzm);
        let ref=this;
       
-
+//ref.moveScreen(xtr,ox,oy, nzm, zone);
     
     this.zoomChng(nzm-this.zoom);
      // ref.moveScreen(xtr,ox,oy, nzm, zone);
      
-   this.canvas.nativeElement.addEventListener("transitionend",function(){ref.moveScreen(xtr,ox,oy, nzm, zone)});
-   
+   //this.canvas.nativeElement.addEventListener("transitionend",function(){console.log("LISTENER");ref.moveScreen(xtr,ox,oy, nzm, zone)});
+   setTimeout(function(){ref.moveScreen(xtr,ox,oy, nzm, zone)},500);
                 };
     
 moveScreen(xy, ox, oy, nzm, zone) {
@@ -360,7 +364,8 @@ moveScreen(xy, ox, oy, nzm, zone) {
   //this.wrapper.nativeElement.scrollLeft = x;
     this.wrapper.nativeElement.scroll(x,y);
      zone.activate(this.ctx,this.magicGlass, nzm);
-    
+    let ref = this;
+   // this.canvas.nativeElement.removeEventListener("transitionend", ref.moveScreen);
            // this.displayedZones = this.zones.filter((z)=>z.word!=zone.word);
       //this.processZones(this.displayedZones);
 
