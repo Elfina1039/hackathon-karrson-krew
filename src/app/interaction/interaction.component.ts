@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter, ViewChildren, ViewChild} from '@angular/core';
 import { DataService } from '../services/data.service';
+import { NavigationService } from '../services/navigation.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { Islide } from '../interfaces/Islide';
@@ -17,6 +18,9 @@ export class InteractionComponent implements OnInit{
     @Output() soundLoaded = new EventEmitter<string>();
     @ViewChildren("canvas") canvases :any;
      @ViewChild("infoWindow") infoWindow :any;
+    
+    
+    
     slide: any;
     zoneLoader : any[] = [];
     zones: any[] = [];
@@ -33,7 +37,7 @@ export class InteractionComponent implements OnInit{
     imgCounter : number = 0;
     cis : number[] = []
     
-  constructor(protected _activatedRoute: ActivatedRoute, protected _dataService: DataService, private router : Router) { 
+  constructor(protected _activatedRoute: ActivatedRoute, protected _dataService: DataService, private router : Router, private navigation : NavigationService) { 
   this.zones=[];
       this.zoneCategories=[];
 
@@ -41,23 +45,41 @@ export class InteractionComponent implements OnInit{
 
 
   ngOnInit() {
-      console.log("afterViewInit");
-      console.log(this.canvases);
-     
-   // console.log("route at component: "+this._activatedRoute.snapshot.params['map']);
-   //   console.log("selected zone: "+this._activatedRoute.snapshot.params['zone']);
       
-      //this._dataService.askOxford("ΤΗΣ","el");
+      let ref= this;
+      this._activatedRoute.paramMap.subscribe(function(p){
+        let source=p.get('source');
+      let canvases=p.get('canvases').split(",");
+      let annotation=p.get('annotation');
+          
+    ref.navigation.previousRoutes.unshift([source,canvases.join(","), annotation]);
+       
+          if(!annotation){
+              annotation=null;
+          }
+          
+       ref.initialize(canvases, source, annotation);
+      });
       
-      let source=this._activatedRoute.snapshot.params['source'];
-      let canvases=this._activatedRoute.snapshot.params['canvases'].split(",");
-      let annotation=this._activatedRoute.snapshot.params['annotation'];
+    
       
-      console.log(annotation);
+       // let id=<string>this._activatedRoute.snapshot.params['zid'];
+  
       
-      if(canvases.length>1){
-           
+      
+  }
+    
+    
+initialize(canvases, source, annotation){
+    this.zones = [];
+    this.zoneLoader = [];
+    this.zoneCategories = [];
+    this.cis=[];
+    
+        if(canvases.length>1){
 this.mode="preview";
+      }else{
+          this.mode="interaction";
       }
       
       let ref=this;
@@ -66,19 +88,18 @@ this.mode="preview";
       for(let i=0;i<canvases.length;i++){
           this.cis.push(i);
               this._dataService.fetchJson(source+"_"+canvases[i]).subscribe(function(data : MapData){
-        console.log(data);
+      
        let imgData=data["imgData"];
        // ref.canvases._results[i].imgData=imgData;
-        console.log(imgData);
+   
         
-console.log("processing loop");
-                  
+              
         if(annotation){
             data.slides=[data.slides[annotation]];
         }
         
       let zoneLoader=ref.processIcons(data);
-        console.log(ref.zoneLoader);
+
  // ref.displayZones();
        //  ref.canvases._results[i].zones=ref.zoneLoader.zones;         
        // ref.canvases._results[i].zoneCategories=ref.zoneLoader.zoneCategories;  
@@ -101,18 +122,12 @@ console.log("processing loop");
           
  
       }
-     
-   
-      
-       // let id=<string>this._activatedRoute.snapshot.params['zid'];
-  
-      
-      
-  }
+}    
+    
     
 displayClicked(e){
-    //console.log("clicked");
-    //console.log(e);
+
+
    // this.infoWindow.open();
     this.name=e.title;
     this.description=e.description;
@@ -127,13 +142,13 @@ displayClicked(e){
 }
     
        processIcons(slideSet){
-           console.log("Processing icons");
+
         let ref=this;
         var result = [];
          let categories = {};
            
         slideSet.slides.forEach(function(slide){
-            console.log("PROCESSING "+ slide.word);
+
             let newZone;
             slide.component = ref;
             
@@ -168,10 +183,10 @@ displayClicked(e){
             categories[slide.cat].zoneCount++;
             
             result.push(newZone);
-            console.log(result);
+
         });
            
-      console.log(result);
+
            let zoneCategories = [];
            
            for(let c in categories){
@@ -183,19 +198,27 @@ displayClicked(e){
     
     displayZones(){
         this.zones = this.zoneLoader;
-        console.log("displaying zones");
+
     }
     
     moveInTime(e){
       //  this.canvases._results.forEach((c)=>c.moveInTime(e.srcElement.value));
         let ref = this;
         
-       // console.log(this.canvases._results[0]);
+
         
+        if(e==1){
+          this.canvases._results[1].wrapper.nativeElement.addEventListener("transitionend", function(){ref.navigate(['interaction/aquila_v/'+e]),3000});
+            this.canvases._results[1].wrapper.nativeElement.style.transform="rotate(180deg)";  
+        }else{
+            
+            ref.navigate(['interaction/aquila_v/'+e]);
+            
+        }
         
-        this.canvases._results[1].wrapper.nativeElement.addEventListener("transitionend", function(){ref.navigate(['single/aquila_v/'+e]),3000});
-            this.canvases._results[1].wrapper.nativeElement.style.transform="rotate(180deg)";
     }
+    
+  
     
     navigate(r){
         this.router.navigate(r);

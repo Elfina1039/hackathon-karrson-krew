@@ -6,7 +6,7 @@ import { DrawingSvc } from '../services/drawing.service';
 
 
 var settingsDict={Script:"region_green", Author:"region_blue", Discovery:"region_yellow", Text:"region_white", Material:"region_purple", Region:"region_purple", City:"region_yellow"};
-
+var iconSize = 100;
 
 
 export class Zone {
@@ -39,7 +39,7 @@ export class Zone {
     
     
     constructor(slide){
-      console.log("constructing zone");
+
         this.static = true;
         this.word = slide.word;
         this.category = slide.cat;
@@ -53,7 +53,7 @@ export class Zone {
         this.points=this.drawing.stringToPath(slide.shape);
         this.imgCoords=this.calcImgCoords(this.points); 
          this.fingerCoords=this.calcFingerCoords(); 
-        console.log(this.imgCoords);
+
         
      //   let timeSpan = slide.fields.timeSpan.value.split("-");
         
@@ -66,26 +66,23 @@ export class Zone {
              if(slide.fields.image.value){
             this.img=new Image();
                 this.img.src=slide.fields.image.value;
-              //console.log("image loaded: " + this.img.src);
+
            //this.source=slide.fields.icon.value;
            
             }
         
-      console.log(this);
+
         
     }
     
-   highlight(ctx){
-       this.drawing.applySetting(ctx,"highlight");
-        this.drawing.drawPolygon(ctx, this.points, "highlight");
-    }
+  
     
 
     calcFingerCoords(){
-        let a = {x:this.imgCoords.topLeft.x-25, y:this.imgCoords.topLeft.y-25};
-        let b = {x:this.imgCoords.topLeft.x-25+250, y:this.imgCoords.topLeft.y-25};
-        let c = {x:this.imgCoords.topLeft.x-25+250, y:this.imgCoords.topLeft.y-25+280};
-        let d = {x:this.imgCoords.topLeft.x-25, y:this.imgCoords.topLeft.y-25+280};
+        let a = {x:this.imgCoords.topLeft.x, y:this.imgCoords.topLeft.y};
+        let b = {x:this.imgCoords.topLeft.x+iconSize, y:this.imgCoords.topLeft.y};
+        let c = {x:this.imgCoords.topLeft.x+iconSize, y:this.imgCoords.topLeft.y+iconSize};
+        let d = {x:this.imgCoords.topLeft.x, y:this.imgCoords.topLeft.y+iconSize};
         
         return [a,b,c,d];
     }
@@ -138,7 +135,7 @@ export class Icon extends Zone {
            this.position=this.imgCoords.topLeft;
             this.img=new Image();
                 this.img.src="assets/images/"+slide.fields.icon.value;
-              //console.log("image loaded: " + this.img.src);
+
            this.source=slide.fields.icon.value;
         
         if(slide.fields.path.value){
@@ -150,17 +147,17 @@ export class Icon extends Zone {
     
     draw(ctx){
         this.drawing.drawImage(ctx, this);
-        console.log("drawing "+this.word);
+
     }
     
     
     addToAnimations(canvas, zoom){
-   //  console.log("adding" + this.word);
+
        return [this];
     }
     
     animate(ctx, stage, canvas, zoom){
-       // console.log("animating region");
+
          ctx.save();
         
         this.draw(ctx);
@@ -181,13 +178,13 @@ duration : number = 8000;
     
     constructor(slide, imgData){
         super(slide);
-      //console.log("constructing region");
+
         
     }
         
 
     draw(ctx){
-      //console.log("drawing Region");
+
          this.drawing.applySetting(ctx, this.drawingSetting);
         this.drawing.drawPolygon(ctx, this.points, this.drawingSetting);
     }
@@ -195,12 +192,12 @@ duration : number = 8000;
 
     
         addToAnimations(canvas, zoom){
-     console.log("adding" + this.word);
+
        return [this];
     }
     
     animate(ctx, stage, canvas, zoom){
-       // console.log("animating region");
+
          ctx.save();
         this.drawing.applySetting(ctx, this.drawingSetting);
         ctx.globalAlpha=stage;
@@ -211,8 +208,8 @@ duration : number = 8000;
 
     
        activate(ctx, component, zoom){
-        console.log("activating");
-        console.log(component.container.nativeElement);
+
+
        // ctx.clearRect(this.imgCoords.topLeft.x, this.imgCoords.topLeft.y, this.imgCoords.width, this.imgCoords.height);
         component.placeFrame(this, zoom);
         
@@ -220,6 +217,12 @@ duration : number = 8000;
            this.draw(ctx);
            
         
+    }
+    
+     highlight(ctx){
+       this.drawing.applySetting(ctx,"highlight");
+        this.drawing.drawPolygon(ctx, this.points, "highlight");
+       
     }
     
    
@@ -232,7 +235,7 @@ duration : number = 8000;
     
     constructor(slide, imgData){
         super(slide);
-      //console.log("constructing region");
+
         
         let transcription = null;
         let translation = null;
@@ -249,12 +252,12 @@ duration : number = 8000;
         
         this.msText = {transcription:transcription, translation:translation, bgImage:imgData.url, bgImage2:imgData.url2, map : slide.fields.map.value, mapLink:slide.fields.map_link.value , link:slide.fields.link.value };
         
-        console.log(this);
+
     }
         
 
     draw_polygon(ctx){
-      //console.log("drawing Region");
+
          this.drawing.applySetting(ctx, this.drawingSetting);
         this.drawing.drawPolygon(ctx, this.points, this.drawingSetting);
     }
@@ -263,26 +266,32 @@ duration : number = 8000;
       //  this.draw_polygon(ctx);
         let finger = new Image();
         if(this.visited==false){
-            finger.src = "/assets/images/svg/interface_clickers_green.svg";
+            finger.src = "/assets/images/icons/interface clickers green.png";
         }else{
-            finger.src = "/assets/images/svg/interface_clickers_red.svg";
+            finger.src = "/assets/images/icons/interface clickers red.png";
         }
         
         let ref = this;
         finger.onload=function(){
-            ctx.drawImage(finger,ref.imgCoords.topLeft.x-50,ref.imgCoords.topLeft.y-50, 250, 280);
+            ctx.drawImage(finger,ref.imgCoords.topLeft.x,ref.imgCoords.topLeft.y, iconSize, iconSize);
         }
         
     }
     
+     highlight(ctx){
+       this.drawing.applySetting(ctx,"highlight");
+        this.drawing.drawPolygon(ctx, this.points, "highlight");
+       this.draw(ctx);
+    }
+    
     
         addToAnimations(canvas, zoom){
-     console.log("adding" + this.word);
+
        return [this];
     }
     
     animate_old(ctx, stage, canvas, zoom){
-       // console.log("animating region");
+
          ctx.save();
         this.drawing.applySetting(ctx, this.drawingSetting);
         ctx.globalAlpha=stage;
@@ -292,14 +301,14 @@ duration : number = 8000;
     }
     
       animate(ctx, stage, canvas, zoom){
-       // console.log("animating region");
-          let x = this.imgCoords.topLeft.x -25+this.imgCoords.width/2*zoom;
-            let y = this.imgCoords.topLeft.y+25+this.imgCoords.height/2*zoom;
+
+          let x = (this.fingerCoords[0].x+(iconSize/2));
+            let y = (this.fingerCoords[0].y+(iconSize/2));
+
+          let small = (iconSize*1.5 + (100*stage))*zoom;
+          let big = (iconSize*2 + (100*stage))*zoom;
           
-          let small = (250 + (100*stage))*zoom;
-          let big = (340 + (100*stage))*zoom;
-          
-         // console.log(small);
+
           
          ctx.save();
         ctx.lineWidth = 9;
@@ -325,8 +334,8 @@ ctx.stroke();
     }
     
        activate(ctx, component, zoom){
-        console.log("activating");
-        console.log(component.container.nativeElement);
+
+
        // ctx.clearRect(this.imgCoords.topLeft.x, this.imgCoords.topLeft.y, this.imgCoords.width, this.imgCoords.height);
         component.placeFrame(this, zoom);
         
@@ -344,12 +353,12 @@ export class Cover extends Zone {
 
     constructor(slide){
         super(slide);
-      //console.log("constructing region");
+
     }
         
 
     draw(ctx){
-      //console.log("drawing Region");
+
          this.drawing.applySetting(ctx, this.drawingSetting);
      this.drawing.drawCover(ctx, this.points);
  
@@ -357,12 +366,12 @@ export class Cover extends Zone {
     }
     
         addToAnimations(canvas, zoom){
-     console.log("adding" + this.word);
+
        return [this];
     }
     
     animate(ctx, stage, canvas, zoom){
-       // console.log("animating region");
+
          ctx.save();
         this.drawing.applySetting(ctx, this.drawingSetting);
         ctx.globalAlpha=stage;
@@ -400,16 +409,16 @@ export class Poster extends Zone {
            this.position=this.imgCoords.topLeft;
             this.img=new Image();
                 this.img.src=slide.fields.image.value;
-              //console.log("image loaded: " + this.img.src);
+
         
            this.source=slide.fields.icon.value;
     }
     
     addToAnimations(canvas, zoom){
-      //console.log(this.img);
+
         this.transformSetting=this.drawing.calcScaleToFit(this.imgCoords, canvas, zoom);
   
-      //console.log("TEXT: " + this.description);
+
         let text = new Text(this.description, 200, 500);
        return [this];
     }
@@ -433,7 +442,7 @@ export class Poster extends Zone {
     }
     
     setTransformSetting(stage, version){
-      //console.log("SETTING V: " + version);
+
         switch(version){
             case "all": this.transformSetting.globalAlpha = this.calcAlpha(stage); this.transformSetting.scale = this.calcScale(stage, 0.5, 1); this.transformSetting.translate = this.calcTranslate(stage, this.transformSetting.center); break;
                 case "smAll": this.transformSetting.globalAlpha = this.calcAlpha(stage); this.transformSetting.scale = 1 + (stage/5); this.transformSetting.translate = this.calcTranslate(stage, this.transformSetting.centerOrig); break;
@@ -541,11 +550,11 @@ export class Text{
     y: number;
     
     constructor(text, x, y){
-      console.log(">> constructing TEXT: " + text);
+
         this.text = text;
         this.x= x;
         this.y = y;   
-      //console.log(this);
+
     }
     
     addToAnimations(canvas, zoom){
@@ -617,7 +626,7 @@ export class Cloud{
 
     
     animate(ctx, stage, canvas, zoom){
-       // console.log("animating region");
+
          ctx.save();
         this.randomizeSetting(stage);
         this.drawing.applySetting(ctx, this.drawingSetting);
@@ -636,12 +645,12 @@ export class Cloud{
         let ref=this;
        //this.points.forEach((point)=>{point.x+=ref.getRandom(0,1);});
         
-     //   console.log(this.transformSetting);
+
         
     }
     
      draw(ctx){
-      //console.log("drawing Region");
+
          this.drawing.applySetting(ctx, this.drawingSetting);
         this.drawing.applyTransform(ctx, this.transformSetting);
         

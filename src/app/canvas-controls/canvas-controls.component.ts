@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 import { ZoneCategory } from '../interfaces/zone-category';
 import {  Router } from '@angular/router';
+import { NavigationService } from '../services/navigation.service';
 
 @Component({
   selector: 'app-canvas-controls',
@@ -19,7 +20,7 @@ export class CanvasControlsComponent implements OnInit {
     
     catColors : any = {Content: "yellow", Script : "red"};
     
-  constructor(private router : Router) { }
+  constructor(private router : Router, private navigation : NavigationService) { }
 
   ngOnInit() {
   }
@@ -48,5 +49,11 @@ export class CanvasControlsComponent implements OnInit {
         console.log("going to map");
         this.router.navigate(['interaction/'+set+'/'+part])
     }
+    
+    goBack(i){
+        this.navigation.goBack(i);
+    }
+    
+    
 
 }

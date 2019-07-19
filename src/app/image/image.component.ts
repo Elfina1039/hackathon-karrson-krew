@@ -6,7 +6,6 @@ import { Component, OnChanges, Input, ViewChild } from '@angular/core';
   styleUrls: ['./image.component.css']
 })
 export class ImageComponent implements OnChanges {
-    
     @Input('imgUrl') imgUrl : string;
     @Input('youTubeId') youTubeId : string;
     @Input('name') name : string;
@@ -30,14 +29,13 @@ export class ImageComponent implements OnChanges {
     
       open(){
         console.log("opening infowindow");
-        this.container.nativeElement.style.height="70%";
+        this.container.nativeElement.style.height="50%";
           this.opened=true;
     }
     
     highlightKws(text){
         let result :string = text;
         this.keyWords.forEach((kw)=>result=result.replace(kw,"<strong>"+kw+"</strong>"));
-        
         return result;
     }
     

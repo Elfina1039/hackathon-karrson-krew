@@ -1,16 +1,13 @@
 <div id=container #container>
     <button (click)="close()" *ngIf="opened==true" style="float:right" class="iconButton"></button>
-    
-    <img [src]="imgUrl" id=image *ngIf="imgUrl"/>
-    
+
+    <img [src]="imgUrl" id=image *ngIf="imgUrl" />
+
     <div id=description *ngIf="description">
         <h2 id=imgHeadline>{{name}}</h2>
         <p class=description [innerHTML]=highlightKws(description)>
-  
         </p>
     </div>
-    
-
     <app-audio [songUrl]="songUrl" mode="interaction" [youTubeId]="youTubeId"></app-audio>
 
 

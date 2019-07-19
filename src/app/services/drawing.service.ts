@@ -87,11 +87,9 @@ constructor(
             animCtx.clearRect(0,0,canvas.nativeElement.width,canvas.nativeElement.height);
                this.animationStage=0;
                 this.runAnimations(ctx,animCtx, canvas, zoom,Date.now(), 5000);
-            console.log("new animation cycle");
+           
             this.animations.filter((a)=>a.fixed).forEach(function(a){
                 
-                    console.log("fixing ");
-                    console.log(a);
                     a.draw(ctx);
              
         });

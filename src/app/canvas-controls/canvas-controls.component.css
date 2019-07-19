@@ -112,11 +112,11 @@
 }
 
 .Material{
-    background-image: url('/assets/images/svg/material blue.png');
+    background-image: url('/assets/images/icons/material blue.png');
 }
 
 .Material_on{
-    background-image: url('/assets/images/svg/material yellow.png');
+    background-image: url('/assets/images/icons/material yellow.png');
 }
 
 

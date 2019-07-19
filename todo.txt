@@ -1,27 +1,32 @@
+    - default route?
+    - make fingerprints smaller
+    - 7. fix redirect bug
+    - close magic glass on click + zoom out
+     - no key to Oxford dictionary
+      - animate fingerprints
+      - go back from map to ms annotation
+      - missing data in infowindow
 
-  
-  - animate fingerprints
-  
-- highlight key words
+- get rid of console logs
 
-
-
-close magic glass on click + zoom out
-7. fix redirect bug
-- jigsaw puzzle
 - calculate appropriate text size for transcription + css
-- go back from map to ms annotation
-- smoother zone rendering (draw multiple layers)
-- magic glass - translation in red + invite translation
-- icon buttons
+- nicer initial animations
+- CSS for desktop
 
-- how to go about combining bubbles?
+?- you cannot click annotation 
+
+
+    - icon buttons
+
+    - how to go about combining bubbles?
 
     - make scroll smooth - use event listener   
   
     Genizah pictures!!
-
-
+- smoother zone rendering (draw multiple layers)
+- magic glass - translation in red + invite translation
+  
+  - highlight key words
 
     - display titles - css
     - display categories as icons

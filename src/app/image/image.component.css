@@ -4,7 +4,7 @@
     position:absolute;
     left:0;
     bottom:0;
-    width: 100%;
+    width: 98%;
     height:0;
     display: flex;
     flex-flow: column nowrap;
@@ -38,9 +38,6 @@ box-shadow: 0 0 15px rgba(0,0,0,0.7);
     border-bottom : 1px solid white;
     color:rgb(255,242,204);
 }
-
-
-
 
 .iconButton{
     position:absolute;

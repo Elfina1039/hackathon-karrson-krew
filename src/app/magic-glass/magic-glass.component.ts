@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './magic-glass.component.html',
   styleUrls: ['./magic-glass.component.css']
 })
+
 export class MagicGlassComponent implements OnInit {
   msText : any = {};
 @Input("fontSize") fontSize : any;

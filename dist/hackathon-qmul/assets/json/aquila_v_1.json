@@ -1,8 +1,8 @@
 {
     "name": "Yannai",
     "imgData": {
-        "url": "/assets/images/aquila_r_y.jpg",
-        "url2": "assets/images/aquila_r_a.jpg",
+        "url": "/assets/images/aquila_v_y_180.jpg",
+        "url2": "assets/images/aquila_v_a.jpg",
         "width": "2000px",
         "height": "2345px",
         "title": "Yannai",
@@ -12,7 +12,7 @@
         {
     "word": "Piyyut",
     "color": "#ffffff",
-    "shape": " 410,1379  848,1379  848,1721  410,1721 ",
+    "shape": "  402,604  554,593  747,609  900,599  943,673  942,870  934,980  867,995  803,963  568,966  412,956 ",
     "cat": "Script",
     "fields": {
         "title": {
@@ -63,7 +63,7 @@
         {
     "word": "Yannai",
     "color": "#ffffff",
-    "shape": " 442,870  435,912  643,910  961,912  1203,933  1402,949  1403,891  1174,893  658,864 ",
+    "shape": " 1270,1464  1286,1417  1241,1391  1040,1409  785,1419  592,1428  429,1420  420,1452  430,1484  570,1475  724,1475  905,1471",
     "cat": "Author",
     "fields": {
          "link": {
@@ -72,11 +72,11 @@
         },
         "title": {
             "name": "title",
-            "value": "Text"
+            "value": "Yannai the poet"
         },
         "text": {
             "name": "text",
-            "value": ""
+            "value": "The upper text of the TS-12-184-v is poetry by the  payyetan  Yannai.  Payyetan were Jewish writers of  piyyut  – liturgical poetry sung or chanted during the  service in the Synagogue, linked to the Torah readings for that week. Yannai probably lived in Palestine in the 6 th  or 7 th  century. It is likely that he was a prolific writer: he is thought to be one of the first Jewish poets to compose a  piyyut  for each weekly Sabbath service, and the copying of his work by a Jewish  scribe on to a recycled parchment in the 10 th  century indicates his continued  popularity three centuries later. However, his poetry declined in popularity in the  12 th -13 th  centuries, when the Babylonian Jewish traditions replaced the  Palestinian tradition, including within the Jewish community in Cairo. The  Babylonian tradition used a different lectionary for Torah readings; Yannai’s  piyyut , linked specifically to the readings of the Palestinian tradition, became  irrelevant and fell out of use. As his work was no longer copied and disseminated after this date, the majority of Yannai’s extant work comes from the Cairo  Genizah."
         },
         "image": {
             "name": "image",
@@ -115,7 +115,7 @@
         {
     "word": "Parchment",
     "color": "#ffffff",
-    "shape": "615,2924  1375,2934  1355,3884  665,3874 ",
+    "shape": "1704,613  1890,601  1895,796  1718,800",
     "cat": "Material",
     "fields": {
         "title": {
@@ -129,6 +129,10 @@
         "image": {
             "name": "image",
             "value": ""
+        },
+        "link": {
+            "name": "link",
+            "value": "making of parchment"
         },
         "icon": {
             "name": "icon",

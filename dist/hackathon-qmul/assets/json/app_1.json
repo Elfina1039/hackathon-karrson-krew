@@ -1,0 +1,144 @@
+{
+    "name":"Interface",
+    "imgData": {
+        "url": "/assets/images/app/screen.png",
+        "url2": "/assets/images/app/screenHtml.png",
+        "width": "1056px",
+        "height": "980px"
+    },
+    "annts": [
+        {
+            "word": "Annotation",
+            "color": "#ffffff",
+            "shape": " 399,199  984,199  984,618  399,618 ",
+            "cat": "default",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Annotation"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "This HTML defines the frame which gets displayed when you click on a annotation. Tha main <div> element CONTAINER gets positioned and resized based on annotation coordinates. Translation and trascription are loaded into the two <div> elememts on a lower level and can be toggled. The next <div> contains the set of icon buttons."
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        },
+        {
+            "word": "Extra info",
+            "color": "#ffffff",
+            "shape": " 326,631  1042,631  1042,898  326,898 ",
+            "cat": "default",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Extra information"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "The <div> CONTAINER slides up when you click the LEARN MORE  button and displays data from the selected annotation. It has space for images (<img>), text with a headline (<div id=description> and <h2>). The <app-audio> tag at the bottom is a nested component responsible for youTube videos."
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        },
+        {
+            "word": "URL",
+            "color": "#ffffff",
+            "shape": " 7,8  337,11  338,42  7,44 ",
+            "cat": "default",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "URL"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "The URL tells the app which components to use and where to look for the data to display. /single/ is linked to the main component holding the others (menu, canvas...), /aquila_v/1/refers to the JSON file with the data. The script has to define which components correspond to specific URLs, where to look for the data and how to process them,"
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        }
+    ]
+    ]
+}

@@ -1,0 +1,277 @@
+{
+    "name": "Development",
+    "imgData": {
+        "url": "assets/images/app/development.png",
+        "url2": "assets/images/app/development.png",
+        "width": "1920px",
+        "height": "1080px",
+        "title": "Development",
+        "fontSize": "20px"
+    },
+    "slides": [
+        {
+            "word": "Slide-up",
+            "color": "#ffffff",
+            "shape": " 13,326  230,326  230,417  13,417 ",
+            "cat": "Script",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Component"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "These three files are responsible for the slide-up window with text, images , videos etc."
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        },
+        {
+            "word": "Main component",
+            "color": "#ffffff",
+            "shape": " 15,441  214,441  214,534  15,534 ",
+            "cat": "Script",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Main component"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "These three files define the topmost component, which hold the other components."
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        },
+        {
+            "word": "Html",
+            "color": "#ffffff",
+            "shape": " 317,101  1071,101  1071,351  317,351 ",
+            "cat": "Script",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Html"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "This is the HTML markup file. It is basically a form of XML and says which element (window, image, paragraph) goes where."
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        },
+        {
+            "word": "TypeScript",
+            "color": "#ffffff",
+            "shape": " 314,364  1052,364  1052,988  314,988 ",
+            "cat": "Script",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "TypeScript FIle"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "This file contains the actual code which can be use to manipulate the HTML and CSS."
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        },
+        {
+            "word": "CSS Stylesheet",
+            "color": "#ffffff",
+            "shape": " 1114,104  1859,104  1859,981  1114,981 ",
+            "cat": "Script",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "CSS Stylesheet"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "This file defines visual features of the app (posititioning, borders, fonts, colors etc.)"
+                },
+                "link": {
+                    "name": "link",
+                    "value": ""
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": ""
+                }
+            }
+        },
+        {
+            "word": "Development environment",
+            "color": "#ffffff",
+            "shape": " 4,62  253,62  253,185  4,185 ",
+            "cat": "Script",
+            "fields": {
+                "title": {
+                    "name": "title",
+                    "value": "Development environment"
+                },
+                "text": {
+                    "name": "text",
+                    "value": "This picture shows a specific piece of software where the code is written. The app is composed of so-called COMPONENTS, i.e. bits of code which are responsible for a specific part of the interface, such as window, toolbar, menu... Each component is defined by three files - HTML, CSS and JavaScrip/TypeScript (coding languages used  on the web). Components are like building blocks od the interface and should be mostly data-neutral. The data for the component is kept in a database or a separate file. The MAP icon in the window will take you to the"
+                },
+                "link": {
+                    "name": "link",
+                    "value": "This section explains the basic structure of the project."
+                },
+                "image": {
+                    "name": "image",
+                    "value": ""
+                },
+                "video": {
+                    "name": "video",
+                    "value": ""
+                },
+                "transcription": {
+                    "name": "transcription",
+                    "value": ""
+                },
+                "translation": {
+                    "name": "translation",
+                    "value": ""
+                },
+                "map": {
+                    "name": "map",
+                    "value": ""
+                },
+                "map_link": {
+                    "name": "map_link",
+                    "value": "Tha map icon will get you to the image showing the actual app in the browser."
+                }
+            }
+        }
+    ]
+}

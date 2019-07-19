@@ -1,36 +1,16 @@
 <div id="wrapper">
-
-<div id="zoom" role="group" aria-label="Manuscript zoom">
-
-            <button  id="zoomIn" (click)="zoomChng(0.1)" class="iconButton">
-              +
-            </button>
-            <button  cid="zoomOut" (click)="zoomChng(-0.1)" class="iconButton">
-              -
-            </button>
-    
-
-        
-     <button  (click)="zoomChng(fitZoom-zoom)" *ngIf="zoom>fitZoom" class="iconButton icon_back">
-          
-            </button>
-    
-    
-    
-    <button  (click)="navigate('aquila_v','0,2')" class="iconButton icon_home">
-        
-            </button>
-    
-          </div>
-    <div id=cats>
-    <ng-container  *ngFor="let zc of zoneCategories">
-   
-        <button  class="iconButton" (click)="zc.selected=!zc.selected; selectionChng()" [ngClass]="zc.selected ? zc.name+'_on':zc.name" ></button>
-    
-    </ng-container>
+    <div id="zoom" role="group" aria-label="Manuscript zoom">
+         <button  id="zoomIn" (click)="zoomChng(0.1)" class="iconButton">+</button>
+        <button  cid="zoomOut" (click)="zoomChng(-0.1)" class="iconButton">-</button>
+         <button  (click)="goBack(1)"  class="iconButton icon_back"> </button>
+        <button  (click)="navigate('aquila_v','0,2')" class="iconButton icon_home"></button>
     </div>
     
-    
+    <div id=cats>
+        <ng-container  *ngFor="let zc of zoneCategories">
+            <button  class="iconButton" (click)="zc.selected=!zc.selected; selectionChng()" [ngClass]="zc.selected ? zc.name+'_on':zc.name" ></button>
+        </ng-container>
+     </div>
 </div>  
 
 

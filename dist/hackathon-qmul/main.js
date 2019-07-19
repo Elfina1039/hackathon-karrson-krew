@@ -51,7 +51,7 @@ var routes = [
     { path: 'interaction/:source/:canvases', component: _interaction_interaction_component__WEBPACK_IMPORTED_MODULE_3__["InteractionComponent"] },
     { path: 'interaction/:map', component: _interaction_interaction_component__WEBPACK_IMPORTED_MODULE_3__["InteractionComponent"] },
     { path: 'home', component: _qr_reader_qr_reader_component__WEBPACK_IMPORTED_MODULE_4__["QrReaderComponent"] },
-    { path: './', component: _qr_reader_qr_reader_component__WEBPACK_IMPORTED_MODULE_4__["QrReaderComponent"] }
+    { path: '', redirectTo: "/interaction/aquila_v/0,2", pathMatch: "full" }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -77,7 +77,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "* {box-sizing: border-box}\r\nhtml,body {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    background-color: black;\r\n    padding: 0;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEdBQUcsc0JBQXNCO0FBQ3pCO0lBQ0ksV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsT0FBTztJQUNQLE1BQU07SUFDTix1QkFBdUI7SUFDdkIsVUFBVTtBQUNkIiwiZmlsZSI6ImFwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiKiB7Ym94LXNpemluZzogYm9yZGVyLWJveH1cclxuaHRtbCxib2R5IHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIHRvcDogMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgcGFkZGluZzogMDtcclxufSJdfQ== */"
+module.exports = "* {box-sizing: border-box}\r\nhtml,body {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    background-color: black;\r\n    padding: 0;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2FwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLEdBQUcsc0JBQXNCO0FBQ3pCO0lBQ0ksV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsT0FBTztJQUNQLE1BQU07SUFDTix1QkFBdUI7SUFDdkIsVUFBVTtBQUNkIiwiZmlsZSI6Ii4uL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiKiB7Ym94LXNpemluZzogYm9yZGVyLWJveH1cclxuaHRtbCxib2R5IHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIHRvcDogMDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gICAgcGFkZGluZzogMDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -145,20 +145,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _canvas_canvas_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./canvas/canvas.component */ "./src/app/canvas/canvas.component.ts");
-/* harmony import */ var _portal_portal_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./portal/portal.component */ "./src/app/portal/portal.component.ts");
-/* harmony import */ var _image_image_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./image/image.component */ "./src/app/image/image.component.ts");
-/* harmony import */ var _interaction_interaction_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./interaction/interaction.component */ "./src/app/interaction/interaction.component.ts");
-/* harmony import */ var _audio_audio_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./audio/audio.component */ "./src/app/audio/audio.component.ts");
-/* harmony import */ var _canvas_controls_canvas_controls_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./canvas-controls/canvas-controls.component */ "./src/app/canvas-controls/canvas-controls.component.ts");
-/* harmony import */ var ngx_youtube_player__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ngx-youtube-player */ "./node_modules/ngx-youtube-player/fesm5/ngx-youtube-player.js");
-/* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm5/slider.es5.js");
-/* harmony import */ var _magic_glass_magic_glass_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./magic-glass/magic-glass.component */ "./src/app/magic-glass/magic-glass.component.ts");
-/* harmony import */ var _split_screen_split_screen_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./split-screen/split-screen.component */ "./src/app/split-screen/split-screen.component.ts");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
-/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm5/icon.es5.js");
-/* harmony import */ var _qr_reader_qr_reader_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./qr-reader/qr-reader.component */ "./src/app/qr-reader/qr-reader.component.ts");
-/* harmony import */ var _zxing_ngx_scanner__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @zxing/ngx-scanner */ "./node_modules/@zxing/ngx-scanner/fesm5/zxing-ngx-scanner.js");
-
+/* harmony import */ var _image_image_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./image/image.component */ "./src/app/image/image.component.ts");
+/* harmony import */ var _interaction_interaction_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./interaction/interaction.component */ "./src/app/interaction/interaction.component.ts");
+/* harmony import */ var _audio_audio_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./audio/audio.component */ "./src/app/audio/audio.component.ts");
+/* harmony import */ var _canvas_controls_canvas_controls_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./canvas-controls/canvas-controls.component */ "./src/app/canvas-controls/canvas-controls.component.ts");
+/* harmony import */ var ngx_youtube_player__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-youtube-player */ "./node_modules/ngx-youtube-player/fesm5/ngx-youtube-player.js");
+/* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm5/slider.es5.js");
+/* harmony import */ var _magic_glass_magic_glass_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./magic-glass/magic-glass.component */ "./src/app/magic-glass/magic-glass.component.ts");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm5/icon.es5.js");
+/* harmony import */ var _qr_reader_qr_reader_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./qr-reader/qr-reader.component */ "./src/app/qr-reader/qr-reader.component.ts");
+/* harmony import */ var _zxing_ngx_scanner__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @zxing/ngx-scanner */ "./node_modules/@zxing/ngx-scanner/fesm5/zxing-ngx-scanner.js");
+/* harmony import */ var _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/material/tooltip */ "./node_modules/@angular/material/esm5/tooltip.es5.js");
 
 
 
@@ -187,25 +185,24 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
                 _canvas_canvas_component__WEBPACK_IMPORTED_MODULE_6__["CanvasComponent"],
-                _portal_portal_component__WEBPACK_IMPORTED_MODULE_7__["PortalComponent"],
-                _image_image_component__WEBPACK_IMPORTED_MODULE_8__["ImageComponent"],
-                _interaction_interaction_component__WEBPACK_IMPORTED_MODULE_9__["InteractionComponent"],
+                _image_image_component__WEBPACK_IMPORTED_MODULE_7__["ImageComponent"],
+                _interaction_interaction_component__WEBPACK_IMPORTED_MODULE_8__["InteractionComponent"],
                 // ControlsComponent,
-                _audio_audio_component__WEBPACK_IMPORTED_MODULE_10__["AudioComponent"],
-                _canvas_controls_canvas_controls_component__WEBPACK_IMPORTED_MODULE_11__["CanvasControlsComponent"],
-                _magic_glass_magic_glass_component__WEBPACK_IMPORTED_MODULE_14__["MagicGlassComponent"],
-                _split_screen_split_screen_component__WEBPACK_IMPORTED_MODULE_15__["SplitScreenComponent"],
-                _qr_reader_qr_reader_component__WEBPACK_IMPORTED_MODULE_18__["QrReaderComponent"]
+                _audio_audio_component__WEBPACK_IMPORTED_MODULE_9__["AudioComponent"],
+                _canvas_controls_canvas_controls_component__WEBPACK_IMPORTED_MODULE_10__["CanvasControlsComponent"],
+                _magic_glass_magic_glass_component__WEBPACK_IMPORTED_MODULE_13__["MagicGlassComponent"],
+                _qr_reader_qr_reader_component__WEBPACK_IMPORTED_MODULE_16__["QrReaderComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
-                ngx_youtube_player__WEBPACK_IMPORTED_MODULE_12__["NgxYoutubePlayerModule"].forRoot(),
-                _angular_material_slider__WEBPACK_IMPORTED_MODULE_13__["MatSliderModule"],
-                _angular_material_button__WEBPACK_IMPORTED_MODULE_16__["MatButtonModule"],
-                _angular_material_icon__WEBPACK_IMPORTED_MODULE_17__["MatIconModule"],
-                _zxing_ngx_scanner__WEBPACK_IMPORTED_MODULE_19__["ZXingScannerModule"]
+                ngx_youtube_player__WEBPACK_IMPORTED_MODULE_11__["NgxYoutubePlayerModule"].forRoot(),
+                _angular_material_slider__WEBPACK_IMPORTED_MODULE_12__["MatSliderModule"],
+                _angular_material_button__WEBPACK_IMPORTED_MODULE_14__["MatButtonModule"],
+                _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__["MatIconModule"],
+                _zxing_ngx_scanner__WEBPACK_IMPORTED_MODULE_17__["ZXingScannerModule"],
+                _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_18__["MatTooltipModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
@@ -225,7 +222,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n\r\naudio{    width: 50%;\r\n  display:none;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF1ZGlvL2F1ZGlvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxVQUFVLFVBQVU7RUFDbEIsWUFBWTtBQUNkIiwiZmlsZSI6ImF1ZGlvL2F1ZGlvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuXHJcbmF1ZGlveyAgICB3aWR0aDogNTAlO1xyXG4gIGRpc3BsYXk6bm9uZTtcclxufSJdfQ== */"
+module.exports = "\r\n\r\naudio{    width: 50%;\r\n  display:none;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2F1ZGlvL2F1ZGlvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFFQSxVQUFVLFVBQVU7RUFDbEIsWUFBWTtBQUNkIiwiZmlsZSI6Ii4uL2F1ZGlvL2F1ZGlvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuXHJcbmF1ZGlveyAgICB3aWR0aDogNTAlO1xyXG4gIGRpc3BsYXk6bm9uZTtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -363,7 +360,7 @@ var AudioComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#wrapper{\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n#zoom{\r\n    padding: .4rem;\r\n    margin: 0.2em;\r\n    display: -webkit-inline-box;\r\n    display: inline-flex;\r\n    color: black;\r\n    min-width: 2em;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    color:white;\r\n}\r\n\r\n#zoom button{\r\n    color:white;\r\n    background-color:black;\r\n    border-radius:0.5em;\r\n    font-weight:bold;\r\n}\r\n\r\n#zoomToFit{\r\n    background-image:url(\"/assets/images/graphics/arrow_back.png\");\r\n    width:1.5em;\r\n    height:2em;\r\n        background-repeat: no-repeat;\r\n    background-size: 100% 100%;\r\n}\r\n\r\n#cats{margin-right:5%}\r\n\r\n.showButton{\r\n    background-color:black;\r\n    color:white;\r\n    opacity:0.5;\r\n      width:2em;\r\n    height:2em;\r\n}\r\n\r\n.hideButton{\r\n    background-color:black;\r\n    color:black;\r\n    width:2em;\r\n    height:2em;\r\n}\r\n\r\n.categorySwitch{\r\n margin-left:1em;\r\n    padding-left:0.5em;\r\n    border-left: 2px solid white;\r\n}\r\n\r\n.iconButton{\r\n    border-radius: 0.2em;\r\n    border:2px outset rgb(20,20,20);\r\n    width:3em;\r\n    height:3em;\r\n    margin:0.25em;\r\n     background-size: 100% 100%;\r\n    -webkit-transition : background-image 1s ease-out;\r\n    transition : background-image 1s ease-out;\r\n  \r\n}\r\n\r\n.icon_back{\r\n    background-image:url(\"/assets/images/icons/returnv2.png\");\r\n}\r\n\r\n.icon_home{\r\n    background-image:url(\"/assets/images/icons/home%20key%20blue.png\");\r\n}\r\n\r\n.icon_home:hover{\r\n    background-image:url(\"/assets/images/icons/home%20yellow.png\");\r\n}\r\n\r\n.Script{\r\n    background-image: url('/assets/images/icons/script blue.png');\r\n}\r\n\r\n.Script_on{\r\n    background-image: url('/assets/images/icons/script yellow.png');\r\n}\r\n\r\n.Text{\r\n    background-image: url('/assets/images/icons/text blue.png');\r\n}\r\n\r\n.Text_on{\r\n    background-image: url('/assets/images/icons/text yellow.png');\r\n}\r\n\r\n.Author{\r\n    background-image: url('/assets/images/icons/author blue.png');\r\n}\r\n\r\n.Author_on{\r\n    background-image: url('/assets/images/icons/author yellow.png');\r\n}\r\n\r\n.Material{\r\n    background-image: url('/assets/images/svg/material blue.png');\r\n}\r\n\r\n.Material_on{\r\n    background-image: url('/assets/images/svg/material yellow.png');\r\n}\r\n\r\n.City, .Region{\r\n    background-image:url(\"/assets/images/icons/map%20blue.png\");\r\n}\r\n\r\n.CIty_on, .Region_on{\r\n    background-image:url(\"/assets/images/icons/map%20yellow.png\");\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNhbnZhcy1jb250cm9scy9jYW52YXMtY29udHJvbHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG9CQUFhO0lBQWIsYUFBYTtJQUNiLDhCQUFxQjtJQUFyQiw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLHlCQUFtQjtZQUFuQixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLHlCQUE4QjtZQUE5Qiw4QkFBOEI7QUFDbEM7O0FBRUE7SUFDSSxjQUFjO0lBQ2QsYUFBYTtJQUNiLDJCQUFvQjtJQUFwQixvQkFBb0I7SUFDcEIsWUFBWTtJQUNaLGNBQWM7SUFDZCw4QkFBcUI7SUFBckIsNkJBQXFCO1lBQXJCLHFCQUFxQjtJQUNyQix5QkFBbUI7WUFBbkIsbUJBQW1CO0lBQ25CLFdBQVc7QUFDZjs7QUFJQTtJQUNJLFdBQVc7SUFDWCxzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLDhEQUE4RDtJQUM5RCxXQUFXO0lBQ1gsVUFBVTtRQUNOLDRCQUE0QjtJQUNoQywwQkFBMEI7QUFDOUI7O0FBRUEsTUFBTSxlQUFlOztBQUdyQjtJQUNJLHNCQUFzQjtJQUN0QixXQUFXO0lBQ1gsV0FBVztNQUNULFNBQVM7SUFDWCxVQUFVO0FBQ2Q7O0FBRUE7SUFDSSxzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFNBQVM7SUFDVCxVQUFVO0FBQ2Q7O0FBR0E7Q0FDQyxlQUFlO0lBQ1osa0JBQWtCO0lBQ2xCLDRCQUE0QjtBQUNoQzs7QUFHQTtJQUNJLG9CQUFvQjtJQUNwQiwrQkFBK0I7SUFDL0IsU0FBUztJQUNULFVBQVU7SUFDVixhQUFhO0tBQ1osMEJBQTBCO0lBQzNCLGlEQUF5QztJQUF6Qyx5Q0FBeUM7O0FBRTdDOztBQUdBO0lBQ0kseURBQXlEO0FBQzdEOztBQUdBO0lBQ0ksa0VBQWtFO0FBQ3RFOztBQUVBO0lBQ0ksOERBQThEO0FBQ2xFOztBQUlBO0lBQ0ksNkRBQTZEO0FBQ2pFOztBQUVBO0lBQ0ksK0RBQStEO0FBQ25FOztBQUVBO0lBQ0ksMkRBQTJEO0FBQy9EOztBQUVBO0lBQ0ksNkRBQTZEO0FBQ2pFOztBQUVBO0lBQ0ksNkRBQTZEO0FBQ2pFOztBQUVBO0lBQ0ksK0RBQStEO0FBQ25FOztBQUVBO0lBQ0ksNkRBQTZEO0FBQ2pFOztBQUVBO0lBQ0ksK0RBQStEO0FBQ25FOztBQUdBO0lBQ0ksMkRBQTJEO0FBQy9EOztBQUVBO0lBQ0ksNkRBQTZEO0FBQ2pFIiwiZmlsZSI6ImNhbnZhcy1jb250cm9scy9jYW52YXMtY29udHJvbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiN3cmFwcGVye1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZmxvdzogcm93IG5vd3JhcDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxufVxyXG5cclxuI3pvb217XHJcbiAgICBwYWRkaW5nOiAuNHJlbTtcclxuICAgIG1hcmdpbjogMC4yZW07XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIG1pbi13aWR0aDogMmVtO1xyXG4gICAgZmxleC1mbG93OiByb3cgbm93cmFwO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGNvbG9yOndoaXRlO1xyXG59XHJcblxyXG5cclxuXHJcbiN6b29tIGJ1dHRvbntcclxuICAgIGNvbG9yOndoaXRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjpibGFjaztcclxuICAgIGJvcmRlci1yYWRpdXM6MC41ZW07XHJcbiAgICBmb250LXdlaWdodDpib2xkO1xyXG59XHJcblxyXG4jem9vbVRvRml0e1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9ncmFwaGljcy9hcnJvd19iYWNrLnBuZ1wiKTtcclxuICAgIHdpZHRoOjEuNWVtO1xyXG4gICAgaGVpZ2h0OjJlbTtcclxuICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDEwMCU7XHJcbn1cclxuXHJcbiNjYXRze21hcmdpbi1yaWdodDo1JX1cclxuXHJcblxyXG4uc2hvd0J1dHRvbntcclxuICAgIGJhY2tncm91bmQtY29sb3I6YmxhY2s7XHJcbiAgICBjb2xvcjp3aGl0ZTtcclxuICAgIG9wYWNpdHk6MC41O1xyXG4gICAgICB3aWR0aDoyZW07XHJcbiAgICBoZWlnaHQ6MmVtO1xyXG59XHJcblxyXG4uaGlkZUJ1dHRvbntcclxuICAgIGJhY2tncm91bmQtY29sb3I6YmxhY2s7XHJcbiAgICBjb2xvcjpibGFjaztcclxuICAgIHdpZHRoOjJlbTtcclxuICAgIGhlaWdodDoyZW07XHJcbn1cclxuXHJcblxyXG4uY2F0ZWdvcnlTd2l0Y2h7XHJcbiBtYXJnaW4tbGVmdDoxZW07XHJcbiAgICBwYWRkaW5nLWxlZnQ6MC41ZW07XHJcbiAgICBib3JkZXItbGVmdDogMnB4IHNvbGlkIHdoaXRlO1xyXG59XHJcblxyXG5cclxuLmljb25CdXR0b257XHJcbiAgICBib3JkZXItcmFkaXVzOiAwLjJlbTtcclxuICAgIGJvcmRlcjoycHggb3V0c2V0IHJnYigyMCwyMCwyMCk7XHJcbiAgICB3aWR0aDozZW07XHJcbiAgICBoZWlnaHQ6M2VtO1xyXG4gICAgbWFyZ2luOjAuMjVlbTtcclxuICAgICBiYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTtcclxuICAgIHRyYW5zaXRpb24gOiBiYWNrZ3JvdW5kLWltYWdlIDFzIGVhc2Utb3V0O1xyXG4gIFxyXG59XHJcblxyXG5cclxuLmljb25fYmFja3tcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvcmV0dXJudjIucG5nXCIpO1xyXG59XHJcblxyXG5cclxuLmljb25faG9tZXtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvaG9tZSUyMGtleSUyMGJsdWUucG5nXCIpO1xyXG59XHJcblxyXG4uaWNvbl9ob21lOmhvdmVye1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9ob21lJTIweWVsbG93LnBuZ1wiKTtcclxufVxyXG5cclxuXHJcblxyXG4uU2NyaXB0e1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL2ltYWdlcy9pY29ucy9zY3JpcHQgYmx1ZS5wbmcnKTtcclxufVxyXG5cclxuLlNjcmlwdF9vbntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnL2Fzc2V0cy9pbWFnZXMvaWNvbnMvc2NyaXB0IHllbGxvdy5wbmcnKTtcclxufVxyXG5cclxuLlRleHR7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvaW1hZ2VzL2ljb25zL3RleHQgYmx1ZS5wbmcnKTtcclxufVxyXG5cclxuLlRleHRfb257XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvaW1hZ2VzL2ljb25zL3RleHQgeWVsbG93LnBuZycpO1xyXG59XHJcblxyXG4uQXV0aG9ye1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL2ltYWdlcy9pY29ucy9hdXRob3IgYmx1ZS5wbmcnKTtcclxufVxyXG5cclxuLkF1dGhvcl9vbntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnL2Fzc2V0cy9pbWFnZXMvaWNvbnMvYXV0aG9yIHllbGxvdy5wbmcnKTtcclxufVxyXG5cclxuLk1hdGVyaWFse1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL2ltYWdlcy9zdmcvbWF0ZXJpYWwgYmx1ZS5wbmcnKTtcclxufVxyXG5cclxuLk1hdGVyaWFsX29ue1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL2ltYWdlcy9zdmcvbWF0ZXJpYWwgeWVsbG93LnBuZycpO1xyXG59XHJcblxyXG5cclxuLkNpdHksIC5SZWdpb257XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi9hc3NldHMvaW1hZ2VzL2ljb25zL21hcCUyMGJsdWUucG5nXCIpO1xyXG59XHJcblxyXG4uQ0l0eV9vbiwgLlJlZ2lvbl9vbntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvbWFwJTIweWVsbG93LnBuZ1wiKTtcclxufSJdfQ== */"
+module.exports = "#wrapper{\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    width: 100%;\r\n    -webkit-box-pack: justify;\r\n            justify-content: space-between;\r\n}\r\n\r\n#zoom{\r\n    padding: .4rem;\r\n    margin: 0.2em;\r\n    display: -webkit-inline-box;\r\n    display: inline-flex;\r\n    color: black;\r\n    min-width: 2em;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: row nowrap;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    color:white;\r\n}\r\n\r\n#zoom button{\r\n    color:white;\r\n    background-color:black;\r\n    border-radius:0.5em;\r\n    font-weight:bold;\r\n}\r\n\r\n#zoomToFit{\r\n    background-image:url(\"/assets/images/graphics/arrow_back.png\");\r\n    width:1.5em;\r\n    height:2em;\r\n        background-repeat: no-repeat;\r\n    background-size: 100% 100%;\r\n}\r\n\r\n#cats{margin-right:5%}\r\n\r\n.showButton{\r\n    background-color:black;\r\n    color:white;\r\n    opacity:0.5;\r\n      width:2em;\r\n    height:2em;\r\n}\r\n\r\n.hideButton{\r\n    background-color:black;\r\n    color:black;\r\n    width:2em;\r\n    height:2em;\r\n}\r\n\r\n.categorySwitch{\r\n margin-left:1em;\r\n    padding-left:0.5em;\r\n    border-left: 2px solid white;\r\n}\r\n\r\n.iconButton{\r\n    border-radius: 0.2em;\r\n    border:2px outset rgb(20,20,20);\r\n    width:3em;\r\n    height:3em;\r\n    margin:0.25em;\r\n     background-size: 100% 100%;\r\n    -webkit-transition : background-image 1s ease-out;\r\n    transition : background-image 1s ease-out;\r\n  \r\n}\r\n\r\n.icon_back{\r\n    background-image:url(\"/assets/images/icons/returnv2.png\");\r\n}\r\n\r\n.icon_home{\r\n    background-image:url(\"/assets/images/icons/home%20key%20blue.png\");\r\n}\r\n\r\n.icon_home:hover{\r\n    background-image:url(\"/assets/images/icons/home%20yellow.png\");\r\n}\r\n\r\n.Script{\r\n    background-image: url('/assets/images/icons/script blue.png');\r\n}\r\n\r\n.Script_on{\r\n    background-image: url('/assets/images/icons/script yellow.png');\r\n}\r\n\r\n.Text{\r\n    background-image: url('/assets/images/icons/text blue.png');\r\n}\r\n\r\n.Text_on{\r\n    background-image: url('/assets/images/icons/text yellow.png');\r\n}\r\n\r\n.Author{\r\n    background-image: url('/assets/images/icons/author blue.png');\r\n}\r\n\r\n.Author_on{\r\n    background-image: url('/assets/images/icons/author yellow.png');\r\n}\r\n\r\n.Material{\r\n    background-image: url('/assets/images/icons/material blue.png');\r\n}\r\n\r\n.Material_on{\r\n    background-image: url('/assets/images/icons/material yellow.png');\r\n}\r\n\r\n.City, .Region{\r\n    background-image:url(\"/assets/images/icons/map%20blue.png\");\r\n}\r\n\r\n.CIty_on, .Region_on{\r\n    background-image:url(\"/assets/images/icons/map%20yellow.png\");\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2NhbnZhcy1jb250cm9scy9jYW52YXMtY29udHJvbHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG9CQUFhO0lBQWIsYUFBYTtJQUNiLDhCQUFxQjtJQUFyQiw2QkFBcUI7WUFBckIscUJBQXFCO0lBQ3JCLHlCQUFtQjtZQUFuQixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLHlCQUE4QjtZQUE5Qiw4QkFBOEI7QUFDbEM7O0FBRUE7SUFDSSxjQUFjO0lBQ2QsYUFBYTtJQUNiLDJCQUFvQjtJQUFwQixvQkFBb0I7SUFDcEIsWUFBWTtJQUNaLGNBQWM7SUFDZCw4QkFBcUI7SUFBckIsNkJBQXFCO1lBQXJCLHFCQUFxQjtJQUNyQix5QkFBbUI7WUFBbkIsbUJBQW1CO0lBQ25CLFdBQVc7QUFDZjs7QUFJQTtJQUNJLFdBQVc7SUFDWCxzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLDhEQUE4RDtJQUM5RCxXQUFXO0lBQ1gsVUFBVTtRQUNOLDRCQUE0QjtJQUNoQywwQkFBMEI7QUFDOUI7O0FBRUEsTUFBTSxlQUFlOztBQUdyQjtJQUNJLHNCQUFzQjtJQUN0QixXQUFXO0lBQ1gsV0FBVztNQUNULFNBQVM7SUFDWCxVQUFVO0FBQ2Q7O0FBRUE7SUFDSSxzQkFBc0I7SUFDdEIsV0FBVztJQUNYLFNBQVM7SUFDVCxVQUFVO0FBQ2Q7O0FBR0E7Q0FDQyxlQUFlO0lBQ1osa0JBQWtCO0lBQ2xCLDRCQUE0QjtBQUNoQzs7QUFHQTtJQUNJLG9CQUFvQjtJQUNwQiwrQkFBK0I7SUFDL0IsU0FBUztJQUNULFVBQVU7SUFDVixhQUFhO0tBQ1osMEJBQTBCO0lBQzNCLGlEQUF5QztJQUF6Qyx5Q0FBeUM7O0FBRTdDOztBQUdBO0lBQ0kseURBQXlEO0FBQzdEOztBQUdBO0lBQ0ksa0VBQWtFO0FBQ3RFOztBQUVBO0lBQ0ksOERBQThEO0FBQ2xFOztBQUlBO0lBQ0ksNkRBQTZEO0FBQ2pFOztBQUVBO0lBQ0ksK0RBQStEO0FBQ25FOztBQUVBO0lBQ0ksMkRBQTJEO0FBQy9EOztBQUVBO0lBQ0ksNkRBQTZEO0FBQ2pFOztBQUVBO0lBQ0ksNkRBQTZEO0FBQ2pFOztBQUVBO0lBQ0ksK0RBQStEO0FBQ25FOztBQUVBO0lBQ0ksK0RBQStEO0FBQ25FOztBQUVBO0lBQ0ksaUVBQWlFO0FBQ3JFOztBQUdBO0lBQ0ksMkRBQTJEO0FBQy9EOztBQUVBO0lBQ0ksNkRBQTZEO0FBQ2pFIiwiZmlsZSI6Ii4uL2NhbnZhcy1jb250cm9scy9jYW52YXMtY29udHJvbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiN3cmFwcGVye1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZmxvdzogcm93IG5vd3JhcDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxufVxyXG5cclxuI3pvb217XHJcbiAgICBwYWRkaW5nOiAuNHJlbTtcclxuICAgIG1hcmdpbjogMC4yZW07XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIG1pbi13aWR0aDogMmVtO1xyXG4gICAgZmxleC1mbG93OiByb3cgbm93cmFwO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGNvbG9yOndoaXRlO1xyXG59XHJcblxyXG5cclxuXHJcbiN6b29tIGJ1dHRvbntcclxuICAgIGNvbG9yOndoaXRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjpibGFjaztcclxuICAgIGJvcmRlci1yYWRpdXM6MC41ZW07XHJcbiAgICBmb250LXdlaWdodDpib2xkO1xyXG59XHJcblxyXG4jem9vbVRvRml0e1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9ncmFwaGljcy9hcnJvd19iYWNrLnBuZ1wiKTtcclxuICAgIHdpZHRoOjEuNWVtO1xyXG4gICAgaGVpZ2h0OjJlbTtcclxuICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiAxMDAlIDEwMCU7XHJcbn1cclxuXHJcbiNjYXRze21hcmdpbi1yaWdodDo1JX1cclxuXHJcblxyXG4uc2hvd0J1dHRvbntcclxuICAgIGJhY2tncm91bmQtY29sb3I6YmxhY2s7XHJcbiAgICBjb2xvcjp3aGl0ZTtcclxuICAgIG9wYWNpdHk6MC41O1xyXG4gICAgICB3aWR0aDoyZW07XHJcbiAgICBoZWlnaHQ6MmVtO1xyXG59XHJcblxyXG4uaGlkZUJ1dHRvbntcclxuICAgIGJhY2tncm91bmQtY29sb3I6YmxhY2s7XHJcbiAgICBjb2xvcjpibGFjaztcclxuICAgIHdpZHRoOjJlbTtcclxuICAgIGhlaWdodDoyZW07XHJcbn1cclxuXHJcblxyXG4uY2F0ZWdvcnlTd2l0Y2h7XHJcbiBtYXJnaW4tbGVmdDoxZW07XHJcbiAgICBwYWRkaW5nLWxlZnQ6MC41ZW07XHJcbiAgICBib3JkZXItbGVmdDogMnB4IHNvbGlkIHdoaXRlO1xyXG59XHJcblxyXG5cclxuLmljb25CdXR0b257XHJcbiAgICBib3JkZXItcmFkaXVzOiAwLjJlbTtcclxuICAgIGJvcmRlcjoycHggb3V0c2V0IHJnYigyMCwyMCwyMCk7XHJcbiAgICB3aWR0aDozZW07XHJcbiAgICBoZWlnaHQ6M2VtO1xyXG4gICAgbWFyZ2luOjAuMjVlbTtcclxuICAgICBiYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTtcclxuICAgIHRyYW5zaXRpb24gOiBiYWNrZ3JvdW5kLWltYWdlIDFzIGVhc2Utb3V0O1xyXG4gIFxyXG59XHJcblxyXG5cclxuLmljb25fYmFja3tcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvcmV0dXJudjIucG5nXCIpO1xyXG59XHJcblxyXG5cclxuLmljb25faG9tZXtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvaG9tZSUyMGtleSUyMGJsdWUucG5nXCIpO1xyXG59XHJcblxyXG4uaWNvbl9ob21lOmhvdmVye1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9ob21lJTIweWVsbG93LnBuZ1wiKTtcclxufVxyXG5cclxuXHJcblxyXG4uU2NyaXB0e1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL2ltYWdlcy9pY29ucy9zY3JpcHQgYmx1ZS5wbmcnKTtcclxufVxyXG5cclxuLlNjcmlwdF9vbntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnL2Fzc2V0cy9pbWFnZXMvaWNvbnMvc2NyaXB0IHllbGxvdy5wbmcnKTtcclxufVxyXG5cclxuLlRleHR7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvaW1hZ2VzL2ljb25zL3RleHQgYmx1ZS5wbmcnKTtcclxufVxyXG5cclxuLlRleHRfb257XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvaW1hZ2VzL2ljb25zL3RleHQgeWVsbG93LnBuZycpO1xyXG59XHJcblxyXG4uQXV0aG9ye1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL2ltYWdlcy9pY29ucy9hdXRob3IgYmx1ZS5wbmcnKTtcclxufVxyXG5cclxuLkF1dGhvcl9vbntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnL2Fzc2V0cy9pbWFnZXMvaWNvbnMvYXV0aG9yIHllbGxvdy5wbmcnKTtcclxufVxyXG5cclxuLk1hdGVyaWFse1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL2ltYWdlcy9pY29ucy9tYXRlcmlhbCBibHVlLnBuZycpO1xyXG59XHJcblxyXG4uTWF0ZXJpYWxfb257XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvaW1hZ2VzL2ljb25zL21hdGVyaWFsIHllbGxvdy5wbmcnKTtcclxufVxyXG5cclxuXHJcbi5DaXR5LCAuUmVnaW9ue1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9tYXAlMjBibHVlLnBuZ1wiKTtcclxufVxyXG5cclxuLkNJdHlfb24sIC5SZWdpb25fb257XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi9hc3NldHMvaW1hZ2VzL2ljb25zL21hcCUyMHllbGxvdy5wbmdcIik7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -374,7 +371,7 @@ module.exports = "#wrapper{\r\n    display: -webkit-box;\r\n    display: flex;\r
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"wrapper\">\n\n<div id=\"zoom\" role=\"group\" aria-label=\"Manuscript zoom\">\n\n            <button  id=\"zoomIn\" (click)=\"zoomChng(0.1)\" class=\"iconButton\">\n              +\n            </button>\n            <button  cid=\"zoomOut\" (click)=\"zoomChng(-0.1)\" class=\"iconButton\">\n              -\n            </button>\n    \n\n        \n     <button  (click)=\"zoomChng(fitZoom-zoom)\" *ngIf=\"zoom>fitZoom\" class=\"iconButton icon_back\">\n          \n            </button>\n    \n    \n    \n    <button  (click)=\"navigate('aquila_v','0,1')\" class=\"iconButton icon_home\">\n        \n            </button>\n    \n          </div>\n    <div id=cats>\n    <ng-container  *ngFor=\"let zc of zoneCategories\">\n   \n        <button  class=\"iconButton\" (click)=\"zc.selected=!zc.selected; selectionChng()\" [ngClass]=\"zc.selected ? zc.name+'_on':zc.name\" ></button>\n    \n    </ng-container>\n    </div>\n    \n    \n</div>  \n\n\n"
+module.exports = "<div id=\"wrapper\">\n    <div id=\"zoom\" role=\"group\" aria-label=\"Manuscript zoom\">\n         <button  id=\"zoomIn\" (click)=\"zoomChng(0.1)\" class=\"iconButton\">+</button>\n        <button  cid=\"zoomOut\" (click)=\"zoomChng(-0.1)\" class=\"iconButton\">-</button>\n         <button  (click)=\"goBack(1)\"  class=\"iconButton icon_back\"> </button>\n        <button  (click)=\"navigate('aquila_v','0,2')\" class=\"iconButton icon_home\"></button>\n    </div>\n    \n    <div id=cats>\n        <ng-container  *ngFor=\"let zc of zoneCategories\">\n            <button  class=\"iconButton\" (click)=\"zc.selected=!zc.selected; selectionChng()\" [ngClass]=\"zc.selected ? zc.name+'_on':zc.name\" ></button>\n        </ng-container>\n     </div>\n</div>  \n\n\n"
 
 /***/ }),
 
@@ -391,12 +388,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _services_navigation_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/navigation.service */ "./src/app/services/navigation.service.ts");
+
 
 
 
 var CanvasControlsComponent = /** @class */ (function () {
-    function CanvasControlsComponent(router) {
+    function CanvasControlsComponent(router, navigation) {
         this.router = router;
+        this.navigation = navigation;
         this.changeZoom = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.changeSelection = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.changeOpacity = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
@@ -419,6 +419,9 @@ var CanvasControlsComponent = /** @class */ (function () {
     CanvasControlsComponent.prototype.navigate = function (set, part) {
         console.log("going to map");
         this.router.navigate(['interaction/' + set + '/' + part]);
+    };
+    CanvasControlsComponent.prototype.goBack = function (i) {
+        this.navigation.goBack(i);
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
@@ -454,7 +457,7 @@ var CanvasControlsComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./canvas-controls.component.html */ "./src/app/canvas-controls/canvas-controls.component.html"),
             styles: [__webpack_require__(/*! ./canvas-controls.component.css */ "./src/app/canvas-controls/canvas-controls.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"], _services_navigation_service__WEBPACK_IMPORTED_MODULE_3__["NavigationService"]])
     ], CanvasControlsComponent);
     return CanvasControlsComponent;
 }());
@@ -470,7 +473,7 @@ var CanvasControlsComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "*{box-sizing:boder-box}\r\n\r\n#msCanvas, manuscript{-webkit-transition:-webkit-transform .5s;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s, -webkit-transform .5s; -webkit-transition: background-image .5x; transition: background-image .5x; -webkit-transform-origin:center center; transform-origin:center center}\r\n\r\n#msCanvas,#interactiveCanvas, #animationCanvas{position:absolute;-webkit-transform-origin:top left;transform-origin:top left;-webkit-transition:background-color 1s, -webkit-transform .5s;transition:background-color 1s, -webkit-transform .5s;transition:transform .5s, background-color 1s;transition:transform .5s, background-color 1s, -webkit-transform .5s; \r\n}\r\n\r\n#msWrapper{position:absolute;\r\n    overflow:scroll;\r\nscroll-behavior: smooth;\r\nbackground-color: rgb(20,20,20);\r\n  /*  background-image:url(\"https://www.draconica.net/ft2019/wp-content/uploads/sites/21/2019/02/bg3.jpg\");*/\r\nwidth: 98%;\r\nheight: 98%;\r\nmargin: 0.1em;\r\n-webkit-transition: -webkit-transform 2s ease-out;\r\ntransition: -webkit-transform 2s ease-out;\r\ntransition: transform 2s ease-out;\r\ntransition: transform 2s ease-out, -webkit-transform 2s ease-out;\r\n}\r\n\r\napp-canvas-controls{\r\n    background-color:transparent;\r\n    width:100%;\r\n    height:5%;\r\n    position:fixed;\r\n    top:0;\r\n    left:0.5%;\r\n    color:white;\r\n}\r\n\r\n#manuscript{border: 1px solid black;\r\nwidth: 100%;\r\nheight: 100%;\r\nposition: absolute;\r\n    background-color:black;\r\nleft:0%;\r\ntop:0}\r\n\r\nh1{\r\n       position: absolute;\r\n    top: 6%;\r\n    left: 0;\r\n    width: 100%;\r\n    text-align: center;\r\n    margin: 0;\r\n    color: transparent;\r\n    -webkit-transition:color 1s;\r\n    transition:color 1s;\r\n}\r\n\r\nh1:hover{\r\n    color:black;\r\n}\r\n\r\n/* CUSTOM SCROLLBAR */\r\n\r\n::-webkit-scrollbar {\r\n    width: 11px;\r\n    height: 11px;\r\n}\r\n\r\n::-webkit-scrollbar-button {\r\n    width: 0px;\r\n    height: 0px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb {\r\n    background: rgb(20,20,20);\r\n    border: 2px solid #ffffff;\r\n    border-radius: 50px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:hover {\r\n    background: #ffffff;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:active {\r\n    background: #000000;\r\n}\r\n\r\n::-webkit-scrollbar-track {\r\n    background: rgb(20,20,20);\r\n    border: 0px none #ffffff;\r\n    border-radius: 39px;\r\n}\r\n\r\n::-webkit-scrollbar-track:hover {\r\n    background: rgb(20,20,20);\r\n}\r\n\r\n::-webkit-scrollbar-track:active {\r\n    background: rgb(20,20,20);\r\n}\r\n\r\n::-webkit-scrollbar-corner {\r\n    background: transparent;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNhbnZhcy9jYW52YXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxFQUFFLG9CQUFvQjs7QUFFdEIsc0JBQXNCLHdDQUF3QixDQUF4QixnQ0FBd0IsQ0FBeEIsd0JBQXdCLENBQXhCLCtDQUF3QixFQUFFLHdDQUFnQyxFQUFoQyxnQ0FBZ0MsRUFBRSxzQ0FBNkIsRUFBN0IsOEJBQThCOztBQUdoSCwrQ0FBK0MsaUJBQWlCLENBQUMsaUNBQXlCLENBQXpCLHlCQUF5QixDQUFDLDZEQUE2QyxDQUE3QyxxREFBNkMsQ0FBN0MsNkNBQTZDLENBQTdDLG9FQUE2QztBQUN4STs7QUFDQSxXQUFXLGlCQUFpQjtJQUN4QixlQUFlO0FBQ25CLHVCQUF1QjtBQUN2QiwrQkFBK0I7RUFDN0IsMEdBQTBHO0FBQzVHLFVBQVU7QUFDVixXQUFXO0FBQ1gsYUFBYTtBQUNiLGlEQUFpQztBQUFqQyx5Q0FBaUM7QUFBakMsaUNBQWlDO0FBQWpDLGdFQUFpQztBQUNqQzs7QUFJQTtJQUNJLDRCQUE0QjtJQUM1QixVQUFVO0lBQ1YsU0FBUztJQUNULGNBQWM7SUFDZCxLQUFLO0lBQ0wsU0FBUztJQUNULFdBQVc7QUFDZjs7QUFFQSxZQUFZLHVCQUF1QjtBQUNuQyxXQUFXO0FBQ1gsWUFBWTtBQUNaLGtCQUFrQjtJQUNkLHNCQUFzQjtBQUMxQixPQUFPO0FBQ1AsS0FBSzs7QUFFTDtPQUNPLGtCQUFrQjtJQUNyQixPQUFPO0lBQ1AsT0FBTztJQUNQLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsU0FBUztJQUNULGtCQUFrQjtJQUNsQiwyQkFBbUI7SUFBbkIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUNBLHFCQUFxQjs7QUFFckI7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFVBQVU7SUFDVixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSx5QkFBeUI7SUFDekIseUJBQXlCO0lBQ3pCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6Qix3QkFBd0I7SUFDeEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCIiwiZmlsZSI6ImNhbnZhcy9jYW52YXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIip7Ym94LXNpemluZzpib2Rlci1ib3h9XHJcblxyXG4jbXNDYW52YXMsIG1hbnVzY3JpcHR7dHJhbnNpdGlvbjp0cmFuc2Zvcm0gLjVzOyB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWltYWdlIC41eDsgdHJhbnNmb3JtLW9yaWdpbjpjZW50ZXIgY2VudGVyfVxyXG5cclxuXHJcbiNtc0NhbnZhcywjaW50ZXJhY3RpdmVDYW52YXMsICNhbmltYXRpb25DYW52YXN7cG9zaXRpb246YWJzb2x1dGU7dHJhbnNmb3JtLW9yaWdpbjp0b3AgbGVmdDt0cmFuc2l0aW9uOnRyYW5zZm9ybSAuNXMsIGJhY2tncm91bmQtY29sb3IgMXM7IFxyXG59XHJcbiNtc1dyYXBwZXJ7cG9zaXRpb246YWJzb2x1dGU7XHJcbiAgICBvdmVyZmxvdzpzY3JvbGw7XHJcbnNjcm9sbC1iZWhhdmlvcjogc21vb3RoO1xyXG5iYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjAsMjAsMjApO1xyXG4gIC8qICBiYWNrZ3JvdW5kLWltYWdlOnVybChcImh0dHBzOi8vd3d3LmRyYWNvbmljYS5uZXQvZnQyMDE5L3dwLWNvbnRlbnQvdXBsb2Fkcy9zaXRlcy8yMS8yMDE5LzAyL2JnMy5qcGdcIik7Ki9cclxud2lkdGg6IDk4JTtcclxuaGVpZ2h0OiA5OCU7XHJcbm1hcmdpbjogMC4xZW07XHJcbnRyYW5zaXRpb246IHRyYW5zZm9ybSAycyBlYXNlLW91dDtcclxufVxyXG5cclxuXHJcblxyXG5hcHAtY2FudmFzLWNvbnRyb2xze1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudDtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBoZWlnaHQ6NSU7XHJcbiAgICBwb3NpdGlvbjpmaXhlZDtcclxuICAgIHRvcDowO1xyXG4gICAgbGVmdDowLjUlO1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbn1cclxuXHJcbiNtYW51c2NyaXB0e2JvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xyXG53aWR0aDogMTAwJTtcclxuaGVpZ2h0OiAxMDAlO1xyXG5wb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmJsYWNrO1xyXG5sZWZ0OjAlO1xyXG50b3A6MH1cclxuXHJcbmgxe1xyXG4gICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiA2JTtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIGNvbG9yOiB0cmFuc3BhcmVudDtcclxuICAgIHRyYW5zaXRpb246Y29sb3IgMXM7XHJcbn1cclxuXHJcbmgxOmhvdmVye1xyXG4gICAgY29sb3I6YmxhY2s7XHJcbn1cclxuLyogQ1VTVE9NIFNDUk9MTEJBUiAqL1xyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhciB7XHJcbiAgICB3aWR0aDogMTFweDtcclxuICAgIGhlaWdodDogMTFweDtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci1idXR0b24ge1xyXG4gICAgd2lkdGg6IDBweDtcclxuICAgIGhlaWdodDogMHB4O1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iIHtcclxuICAgIGJhY2tncm91bmQ6IHJnYigyMCwyMCwyMCk7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjZmZmZmZmO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTBweDtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci10aHVtYjpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZmZmZmO1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmFjdGl2ZSB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDAwMDAwO1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrIHtcclxuICAgIGJhY2tncm91bmQ6IHJnYigyMCwyMCwyMCk7XHJcbiAgICBib3JkZXI6IDBweCBub25lICNmZmZmZmY7XHJcbiAgICBib3JkZXItcmFkaXVzOiAzOXB4O1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrOmhvdmVyIHtcclxuICAgIGJhY2tncm91bmQ6IHJnYigyMCwyMCwyMCk7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItdHJhY2s6YWN0aXZlIHtcclxuICAgIGJhY2tncm91bmQ6IHJnYigyMCwyMCwyMCk7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItY29ybmVyIHtcclxuICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xyXG59XHJcbiJdfQ== */"
+module.exports = "*{box-sizing:boder-box}\r\n\r\n#msCanvas, manuscript{-webkit-transition:-webkit-transform .5s;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s, -webkit-transform .5s; -webkit-transition: background-image .5x; transition: background-image .5x; -webkit-transform-origin:center center; transform-origin:center center}\r\n\r\n#msCanvas,#interactiveCanvas, #animationCanvas{position:absolute;-webkit-transform-origin:top left;transform-origin:top left;-webkit-transition:background-color 1s, -webkit-transform .5s;transition:background-color 1s, -webkit-transform .5s;transition:transform .5s, background-color 1s;transition:transform .5s, background-color 1s, -webkit-transform .5s; \r\n}\r\n\r\n#msWrapper{position:absolute;\r\n    overflow:scroll;\r\nscroll-behavior: smooth;\r\nbackground-color: rgb(20,20,20);\r\n  /*  background-image:url(\"https://www.draconica.net/ft2019/wp-content/uploads/sites/21/2019/02/bg3.jpg\");*/\r\nwidth: 98%;\r\nheight: 98%;\r\nmargin: 0.1em;\r\n-webkit-transition: -webkit-transform 2s ease-out;\r\ntransition: -webkit-transform 2s ease-out;\r\ntransition: transform 2s ease-out;\r\ntransition: transform 2s ease-out, -webkit-transform 2s ease-out;\r\n}\r\n\r\napp-canvas-controls{\r\n    background-color:transparent;\r\n    width:100%;\r\n    height:5%;\r\n    position:fixed;\r\n    top:0;\r\n    left:0.5%;\r\n    color:white;\r\n}\r\n\r\n#manuscript{border: 1px solid black;\r\nwidth: 100%;\r\nheight: 100%;\r\nposition: absolute;\r\n    background-color:black;\r\nleft:0%;\r\ntop:0}\r\n\r\nh1{\r\n       position: absolute;\r\n    top: 6%;\r\n    left: 0;\r\n    width: 100%;\r\n    text-align: center;\r\n    margin: 0;\r\n    color: transparent;\r\n    -webkit-transition:color 1s;\r\n    transition:color 1s;\r\n}\r\n\r\nh1:hover{\r\n    color:black;\r\n}\r\n\r\n/* CUSTOM SCROLLBAR */\r\n\r\n::-webkit-scrollbar {\r\n    width: 11px;\r\n    height: 11px;\r\n}\r\n\r\n::-webkit-scrollbar-button {\r\n    width: 0px;\r\n    height: 0px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb {\r\n    background: rgb(20,20,20);\r\n    border: 2px solid #ffffff;\r\n    border-radius: 50px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:hover {\r\n    background: #ffffff;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:active {\r\n    background: #000000;\r\n}\r\n\r\n::-webkit-scrollbar-track {\r\n    background: rgb(20,20,20);\r\n    border: 0px none #ffffff;\r\n    border-radius: 39px;\r\n}\r\n\r\n::-webkit-scrollbar-track:hover {\r\n    background: rgb(20,20,20);\r\n}\r\n\r\n::-webkit-scrollbar-track:active {\r\n    background: rgb(20,20,20);\r\n}\r\n\r\n::-webkit-scrollbar-corner {\r\n    background: transparent;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2NhbnZhcy9jYW52YXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxFQUFFLG9CQUFvQjs7QUFFdEIsc0JBQXNCLHdDQUF3QixDQUF4QixnQ0FBd0IsQ0FBeEIsd0JBQXdCLENBQXhCLCtDQUF3QixFQUFFLHdDQUFnQyxFQUFoQyxnQ0FBZ0MsRUFBRSxzQ0FBNkIsRUFBN0IsOEJBQThCOztBQUdoSCwrQ0FBK0MsaUJBQWlCLENBQUMsaUNBQXlCLENBQXpCLHlCQUF5QixDQUFDLDZEQUE2QyxDQUE3QyxxREFBNkMsQ0FBN0MsNkNBQTZDLENBQTdDLG9FQUE2QztBQUN4STs7QUFDQSxXQUFXLGlCQUFpQjtJQUN4QixlQUFlO0FBQ25CLHVCQUF1QjtBQUN2QiwrQkFBK0I7RUFDN0IsMEdBQTBHO0FBQzVHLFVBQVU7QUFDVixXQUFXO0FBQ1gsYUFBYTtBQUNiLGlEQUFpQztBQUFqQyx5Q0FBaUM7QUFBakMsaUNBQWlDO0FBQWpDLGdFQUFpQztBQUNqQzs7QUFJQTtJQUNJLDRCQUE0QjtJQUM1QixVQUFVO0lBQ1YsU0FBUztJQUNULGNBQWM7SUFDZCxLQUFLO0lBQ0wsU0FBUztJQUNULFdBQVc7QUFDZjs7QUFFQSxZQUFZLHVCQUF1QjtBQUNuQyxXQUFXO0FBQ1gsWUFBWTtBQUNaLGtCQUFrQjtJQUNkLHNCQUFzQjtBQUMxQixPQUFPO0FBQ1AsS0FBSzs7QUFFTDtPQUNPLGtCQUFrQjtJQUNyQixPQUFPO0lBQ1AsT0FBTztJQUNQLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsU0FBUztJQUNULGtCQUFrQjtJQUNsQiwyQkFBbUI7SUFBbkIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUNBLHFCQUFxQjs7QUFFckI7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFVBQVU7SUFDVixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSx5QkFBeUI7SUFDekIseUJBQXlCO0lBQ3pCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6Qix3QkFBd0I7SUFDeEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCIiwiZmlsZSI6Ii4uL2NhbnZhcy9jYW52YXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIip7Ym94LXNpemluZzpib2Rlci1ib3h9XHJcblxyXG4jbXNDYW52YXMsIG1hbnVzY3JpcHR7dHJhbnNpdGlvbjp0cmFuc2Zvcm0gLjVzOyB0cmFuc2l0aW9uOiBiYWNrZ3JvdW5kLWltYWdlIC41eDsgdHJhbnNmb3JtLW9yaWdpbjpjZW50ZXIgY2VudGVyfVxyXG5cclxuXHJcbiNtc0NhbnZhcywjaW50ZXJhY3RpdmVDYW52YXMsICNhbmltYXRpb25DYW52YXN7cG9zaXRpb246YWJzb2x1dGU7dHJhbnNmb3JtLW9yaWdpbjp0b3AgbGVmdDt0cmFuc2l0aW9uOnRyYW5zZm9ybSAuNXMsIGJhY2tncm91bmQtY29sb3IgMXM7IFxyXG59XHJcbiNtc1dyYXBwZXJ7cG9zaXRpb246YWJzb2x1dGU7XHJcbiAgICBvdmVyZmxvdzpzY3JvbGw7XHJcbnNjcm9sbC1iZWhhdmlvcjogc21vb3RoO1xyXG5iYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjAsMjAsMjApO1xyXG4gIC8qICBiYWNrZ3JvdW5kLWltYWdlOnVybChcImh0dHBzOi8vd3d3LmRyYWNvbmljYS5uZXQvZnQyMDE5L3dwLWNvbnRlbnQvdXBsb2Fkcy9zaXRlcy8yMS8yMDE5LzAyL2JnMy5qcGdcIik7Ki9cclxud2lkdGg6IDk4JTtcclxuaGVpZ2h0OiA5OCU7XHJcbm1hcmdpbjogMC4xZW07XHJcbnRyYW5zaXRpb246IHRyYW5zZm9ybSAycyBlYXNlLW91dDtcclxufVxyXG5cclxuXHJcblxyXG5hcHAtY2FudmFzLWNvbnRyb2xze1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudDtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBoZWlnaHQ6NSU7XHJcbiAgICBwb3NpdGlvbjpmaXhlZDtcclxuICAgIHRvcDowO1xyXG4gICAgbGVmdDowLjUlO1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbn1cclxuXHJcbiNtYW51c2NyaXB0e2JvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xyXG53aWR0aDogMTAwJTtcclxuaGVpZ2h0OiAxMDAlO1xyXG5wb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmJsYWNrO1xyXG5sZWZ0OjAlO1xyXG50b3A6MH1cclxuXHJcbmgxe1xyXG4gICAgICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiA2JTtcclxuICAgIGxlZnQ6IDA7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIGNvbG9yOiB0cmFuc3BhcmVudDtcclxuICAgIHRyYW5zaXRpb246Y29sb3IgMXM7XHJcbn1cclxuXHJcbmgxOmhvdmVye1xyXG4gICAgY29sb3I6YmxhY2s7XHJcbn1cclxuLyogQ1VTVE9NIFNDUk9MTEJBUiAqL1xyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhciB7XHJcbiAgICB3aWR0aDogMTFweDtcclxuICAgIGhlaWdodDogMTFweDtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci1idXR0b24ge1xyXG4gICAgd2lkdGg6IDBweDtcclxuICAgIGhlaWdodDogMHB4O1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iIHtcclxuICAgIGJhY2tncm91bmQ6IHJnYigyMCwyMCwyMCk7XHJcbiAgICBib3JkZXI6IDJweCBzb2xpZCAjZmZmZmZmO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTBweDtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci10aHVtYjpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjZmZmZmZmO1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmFjdGl2ZSB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDAwMDAwO1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrIHtcclxuICAgIGJhY2tncm91bmQ6IHJnYigyMCwyMCwyMCk7XHJcbiAgICBib3JkZXI6IDBweCBub25lICNmZmZmZmY7XHJcbiAgICBib3JkZXItcmFkaXVzOiAzOXB4O1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrOmhvdmVyIHtcclxuICAgIGJhY2tncm91bmQ6IHJnYigyMCwyMCwyMCk7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItdHJhY2s6YWN0aXZlIHtcclxuICAgIGJhY2tncm91bmQ6IHJnYigyMCwyMCwyMCk7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItY29ybmVyIHtcclxuICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -481,7 +484,7 @@ module.exports = "*{box-sizing:boder-box}\r\n\r\n#msCanvas, manuscript{-webkit-t
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n     \n<div id=manuscript [style.width]=height  #manuscript>\n    \n  \n    \n            <div id=\"msWrapper\" #msWrapper [style.overflow]=\"mode=='interaction' ? 'scroll':'hidden'\">\n                \n          <canvas #msCanvas id=msCanvas [style.opacity]=1 [attr.width]=\"imgData.width\" [attr.height]=\"imgData.height\" style=\"border:2px solid black;\n            background-color:transparent'); background-image:url('')\" draggable ></canvas>\n                <canvas #animationCanvas id=animationCanvas  [attr.width]=\"imgData.width\" [attr.height]=\"imgData.height\" style=\"border:2px solid black;\n            background-color:transparent'); background-image:url('')\" draggable ></canvas>\n             <canvas #interactiveCanvas  [style.opacity]=1 id=interactiveCanvas  [attr.width]=\"imgData.width\" [attr.height]=\"imgData.height\"  style=\"border:2px solid black;\n            background-color:transparent'); background-image:url('')\" draggable (document:mousemove)=\"locatePolygon($event, ctx, false)\" (click)=\"locatePolygon($event, ctx, true)\">\n                   \n                </canvas>    \n            <app-canvas-controls *ngIf=\"mode=='interaction'\" [opacityRatio]=opacityRatio [zoom]=\"zoom\" [fitZoom]=\"fitZoom\" [zoneCategories]=\"zoneCategories\" (changeZoom)=\"zoomChng($event)\" (changeSelection)=\"redrawSelected($event)\"  (changeOpacity)=\"opacityChng($event)\" ></app-canvas-controls>\n                 \n                \n                 <app-magic-glass [fontSize]=\"imgData.fontSize\" [infoWindow]=infoWindow [manuscript]=animation #magicglass></app-magic-glass>\n                <h1 > {{imgData.title}}</h1>\n            </div>\n     \n  \n    \n      </div>  \n \n\n   "
+module.exports = "\n     \n<div id=manuscript [style.width]=height  #manuscript>\n    \n  \n    \n            <div id=\"msWrapper\" #msWrapper [style.overflow]=\"mode=='interaction' ? 'scroll':'hidden'\" >\n                \n          <canvas #msCanvas id=msCanvas [style.opacity]=1 [attr.width]=\"imgData.width\" [attr.height]=\"imgData.height\" style=\"border:2px solid black;\n            background-color:transparent'); background-image:url('')\" draggable ></canvas>\n                <canvas #animationCanvas id=animationCanvas  [attr.width]=\"imgData.width\" [attr.height]=\"imgData.height\" style=\"border:2px solid black;\n            background-color:transparent'); background-image:url('')\" draggable ></canvas>\n             <canvas #interactiveCanvas  [style.opacity]=1 id=interactiveCanvas  [attr.width]=\"imgData.width\" [attr.height]=\"imgData.height\"  style=\"border:2px solid black;\n            background-color:transparent'); background-image:url('')\" draggable (document:mousemove)=\"locatePolygon($event, ctx, false)\" (click)=\"locatePolygon($event, ctx, true)\">\n                   \n                </canvas>    \n            <app-canvas-controls *ngIf=\"mode=='interaction'\" [opacityRatio]=opacityRatio [zoom]=\"zoom\" [fitZoom]=\"fitZoom\" [zoneCategories]=\"zoneCategories\" (changeZoom)=\"zoomChng($event)\" (changeSelection)=\"redrawSelected($event)\"  (changeOpacity)=\"opacityChng($event)\" ></app-canvas-controls>\n                 \n                \n                 <app-magic-glass [fontSize]=\"imgData.fontSize\" [infoWindow]=infoWindow [manuscript]=animation #magicglass></app-magic-glass>\n               \n            </div>\n     \n  \n    \n      </div>  \n \n\n   "
 
 /***/ }),
 
@@ -513,25 +516,20 @@ var CanvasComponent = /** @class */ (function () {
         this.fitZoom = 0.4;
     }
     CanvasComponent.prototype.ngOnInit = function () {
-        // console.log("--CANVAS--ON INIT--");
         this.magicGlass.transcription = "";
     };
     CanvasComponent.prototype.ngAfterViewInit = function () {
-        //  console.log("--CANVAS--AFTER VIEW INIT--");
         this.ctx = this.canvas.nativeElement.getContext("2d");
         this.interCtx = this.interaction.nativeElement.getContext("2d");
         this.animCtx = this.animation.nativeElement.getContext("2d");
         //  let zones = this.zones.filter((z)=>z.category=="Území");
         this.displayedZones = this.zones;
-        console.log(this.zones);
         if (this.displayedZones) {
             this.processZones(this.displayedZones);
         }
+        this._drawingSvc.runAnimations(this.ctx, this.animCtx, this.animation, this.zoom, Date.now(), 5000);
     };
     CanvasComponent.prototype.ngOnChanges = function () {
-        console.log(this.zones);
-        console.log(this.imgData);
-        //  console.log("--CANVAS--ON CHANGES--");
         if (this.imgData) {
             this.bgImage = this.imgData.url;
             this.canvas.nativeElement.style.backgroundImage = "url(" + this.bgImage + ")";
@@ -549,52 +547,37 @@ var CanvasComponent = /** @class */ (function () {
     };
     CanvasComponent.prototype.processZones = function (zones) {
         var _this = this;
-        console.log(zones);
         if (this.mode == "interaction") {
             this.ctx.clearRect(0, 0, this.canvas.nativeElement.width, this.canvas.nativeElement.height);
         }
         this.animCtx.clearRect(0, 0, this.interaction.nativeElement.width, this.interaction.nativeElement.height);
         this._drawingSvc.animations = [];
         zones.forEach(function (zone) {
-            //    console.log("canvas drawing zones: ");
-            //  console.log(zone);
-            if (_this.mode == "preview") {
-                //  console.log("adding to animations");
-                //    console.log(zone);
-                //   this._drawingSvc.animations.push({img:zone.img,imgCoords:zone.imgCoords,cat:zone.cat, source:zone.fields.icon.value, destination:zone.fields.destination.value.split(","),shift:[<number>0,<number>0] });
-                _this._drawingSvc.animations = _this._drawingSvc.animations.concat(zone.addToAnimations(_this.canvas, _this.zoom));
-            }
-            else {
+            if (_this.mode != "preview") {
                 zone.draw(_this.ctx);
             }
+            _this._drawingSvc.animations = _this._drawingSvc.animations.concat(zone.addToAnimations(_this.canvas, _this.zoom));
         });
         if (this._drawingSvc.animations.length > 0) {
             // this.canvas.nativeElement.style.transition="transform "+this.slideConfig.duration/1000+"s";
             // this.interaction.nativeElement.style.transition="transform "+this.slideConfig.duration/1000+"s";
             // this.animation.nativeElement.style.transition="transform "+this.slideConfig.duration/1000+"s";
             // this.scaleCanvas([this.canvas,  this.animation], this.wrapper, this.outer, this.fitZoom*this.slideConfig.zoom, this.fitZoom, this.slideConfig.translate);
-            //console.log("RUNNING ANIMATIONS");
-            //   console.log(this._drawingSvc.animations);
             this._drawingSvc.animationStage = 0;
             //this.zoomChng(0.2);
-            console.log("running animations");
-            var ref_1 = this;
-            ref_1._drawingSvc.runAnimations(ref_1.ctx, ref_1.animCtx, ref_1.animation, ref_1.zoom, Date.now(), 8000);
-            setInterval(function () { ref_1._drawingSvc.runAnimations(ref_1.ctx, ref_1.animCtx, ref_1.animation, ref_1.zoom, Date.now(), 8000); }, 8500);
+            var ref = this;
         }
     };
     CanvasComponent.prototype.locatePolygon = function (mouse, ctx, display) {
         if (this.mode == "interaction" && this.displayedZones) {
             var rZone;
-            var ref_2 = this;
+            var ref_1 = this;
             //z.cat!="movement" && 
-            this.displayedZones.filter(function (z) { return (z != ref_2.selectedZone && z.category != "Mrak"); }).forEach(function (zone, zid) {
+            this.displayedZones.filter(function (z) { return (z != ref_1.selectedZone && z.category != "Mrak"); }).forEach(function (zone, zid) {
                 //let points = zone.points;
-                //  console.log(zone.fingerCoords);
                 var points = zone.fingerCoords;
                 ctx.beginPath();
                 ctx.moveTo(points[0].x, points[0].y);
-                //console.log(zone.WORD["#text"]+"="+points[0].x+":"+ points[0].y);
                 for (var p = 1; p < points.length; p++) {
                     ctx.lineTo(points[p].x, points[p].y);
                 }
@@ -604,32 +587,28 @@ var CanvasComponent = /** @class */ (function () {
                 }
             });
             if (rZone) {
-                //  console.log(rZone.word);
-                this.animCtx.clearRect(0, 0, this.interaction.nativeElement.width, this.interaction.nativeElement.height);
+                this.interCtx.clearRect(0, 0, this.interaction.nativeElement.width, this.interaction.nativeElement.height);
                 // this._drawingSvc.drawPolygon(this.interCtx, rZone.points,"highlight");
-                rZone.highlight(this.animCtx);
-                //    console.log(this.magicGlass);
+                rZone.highlight(this.interCtx);
                 if (display == true) {
-                    //   console.log(rZone);
                     this.clicked.emit(rZone);
                     this.focusOn(rZone);
                     this.selectedZone = rZone;
                 }
             }
+            else {
+                if (display == true) {
+                    this.zoomChng(this.fitZoom - this.zoom);
+                }
+            }
         }
     };
     CanvasComponent.prototype.calcZoomToFit = function () {
-        //    console.log("calculating zoom");
-        //   console.log(this.wrapper);
-        // console.log(this.wrapper.nativeElement.offsetHeight);
         var wrapperWidth = this.wrapper.nativeElement.offsetWidth;
         var wrapperHeight = this.wrapper.nativeElement.offsetHeight;
-        //   console.log(wrapperWidth +" <> "+wrapperHeight);
         var ratioX = parseInt(wrapperWidth) / parseInt(this.imgData.width);
         var ratioY = parseInt(wrapperHeight) / parseInt(this.imgData.height);
-        //  console.log(ratioX +" - "+ratioY);
         if (ratioX <= ratioY) {
-            //  console.log("returning X");
             return ratioX;
         }
         else {
@@ -638,28 +617,21 @@ var CanvasComponent = /** @class */ (function () {
     };
     CanvasComponent.prototype.zoomChng = function (zChng) {
         this.magicGlass.hideFrame();
-        // console.log(zChng);
-        // console.log("before:", this.zoom);
         var newZoomLevel = this.zoom + parseFloat(zChng);
         this.zoom = newZoomLevel >= .1 ? newZoomLevel : .1;
-        //  console.log("after:", this.zoom);
         this.scaleCanvas([this.canvas, this.interaction, this.animation], this.wrapper, this.outer, this.zoom, this.fitZoom, { x: 0, y: 0 });
     };
     CanvasComponent.prototype.moveInTime = function (year) {
-        console.log("moving to " + year);
-        console.log(this.zones);
         this.canvas.nativeElement.style.opacity = 1;
         this.interaction.nativeElement.style.opacity = 0;
         // this.displayedZones = this.zones.filter((z)=>year>=z.startDate && year<=z.endDate);
         //    this.processZones(this.displayedZones);
     };
     CanvasComponent.prototype.redrawSelected = function (e) {
-        //   console.log(e);
         this.displayedZones = this.zones.filter(function (z) { return e[z.category] == true; });
         this.processZones(this.displayedZones);
     };
     CanvasComponent.prototype.scaleCanvas = function (canvases, inner, outer, zoom, fitZoom, translate) {
-        //  console.log("scaling to: "+zoom);
         var dw = parseInt(outer.nativeElement.style.width); // manuscript element
         var dh = parseInt(outer.nativeElement.style.height);
         var nw = parseInt(this.imgData.width) * zoom;
@@ -682,18 +654,15 @@ var CanvasComponent = /** @class */ (function () {
                 c.nativeElement.style.overflow = "scroll";
             }
         });
-        // console.log(nw + "--" + nh);
         inner.nativeElement.style.width = nw;
         inner.nativeElement.style.height = nh;
     };
     CanvasComponent.prototype.focusOn = function (zone) {
-        // console.log("zooming in");
         var xtr = zone.imgCoords;
         var sx = xtr.max.x - xtr.min.x;
         var sy = xtr.max.y - xtr.min.y;
         var vw = this.outer.nativeElement.clientWidth;
         var vh = this.outer.nativeElement.clientHeight;
-        //  console.log(this.outer);
         var ox = (vw - sx) / 2;
         var oy = (vh - sy) / 2;
         var nzm;
@@ -703,26 +672,24 @@ var CanvasComponent = /** @class */ (function () {
         else {
             nzm = vh / sy * 0.7;
         }
-        //  console.log(vw + " : " + sx);
-        //  console.log("new zoom: "+nzm);
         var ref = this;
+        //ref.moveScreen(xtr,ox,oy, nzm, zone);
         this.zoomChng(nzm - this.zoom);
         // ref.moveScreen(xtr,ox,oy, nzm, zone);
-        this.canvas.nativeElement.addEventListener("transitionend", function () { ref.moveScreen(xtr, ox, oy, nzm, zone); });
+        setTimeout(function () { ref.moveScreen(xtr, ox, oy, nzm, zone); }, 500);
     };
     ;
     CanvasComponent.prototype.moveScreen = function (xy, ox, oy, nzm, zone) {
-        //  console.log(((xy.max.x-xy.min.y)/6*nzm) + "//" + ((xy.max.y-xy.min.y)/6*nzm));
         //-((xy.max.x-xy.min.y/3)*nzm)
         //-((xy.max.y-xy.min.y/3)*nzm)
         var x = Math.max(0, (xy.min.x * nzm - ((xy.max.x - xy.min.x) / 6 * nzm)));
         var y = Math.max(0, (xy.min.y * nzm - ((xy.max.y - xy.min.y) / 6 * nzm)));
-        // console.log(x + "-ss-" + y);
-        //  console.log( this.outer);
         // this.wrapper.nativeElement.scrollTop = y;
         //this.wrapper.nativeElement.scrollLeft = x;
         this.wrapper.nativeElement.scroll(x, y);
         zone.activate(this.ctx, this.magicGlass, nzm);
+        var ref = this;
+        // this.canvas.nativeElement.removeEventListener("transitionend", ref.moveScreen);
         // this.displayedZones = this.zones.filter((z)=>z.word!=zone.word);
         //this.processZones(this.displayedZones);
     };
@@ -810,7 +777,7 @@ var CanvasComponent = /** @class */ (function () {
 /*!*********************************!*\
   !*** ./src/app/classes/zone.ts ***!
   \*********************************/
-/*! exports provided: Zone, Icon, Region, Cover, Poster, Slide, Text, Curtain, Cloud */
+/*! exports provided: Zone, Icon, Region, Annotation, Cover, Poster, Slide, Text, Curtain, Cloud */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -818,6 +785,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Zone", function() { return Zone; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Icon", function() { return Icon; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Region", function() { return Region; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Annotation", function() { return Annotation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Cover", function() { return Cover; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Poster", function() { return Poster; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Slide", function() { return Slide; });
@@ -828,12 +796,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_drawing_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/drawing.service */ "./src/app/services/drawing.service.ts");
 
 
-var settingsDict = { Script: "region_green", Author: "region_blue", Discovery: "region_yellow", Text: "region_white", Material: "region_purple" };
+var settingsDict = { Script: "region_green", Author: "region_blue", Discovery: "region_yellow", Text: "region_white", Material: "region_purple", Region: "region_purple", City: "region_yellow" };
+var iconSize = 100;
 var Zone = /** @class */ (function () {
     function Zone(slide) {
         this.drawing = new _services_drawing_service__WEBPACK_IMPORTED_MODULE_1__["DrawingSvc"]();
         this.visited = false;
-        console.log("constructing zone");
         this.static = true;
         this.word = slide.word;
         this.category = slide.cat;
@@ -845,7 +813,6 @@ var Zone = /** @class */ (function () {
         this.points = this.drawing.stringToPath(slide.shape);
         this.imgCoords = this.calcImgCoords(this.points);
         this.fingerCoords = this.calcFingerCoords();
-        console.log(this.imgCoords);
         //   let timeSpan = slide.fields.timeSpan.value.split("-");
         //  this.startDate=timeSpan[0];
         //    this.endDate=timeSpan[1];
@@ -853,20 +820,14 @@ var Zone = /** @class */ (function () {
         if (slide.fields.image.value) {
             this.img = new Image();
             this.img.src = slide.fields.image.value;
-            //console.log("image loaded: " + this.img.src);
             //this.source=slide.fields.icon.value;
         }
-        console.log(this);
     }
-    Zone.prototype.highlight = function (ctx) {
-        this.drawing.applySetting(ctx, "highlight");
-        this.drawing.drawPolygon(ctx, this.points, "highlight");
-    };
     Zone.prototype.calcFingerCoords = function () {
-        var a = { x: this.imgCoords.topLeft.x - 25, y: this.imgCoords.topLeft.y - 25 };
-        var b = { x: this.imgCoords.topLeft.x - 25 + 250, y: this.imgCoords.topLeft.y - 25 };
-        var c = { x: this.imgCoords.topLeft.x - 25 + 250, y: this.imgCoords.topLeft.y - 25 + 280 };
-        var d = { x: this.imgCoords.topLeft.x - 25, y: this.imgCoords.topLeft.y - 25 + 280 };
+        var a = { x: this.imgCoords.topLeft.x, y: this.imgCoords.topLeft.y };
+        var b = { x: this.imgCoords.topLeft.x + iconSize, y: this.imgCoords.topLeft.y };
+        var c = { x: this.imgCoords.topLeft.x + iconSize, y: this.imgCoords.topLeft.y + iconSize };
+        var d = { x: this.imgCoords.topLeft.x, y: this.imgCoords.topLeft.y + iconSize };
         return [a, b, c, d];
     };
     Zone.prototype.calcImgCoords = function (points) {
@@ -894,7 +855,6 @@ var Icon = /** @class */ (function (_super) {
         _this.position = _this.imgCoords.topLeft;
         _this.img = new Image();
         _this.img.src = "assets/images/" + slide.fields.icon.value;
-        //console.log("image loaded: " + this.img.src);
         _this.source = slide.fields.icon.value;
         if (slide.fields.path.value) {
             var pathPoints = _this.drawing.stringToPath(slide.fields.path.value);
@@ -904,14 +864,11 @@ var Icon = /** @class */ (function (_super) {
     }
     Icon.prototype.draw = function (ctx) {
         this.drawing.drawImage(ctx, this);
-        console.log("drawing " + this.word);
     };
     Icon.prototype.addToAnimations = function (canvas, zoom) {
-        //  console.log("adding" + this.word);
         return [this];
     };
     Icon.prototype.animate = function (ctx, stage, canvas, zoom) {
-        // console.log("animating region");
         ctx.save();
         this.draw(ctx);
         ctx.restore();
@@ -925,7 +882,41 @@ var Region = /** @class */ (function (_super) {
         var _this = _super.call(this, slide) || this;
         _this.offset = 0;
         _this.duration = 8000;
-        //console.log("constructing region");
+        return _this;
+    }
+    Region.prototype.draw = function (ctx) {
+        this.drawing.applySetting(ctx, this.drawingSetting);
+        this.drawing.drawPolygon(ctx, this.points, this.drawingSetting);
+    };
+    Region.prototype.addToAnimations = function (canvas, zoom) {
+        return [this];
+    };
+    Region.prototype.animate = function (ctx, stage, canvas, zoom) {
+        ctx.save();
+        this.drawing.applySetting(ctx, this.drawingSetting);
+        ctx.globalAlpha = stage;
+        this.draw(ctx);
+        ctx.restore();
+    };
+    Region.prototype.activate = function (ctx, component, zoom) {
+        // ctx.clearRect(this.imgCoords.topLeft.x, this.imgCoords.topLeft.y, this.imgCoords.width, this.imgCoords.height);
+        component.placeFrame(this, zoom);
+        this.visited = true;
+        this.draw(ctx);
+    };
+    Region.prototype.highlight = function (ctx) {
+        this.drawing.applySetting(ctx, "highlight");
+        this.drawing.drawPolygon(ctx, this.points, "highlight");
+    };
+    return Region;
+}(Zone));
+
+var Annotation = /** @class */ (function (_super) {
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](Annotation, _super);
+    function Annotation(slide, imgData) {
+        var _this = _super.call(this, slide) || this;
+        _this.offset = 0;
+        _this.duration = 8000;
         var transcription = null;
         var translation = null;
         if (slide.fields.transcription) {
@@ -935,68 +926,86 @@ var Region = /** @class */ (function (_super) {
             translation = slide.fields.translation.value.split(" ").map(function (w) { return { transcript: w }; });
         }
         _this.msText = { transcription: transcription, translation: translation, bgImage: imgData.url, bgImage2: imgData.url2, map: slide.fields.map.value, mapLink: slide.fields.map_link.value, link: slide.fields.link.value };
-        console.log(_this);
         return _this;
     }
-    Region.prototype.draw_polygon = function (ctx) {
-        //console.log("drawing Region");
+    Annotation.prototype.draw_polygon = function (ctx) {
         this.drawing.applySetting(ctx, this.drawingSetting);
         this.drawing.drawPolygon(ctx, this.points, this.drawingSetting);
     };
-    Region.prototype.draw = function (ctx) {
+    Annotation.prototype.draw = function (ctx) {
         //  this.draw_polygon(ctx);
         var finger = new Image();
         if (this.visited == false) {
-            finger.src = "/assets/images/svg/interface_clickers_green.svg";
+            finger.src = "/assets/images/icons/interface clickers green.png";
         }
         else {
-            finger.src = "/assets/images/svg/interface_clickers_red.svg";
+            finger.src = "/assets/images/icons/interface clickers red.png";
         }
         var ref = this;
         finger.onload = function () {
-            ctx.drawImage(finger, ref.imgCoords.topLeft.x - 50, ref.imgCoords.topLeft.y - 50, 250, 280);
+            ctx.drawImage(finger, ref.imgCoords.topLeft.x, ref.imgCoords.topLeft.y, iconSize, iconSize);
         };
     };
-    Region.prototype.addToAnimations = function (canvas, zoom) {
-        console.log("adding" + this.word);
+    Annotation.prototype.highlight = function (ctx) {
+        this.drawing.applySetting(ctx, "highlight");
+        this.drawing.drawPolygon(ctx, this.points, "highlight");
+        this.draw(ctx);
+    };
+    Annotation.prototype.addToAnimations = function (canvas, zoom) {
         return [this];
     };
-    Region.prototype.animate = function (ctx, stage, canvas, zoom) {
-        // console.log("animating region");
+    Annotation.prototype.animate_old = function (ctx, stage, canvas, zoom) {
         ctx.save();
         this.drawing.applySetting(ctx, this.drawingSetting);
         ctx.globalAlpha = stage;
         this.draw_polygon(ctx);
         ctx.restore();
     };
-    Region.prototype.activate = function (ctx, component, zoom) {
-        console.log("activating");
-        console.log(component.container.nativeElement);
+    Annotation.prototype.animate = function (ctx, stage, canvas, zoom) {
+        var x = (this.fingerCoords[0].x + (iconSize / 2));
+        var y = (this.fingerCoords[0].y + (iconSize / 2));
+        var small = (iconSize * 1.5 + (100 * stage)) * zoom;
+        var big = (iconSize * 2 + (100 * stage)) * zoom;
+        ctx.save();
+        ctx.lineWidth = 9;
+        ctx.strokeStyle = "green";
+        ctx.globalAlpha = 0.3 + stage;
+        ctx.beginPath();
+        ctx.arc(x, y, small, -Math.PI / 3, Math.PI / 3);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(x, y, big, -Math.PI / 3, Math.PI / 3);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(x, y, small, Math.PI / 1.5, -Math.PI / 1.5);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(x, y, big, Math.PI / 1.5, -Math.PI / 1.5);
+        ctx.stroke();
+        ctx.restore();
+    };
+    Annotation.prototype.activate = function (ctx, component, zoom) {
         // ctx.clearRect(this.imgCoords.topLeft.x, this.imgCoords.topLeft.y, this.imgCoords.width, this.imgCoords.height);
         component.placeFrame(this, zoom);
         this.visited = true;
         this.draw(ctx);
     };
-    return Region;
+    return Annotation;
 }(Zone));
 
 var Cover = /** @class */ (function (_super) {
     tslib__WEBPACK_IMPORTED_MODULE_0__["__extends"](Cover, _super);
     function Cover(slide) {
         return _super.call(this, slide) || this;
-        //console.log("constructing region");
     }
     Cover.prototype.draw = function (ctx) {
-        //console.log("drawing Region");
         this.drawing.applySetting(ctx, this.drawingSetting);
         this.drawing.drawCover(ctx, this.points);
     };
     Cover.prototype.addToAnimations = function (canvas, zoom) {
-        console.log("adding" + this.word);
         return [this];
     };
     Cover.prototype.animate = function (ctx, stage, canvas, zoom) {
-        // console.log("animating region");
         ctx.save();
         this.drawing.applySetting(ctx, this.drawingSetting);
         ctx.globalAlpha = stage;
@@ -1017,14 +1026,11 @@ var Poster = /** @class */ (function (_super) {
         _this.position = _this.imgCoords.topLeft;
         _this.img = new Image();
         _this.img.src = slide.fields.image.value;
-        //console.log("image loaded: " + this.img.src);
         _this.source = slide.fields.icon.value;
         return _this;
     }
     Poster.prototype.addToAnimations = function (canvas, zoom) {
-        //console.log(this.img);
         this.transformSetting = this.drawing.calcScaleToFit(this.imgCoords, canvas, zoom);
-        //console.log("TEXT: " + this.description);
         var text = new Text(this.description, 200, 500);
         return [this];
     };
@@ -1041,7 +1047,6 @@ var Poster = /** @class */ (function (_super) {
         this.drawing.drawStaticImage(ctx, this);
     };
     Poster.prototype.setTransformSetting = function (stage, version) {
-        //console.log("SETTING V: " + version);
         switch (version) {
             case "all":
                 this.transformSetting.globalAlpha = this.calcAlpha(stage);
@@ -1145,11 +1150,9 @@ var Slide = /** @class */ (function () {
 var Text = /** @class */ (function () {
     function Text(text, x, y) {
         this.drawing = new _services_drawing_service__WEBPACK_IMPORTED_MODULE_1__["DrawingSvc"]();
-        console.log(">> constructing TEXT: " + text);
         this.text = text;
         this.x = x;
         this.y = y;
-        //console.log(this);
     }
     Text.prototype.addToAnimations = function (canvas, zoom) {
         return [this];
@@ -1203,7 +1206,6 @@ var Cloud = /** @class */ (function () {
         return [this];
     };
     Cloud.prototype.animate = function (ctx, stage, canvas, zoom) {
-        // console.log("animating region");
         ctx.save();
         this.randomizeSetting(stage);
         this.drawing.applySetting(ctx, this.drawingSetting);
@@ -1219,10 +1221,8 @@ var Cloud = /** @class */ (function () {
         this.transformSetting.scale += this.getRandom(0, 0.02);
         var ref = this;
         //this.points.forEach((point)=>{point.x+=ref.getRandom(0,1);});
-        //   console.log(this.transformSetting);
     };
     Cloud.prototype.draw = function (ctx) {
-        //console.log("drawing Region");
         this.drawing.applySetting(ctx, this.drawingSetting);
         this.drawing.applyTransform(ctx, this.transformSetting);
         this.drawing.drawPolygon(ctx, this.points, this.drawingSetting);
@@ -1255,7 +1255,7 @@ var Cloud = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "* {box-sizing: border-box}\r\n\r\n#container{\r\n    position:absolute;\r\n    left:0;\r\n    bottom:0;\r\n    width: 100%;\r\n    height:0;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: column nowrap;\r\n    background-color: rgba(0,0,0,0.8);\r\n    color: white;\r\n    padding:1em;\r\n    z-index:2500;\r\n    overflow-y : scroll;\r\n        -webkit-transition: height 2s;\r\n        transition: height 2s;\r\n}\r\n\r\n#image{\r\n   background-color: rgba(100,100,100,0.3);\r\nmargin: 0.5em;\r\n    margin-bottom: 1em;\r\nmargin-bottom: 0;\r\nbox-shadow: 0 0 15px rgba(0,0,0,0.7);\r\nmax-width: 100%;\r\nborder: 2px outset rgb(100,100,100);\r\n}\r\n\r\n#description{\r\n       background-color: rgba(0,0,0,0.7);\r\nmargin:0.5em;\r\n    padding:1em;\r\nbox-shadow: 0 0 15px rgba(0,0,0,0.7);\r\n   max-width:100%;\r\n}\r\n\r\n#description h2{\r\n    border-bottom : 1px solid white;\r\n}\r\n\r\n.iconButton{\r\n    position:absolute;\r\n    right:0;\r\n    top:0;\r\n    border-radius: 0.2em;\r\n    border:2px outset rgb(20,20,20);\r\n    width:3em;\r\n    height:3em;\r\n    margin:0.25em;\r\n     background-size: 100% 100%;\r\n    -webkit-transition : background-image 1s ease-out;\r\n    transition : background-image 1s ease-out;\r\n\r\n    background-image:url(\"/assets/images/icons/close.png\");\r\n}\r\n\r\n.iconButton:hover{\r\n    box-shadow:0 0 5px yellow;\r\n}\r\n\r\n/* CUSTOM SCROLLBAR */\r\n\r\n::-webkit-scrollbar {\r\n    width: 11px;\r\n    height: 11px;\r\n}\r\n\r\n::-webkit-scrollbar-button {\r\n    width: 0px;\r\n    height: 0px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb {\r\n    background: rgb(20,20,20);\r\n    border: 2px solid #ffffff;\r\n    border-radius: 50px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:hover {\r\n    background: #ffffff;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:active {\r\n    background: #000000;\r\n}\r\n\r\n::-webkit-scrollbar-track {\r\n    background: rgb(20,20,20);\r\n    border: 0px none #ffffff;\r\n    border-radius: 39px;\r\n}\r\n\r\n::-webkit-scrollbar-track:hover {\r\n    background: rgb(20,20,20);\r\n}\r\n\r\n::-webkit-scrollbar-track:active {\r\n    background: rgb(20,20,20);\r\n}\r\n\r\n::-webkit-scrollbar-corner {\r\n    background: transparent;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImltYWdlL2ltYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsR0FBRyxzQkFBc0I7O0FBRXpCO0lBQ0ksaUJBQWlCO0lBQ2pCLE1BQU07SUFDTixRQUFRO0lBQ1IsV0FBVztJQUNYLFFBQVE7SUFDUixvQkFBYTtJQUFiLGFBQWE7SUFDYiw0QkFBd0I7SUFBeEIsNkJBQXdCO1lBQXhCLHdCQUF3QjtJQUN4QixpQ0FBaUM7SUFDakMsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0lBQ1osbUJBQW1CO1FBQ2YsNkJBQXFCO1FBQXJCLHFCQUFxQjtBQUM3Qjs7QUFFQTtHQUNHLHVDQUF1QztBQUMxQyxhQUFhO0lBQ1Qsa0JBQWtCO0FBQ3RCLGdCQUFnQjtBQUNoQixvQ0FBb0M7QUFDcEMsZUFBZTtBQUNmLG1DQUFtQztBQUNuQzs7QUFFQTtPQUNPLGlDQUFpQztBQUN4QyxZQUFZO0lBQ1IsV0FBVztBQUNmLG9DQUFvQztHQUNqQyxjQUFjO0FBQ2pCOztBQUVBO0lBQ0ksK0JBQStCO0FBQ25DOztBQUtBO0lBQ0ksaUJBQWlCO0lBQ2pCLE9BQU87SUFDUCxLQUFLO0lBQ0wsb0JBQW9CO0lBQ3BCLCtCQUErQjtJQUMvQixTQUFTO0lBQ1QsVUFBVTtJQUNWLGFBQWE7S0FDWiwwQkFBMEI7SUFDM0IsaURBQXlDO0lBQXpDLHlDQUF5Qzs7SUFFekMsc0RBQXNEO0FBQzFEOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBLHFCQUFxQjs7QUFFckI7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLFVBQVU7SUFDVixXQUFXO0FBQ2Y7O0FBRUE7SUFDSSx5QkFBeUI7SUFDekIseUJBQXlCO0lBQ3pCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6Qix3QkFBd0I7SUFDeEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksdUJBQXVCO0FBQzNCIiwiZmlsZSI6ImltYWdlL2ltYWdlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIqIHtib3gtc2l6aW5nOiBib3JkZXItYm94fVxyXG5cclxuI2NvbnRhaW5lcntcclxuICAgIHBvc2l0aW9uOmFic29sdXRlO1xyXG4gICAgbGVmdDowO1xyXG4gICAgYm90dG9tOjA7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDowO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZmxvdzogY29sdW1uIG5vd3JhcDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwwLDAsMC44KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHBhZGRpbmc6MWVtO1xyXG4gICAgei1pbmRleDoyNTAwO1xyXG4gICAgb3ZlcmZsb3cteSA6IHNjcm9sbDtcclxuICAgICAgICB0cmFuc2l0aW9uOiBoZWlnaHQgMnM7XHJcbn1cclxuXHJcbiNpbWFnZXtcclxuICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgxMDAsMTAwLDEwMCwwLjMpO1xyXG5tYXJnaW46IDAuNWVtO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xyXG5tYXJnaW4tYm90dG9tOiAwO1xyXG5ib3gtc2hhZG93OiAwIDAgMTVweCByZ2JhKDAsMCwwLDAuNyk7XHJcbm1heC13aWR0aDogMTAwJTtcclxuYm9yZGVyOiAycHggb3V0c2V0IHJnYigxMDAsMTAwLDEwMCk7XHJcbn1cclxuXHJcbiNkZXNjcmlwdGlvbntcclxuICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwwLDAsMC43KTtcclxubWFyZ2luOjAuNWVtO1xyXG4gICAgcGFkZGluZzoxZW07XHJcbmJveC1zaGFkb3c6IDAgMCAxNXB4IHJnYmEoMCwwLDAsMC43KTtcclxuICAgbWF4LXdpZHRoOjEwMCU7XHJcbn1cclxuXHJcbiNkZXNjcmlwdGlvbiBoMntcclxuICAgIGJvcmRlci1ib3R0b20gOiAxcHggc29saWQgd2hpdGU7XHJcbn1cclxuXHJcblxyXG5cclxuXHJcbi5pY29uQnV0dG9ue1xyXG4gICAgcG9zaXRpb246YWJzb2x1dGU7XHJcbiAgICByaWdodDowO1xyXG4gICAgdG9wOjA7XHJcbiAgICBib3JkZXItcmFkaXVzOiAwLjJlbTtcclxuICAgIGJvcmRlcjoycHggb3V0c2V0IHJnYigyMCwyMCwyMCk7XHJcbiAgICB3aWR0aDozZW07XHJcbiAgICBoZWlnaHQ6M2VtO1xyXG4gICAgbWFyZ2luOjAuMjVlbTtcclxuICAgICBiYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTtcclxuICAgIHRyYW5zaXRpb24gOiBiYWNrZ3JvdW5kLWltYWdlIDFzIGVhc2Utb3V0O1xyXG5cclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvY2xvc2UucG5nXCIpO1xyXG59XHJcblxyXG4uaWNvbkJ1dHRvbjpob3ZlcntcclxuICAgIGJveC1zaGFkb3c6MCAwIDVweCB5ZWxsb3c7XHJcbn1cclxuXHJcbi8qIENVU1RPTSBTQ1JPTExCQVIgKi9cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXIge1xyXG4gICAgd2lkdGg6IDExcHg7XHJcbiAgICBoZWlnaHQ6IDExcHg7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItYnV0dG9uIHtcclxuICAgIHdpZHRoOiAwcHg7XHJcbiAgICBoZWlnaHQ6IDBweDtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci10aHVtYiB7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2IoMjAsMjAsMjApO1xyXG4gICAgYm9yZGVyOiAycHggc29saWQgI2ZmZmZmZjtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWI6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZDogI2ZmZmZmZjtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci10aHVtYjphY3RpdmUge1xyXG4gICAgYmFja2dyb3VuZDogIzAwMDAwMDtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2IoMjAsMjAsMjApO1xyXG4gICAgYm9yZGVyOiAwcHggbm9uZSAjZmZmZmZmO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMzlweDtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci10cmFjazpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2IoMjAsMjAsMjApO1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrOmFjdGl2ZSB7XHJcbiAgICBiYWNrZ3JvdW5kOiByZ2IoMjAsMjAsMjApO1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLWNvcm5lciB7XHJcbiAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcclxufVxyXG4iXX0= */"
+module.exports = "* {box-sizing: border-box}\r\n\r\n#container{\r\n    position:absolute;\r\n    left:0;\r\n    bottom:0;\r\n    width: 98%;\r\n    height:0;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: column nowrap;\r\n    background-color: rgba(0,0,0,0.8);\r\n    color: white;\r\n    padding:1em;\r\n    z-index:2500;\r\n    overflow-y : scroll;\r\n        -webkit-transition: height 2s;\r\n        transition: height 2s;\r\n}\r\n\r\n#image{\r\n   background-color: rgba(100,100,100,0.3);\r\nmargin: 0.5em;\r\n    margin-bottom: 1em;\r\nmargin-bottom: 0;\r\nbox-shadow: 0 0 15px rgba(0,0,0,0.7);\r\nmax-width: 100%;\r\nborder: 2px outset rgb(100,100,100);\r\n}\r\n\r\n#description{\r\n       background-color: rgba(0,0,0,0.7);\r\nmargin:0.5em;\r\n    padding:1em;\r\nbox-shadow: 0 0 15px rgba(0,0,0,0.7);\r\n   max-width:100%;\r\n}\r\n\r\n#description h2{\r\n    border-bottom : 1px solid white;\r\n    color:rgb(255,242,204);\r\n}\r\n\r\n.iconButton{\r\n    position:absolute;\r\n    right:0;\r\n    top:0;\r\n    border-radius: 0.2em;\r\n    border:2px outset rgb(20,20,20);\r\n    width:3em;\r\n    height:3em;\r\n    margin:0.25em;\r\n     background-size: 100% 100%;\r\n    -webkit-transition : background-image 1s ease-out;\r\n    transition : background-image 1s ease-out;\r\n\r\n    background-image:url(\"/assets/images/icons/close.png\");\r\n}\r\n\r\n.iconButton:hover{\r\n    box-shadow:0 0 5px yellow;\r\n}\r\n\r\nspan.keyWord{\r\n   font-weight:bold;\r\n    color:#5d91b6\r\n}\r\n\r\n/* CUSTOM SCROLLBAR */\r\n\r\n::-webkit-scrollbar {\r\n    width: 11px;\r\n    height: 11px;\r\n}\r\n\r\n::-webkit-scrollbar-button {\r\n    width: 0px;\r\n    height: 0px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb {\r\n    background: rgb(20,20,20);\r\n    border: 2px solid #ffffff;\r\n    border-radius: 50px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:hover {\r\n    background: #ffffff;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:active {\r\n    background: #000000;\r\n}\r\n\r\n::-webkit-scrollbar-track {\r\n    background: rgb(20,20,20);\r\n    border: 0px none #ffffff;\r\n    border-radius: 39px;\r\n}\r\n\r\n::-webkit-scrollbar-track:hover {\r\n    background: rgb(20,20,20);\r\n}\r\n\r\n::-webkit-scrollbar-track:active {\r\n    background: rgb(20,20,20);\r\n}\r\n\r\n::-webkit-scrollbar-corner {\r\n    background: transparent;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2ltYWdlL2ltYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsR0FBRyxzQkFBc0I7O0FBRXpCO0lBQ0ksaUJBQWlCO0lBQ2pCLE1BQU07SUFDTixRQUFRO0lBQ1IsVUFBVTtJQUNWLFFBQVE7SUFDUixvQkFBYTtJQUFiLGFBQWE7SUFDYiw0QkFBd0I7SUFBeEIsNkJBQXdCO1lBQXhCLHdCQUF3QjtJQUN4QixpQ0FBaUM7SUFDakMsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0lBQ1osbUJBQW1CO1FBQ2YsNkJBQXFCO1FBQXJCLHFCQUFxQjtBQUM3Qjs7QUFFQTtHQUNHLHVDQUF1QztBQUMxQyxhQUFhO0lBQ1Qsa0JBQWtCO0FBQ3RCLGdCQUFnQjtBQUNoQixvQ0FBb0M7QUFDcEMsZUFBZTtBQUNmLG1DQUFtQztBQUNuQzs7QUFFQTtPQUNPLGlDQUFpQztBQUN4QyxZQUFZO0lBQ1IsV0FBVztBQUNmLG9DQUFvQztHQUNqQyxjQUFjO0FBQ2pCOztBQUVBO0lBQ0ksK0JBQStCO0lBQy9CLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJLGlCQUFpQjtJQUNqQixPQUFPO0lBQ1AsS0FBSztJQUNMLG9CQUFvQjtJQUNwQiwrQkFBK0I7SUFDL0IsU0FBUztJQUNULFVBQVU7SUFDVixhQUFhO0tBQ1osMEJBQTBCO0lBQzNCLGlEQUF5QztJQUF6Qyx5Q0FBeUM7O0lBRXpDLHNEQUFzRDtBQUMxRDs7QUFFQTtJQUNJLHlCQUF5QjtBQUM3Qjs7QUFFQTtHQUNHLGdCQUFnQjtJQUNmO0FBQ0o7O0FBRUEscUJBQXFCOztBQUVyQjtJQUNJLFdBQVc7SUFDWCxZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksVUFBVTtJQUNWLFdBQVc7QUFDZjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6Qix5QkFBeUI7SUFDekIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLHdCQUF3QjtJQUN4QixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSx5QkFBeUI7QUFDN0I7O0FBRUE7SUFDSSx5QkFBeUI7QUFDN0I7O0FBRUE7SUFDSSx1QkFBdUI7QUFDM0IiLCJmaWxlIjoiLi4vaW1hZ2UvaW1hZ2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIioge2JveC1zaXppbmc6IGJvcmRlci1ib3h9XHJcblxyXG4jY29udGFpbmVye1xyXG4gICAgcG9zaXRpb246YWJzb2x1dGU7XHJcbiAgICBsZWZ0OjA7XHJcbiAgICBib3R0b206MDtcclxuICAgIHdpZHRoOiA5OCU7XHJcbiAgICBoZWlnaHQ6MDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWZsb3c6IGNvbHVtbiBub3dyYXA7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsMCwwLDAuOCk7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBwYWRkaW5nOjFlbTtcclxuICAgIHotaW5kZXg6MjUwMDtcclxuICAgIG92ZXJmbG93LXkgOiBzY3JvbGw7XHJcbiAgICAgICAgdHJhbnNpdGlvbjogaGVpZ2h0IDJzO1xyXG59XHJcblxyXG4jaW1hZ2V7XHJcbiAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMTAwLDEwMCwxMDAsMC4zKTtcclxubWFyZ2luOiAwLjVlbTtcclxuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcclxubWFyZ2luLWJvdHRvbTogMDtcclxuYm94LXNoYWRvdzogMCAwIDE1cHggcmdiYSgwLDAsMCwwLjcpO1xyXG5tYXgtd2lkdGg6IDEwMCU7XHJcbmJvcmRlcjogMnB4IG91dHNldCByZ2IoMTAwLDEwMCwxMDApO1xyXG59XHJcblxyXG4jZGVzY3JpcHRpb257XHJcbiAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsMCwwLDAuNyk7XHJcbm1hcmdpbjowLjVlbTtcclxuICAgIHBhZGRpbmc6MWVtO1xyXG5ib3gtc2hhZG93OiAwIDAgMTVweCByZ2JhKDAsMCwwLDAuNyk7XHJcbiAgIG1heC13aWR0aDoxMDAlO1xyXG59XHJcblxyXG4jZGVzY3JpcHRpb24gaDJ7XHJcbiAgICBib3JkZXItYm90dG9tIDogMXB4IHNvbGlkIHdoaXRlO1xyXG4gICAgY29sb3I6cmdiKDI1NSwyNDIsMjA0KTtcclxufVxyXG5cclxuLmljb25CdXR0b257XHJcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuICAgIHJpZ2h0OjA7XHJcbiAgICB0b3A6MDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDAuMmVtO1xyXG4gICAgYm9yZGVyOjJweCBvdXRzZXQgcmdiKDIwLDIwLDIwKTtcclxuICAgIHdpZHRoOjNlbTtcclxuICAgIGhlaWdodDozZW07XHJcbiAgICBtYXJnaW46MC4yNWVtO1xyXG4gICAgIGJhY2tncm91bmQtc2l6ZTogMTAwJSAxMDAlO1xyXG4gICAgdHJhbnNpdGlvbiA6IGJhY2tncm91bmQtaW1hZ2UgMXMgZWFzZS1vdXQ7XHJcblxyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9jbG9zZS5wbmdcIik7XHJcbn1cclxuXHJcbi5pY29uQnV0dG9uOmhvdmVye1xyXG4gICAgYm94LXNoYWRvdzowIDAgNXB4IHllbGxvdztcclxufVxyXG5cclxuc3Bhbi5rZXlXb3Jke1xyXG4gICBmb250LXdlaWdodDpib2xkO1xyXG4gICAgY29sb3I6IzVkOTFiNlxyXG59XHJcblxyXG4vKiBDVVNUT00gU0NST0xMQkFSICovXHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyIHtcclxuICAgIHdpZHRoOiAxMXB4O1xyXG4gICAgaGVpZ2h0OiAxMXB4O1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLWJ1dHRvbiB7XHJcbiAgICB3aWR0aDogMHB4O1xyXG4gICAgaGVpZ2h0OiAwcHg7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWIge1xyXG4gICAgYmFja2dyb3VuZDogcmdiKDIwLDIwLDIwKTtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkICNmZmZmZmY7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xyXG59XHJcblxyXG46Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmhvdmVyIHtcclxuICAgIGJhY2tncm91bmQ6ICNmZmZmZmY7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWI6YWN0aXZlIHtcclxuICAgIGJhY2tncm91bmQ6ICMwMDAwMDA7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItdHJhY2sge1xyXG4gICAgYmFja2dyb3VuZDogcmdiKDIwLDIwLDIwKTtcclxuICAgIGJvcmRlcjogMHB4IG5vbmUgI2ZmZmZmZjtcclxuICAgIGJvcmRlci1yYWRpdXM6IDM5cHg7XHJcbn1cclxuXHJcbjo6LXdlYmtpdC1zY3JvbGxiYXItdHJhY2s6aG92ZXIge1xyXG4gICAgYmFja2dyb3VuZDogcmdiKDIwLDIwLDIwKTtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci10cmFjazphY3RpdmUge1xyXG4gICAgYmFja2dyb3VuZDogcmdiKDIwLDIwLDIwKTtcclxufVxyXG5cclxuOjotd2Via2l0LXNjcm9sbGJhci1jb3JuZXIge1xyXG4gICAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XHJcbn1cclxuIl19 */"
 
 /***/ }),
 
@@ -1266,7 +1266,7 @@ module.exports = "* {box-sizing: border-box}\r\n\r\n#container{\r\n    position:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=container #container>\n    <button (click)=\"close()\" *ngIf=\"opened==true\" style=\"float:right\" class=\"iconButton\"></button>\n    \n    <img [src]=\"imgUrl\" id=image *ngIf=\"imgUrl\"/>\n    \n    <div id=description *ngIf=\"description\">\n        <h2 id=imgHeadline>{{name}}</h2>\n        <p class=description>\n    {{description}}\n        </p>\n    </div>\n    \n\n    <app-audio [songUrl]=\"songUrl\" mode=\"interaction\" [youTubeId]=\"youTubeId\"></app-audio>\n\n\n</div>\n"
+module.exports = "<div id=container #container>\n    <button (click)=\"close()\" *ngIf=\"opened==true\" style=\"float:right\" class=\"iconButton\"></button>\n\n    <img [src]=\"imgUrl\" id=image *ngIf=\"imgUrl\" />\n\n    <div id=description *ngIf=\"description\">\n        <h2 id=imgHeadline>{{name}}</h2>\n        <p class=description [innerHTML]=highlightKws(description)>\n        </p>\n    </div>\n    <app-audio [songUrl]=\"songUrl\" mode=\"interaction\" [youTubeId]=\"youTubeId\"></app-audio>\n\n\n</div>"
 
 /***/ }),
 
@@ -1287,6 +1287,7 @@ __webpack_require__.r(__webpack_exports__);
 var ImageComponent = /** @class */ (function () {
     function ImageComponent() {
         this.opened = false;
+        this.keyWords = ["Aquila", "Genizah", "palimpsest", "Pyyut", "Palestine", "poetry", "Yannai"];
     }
     ImageComponent.prototype.ngOnChanges = function () {
     };
@@ -1297,8 +1298,13 @@ var ImageComponent = /** @class */ (function () {
     };
     ImageComponent.prototype.open = function () {
         console.log("opening infowindow");
-        this.container.nativeElement.style.height = "70%";
+        this.container.nativeElement.style.height = "50%";
         this.opened = true;
+    };
+    ImageComponent.prototype.highlightKws = function (text) {
+        var result = text;
+        this.keyWords.forEach(function (kw) { return result = result.replace(kw, "<strong>" + kw + "</strong>"); });
+        return result;
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])('imgUrl'),
@@ -1346,7 +1352,7 @@ var ImageComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "app-audio{\r\n    position:absolute;\r\n    top:0;\r\n    right:0;\r\n    margin:1%;\r\n    z-index:1000;\r\n}\r\n\r\n#timeMachine{\r\n          position: fixed;\r\n    width: 100%;\r\n    height: 100%;\r\n    left: 0;\r\n    bottom: 0%;\r\n    z-index: 5000;\r\n    background-color: transparent;\r\n    color: white;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: column nowrap;\r\n}\r\n\r\n#timeMachine h2{\r\n   width:100%;\r\n    text-align:center;\r\n    font-size: 50px;\r\n    background-color:black;\r\n    border-radius: 0.5em;\r\n    \r\n}\r\n\r\n#timeMachine p{\r\n    width:90%;\r\n    margin:5%;\r\n    text-align:center;\r\n     background-color:black;\r\n    border-radius: 0.5em;\r\n    padding:\r\n}\r\n\r\n.selectButton{\r\n    display:-webkit-box;\r\n    display:flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: column-nowrap;\r\n   border: none;\r\n    position: fixed;\r\n    bottom: 0%;\r\n    width: 50%;\r\n    height: 100%;\r\n    background-color: transparent;\r\n    font-size: 50px;\r\n    -webkit-transition: background-color 2s ease-out;\r\n    transition: background-color 2s ease-out;\r\n}\r\n\r\n.selectButton:hover{\r\n    background-color:rgba(255,255,255,0.5);\r\n}\r\n\r\n.selectButton h3{\r\n    font-size:35px;\r\n    position:absolute;\r\n    bottom:50%;\r\n    width:90%;\r\n    margin:5%;\r\n    text-align:center;\r\n}\r\n\r\n#aquila{\r\n    right:0;\r\n    color:white;\r\n}\r\n\r\n#yannai{\r\n    left:0;\r\n    color:black;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImludGVyYWN0aW9uL2ludGVyYWN0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7SUFDakIsS0FBSztJQUNMLE9BQU87SUFDUCxTQUFTO0lBQ1QsWUFBWTtBQUNoQjs7QUFFQTtVQUNVLGVBQWU7SUFDckIsV0FBVztJQUNYLFlBQVk7SUFDWixPQUFPO0lBQ1AsVUFBVTtJQUNWLGFBQWE7SUFDYiw2QkFBNkI7SUFDN0IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2Ysb0JBQWE7SUFBYixhQUFhO0lBQ2IsNEJBQXdCO0lBQXhCLDZCQUF3QjtZQUF4Qix3QkFBd0I7QUFDNUI7O0FBR0E7R0FDRyxVQUFVO0lBQ1QsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZixzQkFBc0I7SUFDdEIsb0JBQW9COztBQUV4Qjs7QUFFQTtJQUNJLFNBQVM7SUFDVCxTQUFTO0lBQ1QsaUJBQWlCO0tBQ2hCLHNCQUFzQjtJQUN2QixvQkFBb0I7SUFDcEI7QUFDSjs7QUFHQTtJQUNJLG1CQUFZO0lBQVosWUFBWTtJQUNaLDRCQUF3QjtJQUF4Qiw2QkFBd0I7WUFBeEIsd0JBQXdCO0dBQ3pCLFlBQVk7SUFDWCxlQUFlO0lBQ2YsVUFBVTtJQUNWLFVBQVU7SUFDVixZQUFZO0lBQ1osNkJBQTZCO0lBQzdCLGVBQWU7SUFDZixnREFBd0M7SUFBeEMsd0NBQXdDO0FBQzVDOztBQUVBO0lBQ0ksc0NBQXNDO0FBQzFDOztBQUVBO0lBQ0ksY0FBYztJQUNkLGlCQUFpQjtJQUNqQixVQUFVO0lBQ1YsU0FBUztJQUNULFNBQVM7SUFDVCxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxPQUFPO0lBQ1AsV0FBVztBQUNmOztBQUVBO0lBQ0ksTUFBTTtJQUNOLFdBQVc7QUFDZiIsImZpbGUiOiJpbnRlcmFjdGlvbi9pbnRlcmFjdGlvbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYXBwLWF1ZGlve1xyXG4gICAgcG9zaXRpb246YWJzb2x1dGU7XHJcbiAgICB0b3A6MDtcclxuICAgIHJpZ2h0OjA7XHJcbiAgICBtYXJnaW46MSU7XHJcbiAgICB6LWluZGV4OjEwMDA7XHJcbn1cclxuXHJcbiN0aW1lTWFjaGluZXtcclxuICAgICAgICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIGJvdHRvbTogMCU7XHJcbiAgICB6LWluZGV4OiA1MDAwO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1mbG93OiBjb2x1bW4gbm93cmFwO1xyXG59XHJcblxyXG5cclxuI3RpbWVNYWNoaW5lIGgye1xyXG4gICB3aWR0aDoxMDAlO1xyXG4gICAgdGV4dC1hbGlnbjpjZW50ZXI7XHJcbiAgICBmb250LXNpemU6IDUwcHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMC41ZW07XHJcbiAgICBcclxufVxyXG5cclxuI3RpbWVNYWNoaW5lIHB7XHJcbiAgICB3aWR0aDo5MCU7XHJcbiAgICBtYXJnaW46NSU7XHJcbiAgICB0ZXh0LWFsaWduOmNlbnRlcjtcclxuICAgICBiYWNrZ3JvdW5kLWNvbG9yOmJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMC41ZW07XHJcbiAgICBwYWRkaW5nOlxyXG59XHJcblxyXG5cclxuLnNlbGVjdEJ1dHRvbntcclxuICAgIGRpc3BsYXk6ZmxleDtcclxuICAgIGZsZXgtZmxvdzogY29sdW1uLW5vd3JhcDtcclxuICAgYm9yZGVyOiBub25lO1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgYm90dG9tOiAwJTtcclxuICAgIHdpZHRoOiA1MCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcclxuICAgIGZvbnQtc2l6ZTogNTBweDtcclxuICAgIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgMnMgZWFzZS1vdXQ7XHJcbn1cclxuXHJcbi5zZWxlY3RCdXR0b246aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjU1LDI1NSwyNTUsMC41KTtcclxufVxyXG5cclxuLnNlbGVjdEJ1dHRvbiBoM3tcclxuICAgIGZvbnQtc2l6ZTozNXB4O1xyXG4gICAgcG9zaXRpb246YWJzb2x1dGU7XHJcbiAgICBib3R0b206NTAlO1xyXG4gICAgd2lkdGg6OTAlO1xyXG4gICAgbWFyZ2luOjUlO1xyXG4gICAgdGV4dC1hbGlnbjpjZW50ZXI7XHJcbn1cclxuXHJcbiNhcXVpbGF7XHJcbiAgICByaWdodDowO1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbn1cclxuXHJcbiN5YW5uYWl7XHJcbiAgICBsZWZ0OjA7XHJcbiAgICBjb2xvcjpibGFjaztcclxufVxyXG5cclxuIl19 */"
+module.exports = "app-audio{\r\n    position:absolute;\r\n    top:0;\r\n    right:0;\r\n    margin:1%;\r\n    z-index:1000;\r\n}\r\n\r\n#timeMachine{\r\n          position: fixed;\r\n    width: 100%;\r\n    height: 100%;\r\n    left: 0;\r\n    bottom: 0%;\r\n    z-index: 5000;\r\n    background-color: transparent;\r\n    color: white;\r\n    text-align: center;\r\n    font-size: 20px;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: column nowrap;\r\n}\r\n\r\n#timeMachine h2{\r\n   width:100%;\r\n    text-align:center;\r\n    font-size: 50px;\r\n    background-color:black;\r\n    border-radius: 0.5em;\r\n    \r\n}\r\n\r\n#timeMachine p{\r\n    width:90%;\r\n    margin:5%;\r\n    text-align:center;\r\n     background-color:black;\r\n    border-radius: 0.5em;\r\n    padding:\r\n}\r\n\r\n.selectButton{\r\n    display:-webkit-box;\r\n    display:flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: column-nowrap;\r\n   border: none;\r\n    position: fixed;\r\n    bottom: 0%;\r\n    width: 50%;\r\n    height: 100%;\r\n    background-color: transparent;\r\n    font-size: 50px;\r\n    -webkit-transition: background-color 2s ease-out;\r\n    transition: background-color 2s ease-out;\r\n}\r\n\r\n.selectButton:hover{\r\n    background-color:rgba(255,255,255,0.2);\r\n}\r\n\r\n.selectButton h3{\r\n    font-size:35px;\r\n    position:absolute;\r\n    bottom:50%;\r\n    width:90%;\r\n    margin:5%;\r\n    text-align:center;\r\n}\r\n\r\n#aquila{\r\n    right:0;\r\n    color:white;\r\n}\r\n\r\n#yannai{\r\n    left:0;\r\n    color:black;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2ludGVyYWN0aW9uL2ludGVyYWN0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7SUFDakIsS0FBSztJQUNMLE9BQU87SUFDUCxTQUFTO0lBQ1QsWUFBWTtBQUNoQjs7QUFFQTtVQUNVLGVBQWU7SUFDckIsV0FBVztJQUNYLFlBQVk7SUFDWixPQUFPO0lBQ1AsVUFBVTtJQUNWLGFBQWE7SUFDYiw2QkFBNkI7SUFDN0IsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2Ysb0JBQWE7SUFBYixhQUFhO0lBQ2IsNEJBQXdCO0lBQXhCLDZCQUF3QjtZQUF4Qix3QkFBd0I7QUFDNUI7O0FBR0E7R0FDRyxVQUFVO0lBQ1QsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZixzQkFBc0I7SUFDdEIsb0JBQW9COztBQUV4Qjs7QUFFQTtJQUNJLFNBQVM7SUFDVCxTQUFTO0lBQ1QsaUJBQWlCO0tBQ2hCLHNCQUFzQjtJQUN2QixvQkFBb0I7SUFDcEI7QUFDSjs7QUFHQTtJQUNJLG1CQUFZO0lBQVosWUFBWTtJQUNaLDRCQUF3QjtJQUF4Qiw2QkFBd0I7WUFBeEIsd0JBQXdCO0dBQ3pCLFlBQVk7SUFDWCxlQUFlO0lBQ2YsVUFBVTtJQUNWLFVBQVU7SUFDVixZQUFZO0lBQ1osNkJBQTZCO0lBQzdCLGVBQWU7SUFDZixnREFBd0M7SUFBeEMsd0NBQXdDO0FBQzVDOztBQUVBO0lBQ0ksc0NBQXNDO0FBQzFDOztBQUVBO0lBQ0ksY0FBYztJQUNkLGlCQUFpQjtJQUNqQixVQUFVO0lBQ1YsU0FBUztJQUNULFNBQVM7SUFDVCxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxPQUFPO0lBQ1AsV0FBVztBQUNmOztBQUVBO0lBQ0ksTUFBTTtJQUNOLFdBQVc7QUFDZiIsImZpbGUiOiIuLi9pbnRlcmFjdGlvbi9pbnRlcmFjdGlvbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYXBwLWF1ZGlve1xyXG4gICAgcG9zaXRpb246YWJzb2x1dGU7XHJcbiAgICB0b3A6MDtcclxuICAgIHJpZ2h0OjA7XHJcbiAgICBtYXJnaW46MSU7XHJcbiAgICB6LWluZGV4OjEwMDA7XHJcbn1cclxuXHJcbiN0aW1lTWFjaGluZXtcclxuICAgICAgICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgbGVmdDogMDtcclxuICAgIGJvdHRvbTogMCU7XHJcbiAgICB6LWluZGV4OiA1MDAwO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1mbG93OiBjb2x1bW4gbm93cmFwO1xyXG59XHJcblxyXG5cclxuI3RpbWVNYWNoaW5lIGgye1xyXG4gICB3aWR0aDoxMDAlO1xyXG4gICAgdGV4dC1hbGlnbjpjZW50ZXI7XHJcbiAgICBmb250LXNpemU6IDUwcHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMC41ZW07XHJcbiAgICBcclxufVxyXG5cclxuI3RpbWVNYWNoaW5lIHB7XHJcbiAgICB3aWR0aDo5MCU7XHJcbiAgICBtYXJnaW46NSU7XHJcbiAgICB0ZXh0LWFsaWduOmNlbnRlcjtcclxuICAgICBiYWNrZ3JvdW5kLWNvbG9yOmJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMC41ZW07XHJcbiAgICBwYWRkaW5nOlxyXG59XHJcblxyXG5cclxuLnNlbGVjdEJ1dHRvbntcclxuICAgIGRpc3BsYXk6ZmxleDtcclxuICAgIGZsZXgtZmxvdzogY29sdW1uLW5vd3JhcDtcclxuICAgYm9yZGVyOiBub25lO1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgYm90dG9tOiAwJTtcclxuICAgIHdpZHRoOiA1MCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcclxuICAgIGZvbnQtc2l6ZTogNTBweDtcclxuICAgIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgMnMgZWFzZS1vdXQ7XHJcbn1cclxuXHJcbi5zZWxlY3RCdXR0b246aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMjU1LDI1NSwyNTUsMC4yKTtcclxufVxyXG5cclxuLnNlbGVjdEJ1dHRvbiBoM3tcclxuICAgIGZvbnQtc2l6ZTozNXB4O1xyXG4gICAgcG9zaXRpb246YWJzb2x1dGU7XHJcbiAgICBib3R0b206NTAlO1xyXG4gICAgd2lkdGg6OTAlO1xyXG4gICAgbWFyZ2luOjUlO1xyXG4gICAgdGV4dC1hbGlnbjpjZW50ZXI7XHJcbn1cclxuXHJcbiNhcXVpbGF7XHJcbiAgICByaWdodDowO1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbn1cclxuXHJcbiN5YW5uYWl7XHJcbiAgICBsZWZ0OjA7XHJcbiAgICBjb2xvcjpibGFjaztcclxufVxyXG5cclxuIl19 */"
 
 /***/ }),
 
@@ -1374,18 +1380,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/data.service */ "./src/app/services/data.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _classes_zone__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../classes/zone */ "./src/app/classes/zone.ts");
+/* harmony import */ var _services_navigation_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/navigation.service */ "./src/app/services/navigation.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _classes_zone__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../classes/zone */ "./src/app/classes/zone.ts");
+
 
 
 
 
 
 var InteractionComponent = /** @class */ (function () {
-    function InteractionComponent(_activatedRoute, _dataService, router) {
+    function InteractionComponent(_activatedRoute, _dataService, router, navigation) {
         this._activatedRoute = _activatedRoute;
         this._dataService = _dataService;
         this.router = router;
+        this.navigation = navigation;
         this.soundLoaded = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.zoneLoader = [];
         this.zones = [];
@@ -1399,32 +1408,40 @@ var InteractionComponent = /** @class */ (function () {
         this.zoneCategories = [];
     }
     InteractionComponent.prototype.ngOnInit = function () {
-        console.log("afterViewInit");
-        console.log(this.canvases);
-        // console.log("route at component: "+this._activatedRoute.snapshot.params['map']);
-        //   console.log("selected zone: "+this._activatedRoute.snapshot.params['zone']);
-        //this._dataService.askOxford("ΤΗΣ","el");
-        var source = this._activatedRoute.snapshot.params['source'];
-        var canvases = this._activatedRoute.snapshot.params['canvases'].split(",");
-        var annotation = this._activatedRoute.snapshot.params['annotation'];
-        console.log(annotation);
+        var ref = this;
+        this._activatedRoute.paramMap.subscribe(function (p) {
+            var source = p.get('source');
+            var canvases = p.get('canvases').split(",");
+            var annotation = p.get('annotation');
+            ref.navigation.previousRoutes.unshift([source, canvases.join(","), annotation]);
+            if (!annotation) {
+                annotation = null;
+            }
+            ref.initialize(canvases, source, annotation);
+        });
+        // let id=<string>this._activatedRoute.snapshot.params['zid'];
+    };
+    InteractionComponent.prototype.initialize = function (canvases, source, annotation) {
+        this.zones = [];
+        this.zoneLoader = [];
+        this.zoneCategories = [];
+        this.cis = [];
         if (canvases.length > 1) {
             this.mode = "preview";
+        }
+        else {
+            this.mode = "interaction";
         }
         var ref = this;
         var _loop_1 = function (i) {
             this_1.cis.push(i);
             this_1._dataService.fetchJson(source + "_" + canvases[i]).subscribe(function (data) {
-                console.log(data);
                 var imgData = data["imgData"];
                 // ref.canvases._results[i].imgData=imgData;
-                console.log(imgData);
-                console.log("processing loop");
                 if (annotation) {
                     data.slides = [data.slides[annotation]];
                 }
                 var zoneLoader = ref.processIcons(data);
-                console.log(ref.zoneLoader);
                 // ref.displayZones();
                 //  ref.canvases._results[i].zones=ref.zoneLoader.zones;         
                 // ref.canvases._results[i].zoneCategories=ref.zoneLoader.zoneCategories;  
@@ -1443,11 +1460,8 @@ var InteractionComponent = /** @class */ (function () {
         for (var i = 0; i < canvases.length; i++) {
             _loop_1(i);
         }
-        // let id=<string>this._activatedRoute.snapshot.params['zid'];
     };
     InteractionComponent.prototype.displayClicked = function (e) {
-        //console.log("clicked");
-        //console.log(e);
         // this.infoWindow.open();
         this.name = e.title;
         this.description = e.description;
@@ -1456,42 +1470,45 @@ var InteractionComponent = /** @class */ (function () {
         this.songUrl = "";
     };
     InteractionComponent.prototype.processIcons = function (slideSet) {
-        console.log("Processing icons");
         var ref = this;
         var result = [];
         var categories = {};
         slideSet.slides.forEach(function (slide) {
-            console.log("PROCESSING " + slide.word);
             var newZone;
             slide.component = ref;
-            switch (slide.cat) {
-                case "translation":
-                    newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_4__["Region"](slide, slideSet.imgData);
-                    break;
-                case "Script":
-                    newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_4__["Region"](slide, slideSet.imgData);
-                    break;
-                case "Content":
-                    newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_4__["Region"](slide, slideSet.imgData);
-                    break;
-                case "Author":
-                    newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_4__["Region"](slide, slideSet.imgData);
-                    break;
-                case "Text":
-                    newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_4__["Region"](slide, slideSet.imgData);
-                    break;
-                case "Material":
-                    newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_4__["Region"](slide, slideSet.imgData);
-                    break;
-                case "Region":
-                    newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_4__["Region"](slide, slideSet.imgData);
-                    break;
-                case "Discovery":
-                    newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_4__["Region"](slide, slideSet.imgData);
-                    break;
-                case "City":
-                    newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_4__["Region"](slide, slideSet.imgData);
-                    break;
+            if (ref.mode != "preview") {
+                switch (slide.cat) {
+                    case "translation":
+                        newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Annotation"](slide, slideSet.imgData);
+                        break;
+                    case "Script":
+                        newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Annotation"](slide, slideSet.imgData);
+                        break;
+                    case "Content":
+                        newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Annotation"](slide, slideSet.imgData);
+                        break;
+                    case "Author":
+                        newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Annotation"](slide, slideSet.imgData);
+                        break;
+                    case "Text":
+                        newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Annotation"](slide, slideSet.imgData);
+                        break;
+                    case "Material":
+                        newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Annotation"](slide, slideSet.imgData);
+                        break;
+                    case "Region":
+                        newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Region"](slide, slideSet.imgData);
+                        break;
+                    case "Discovery":
+                        newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Annotation"](slide, slideSet.imgData);
+                        break;
+                    case "City":
+                        newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Region"](slide, slideSet.imgData);
+                        break;
+                }
+            }
+            else {
+                newZone = new _classes_zone__WEBPACK_IMPORTED_MODULE_5__["Region"](slide, slideSet.imgData);
             }
             if (!categories[slide.cat]) {
                 var selectedVal = void 0;
@@ -1500,9 +1517,7 @@ var InteractionComponent = /** @class */ (function () {
             }
             categories[slide.cat].zoneCount++;
             result.push(newZone);
-            console.log(result);
         });
-        console.log(result);
         var zoneCategories = [];
         for (var c in categories) {
             zoneCategories.push(categories[c]);
@@ -1511,14 +1526,17 @@ var InteractionComponent = /** @class */ (function () {
     };
     InteractionComponent.prototype.displayZones = function () {
         this.zones = this.zoneLoader;
-        console.log("displaying zones");
     };
     InteractionComponent.prototype.moveInTime = function (e) {
         //  this.canvases._results.forEach((c)=>c.moveInTime(e.srcElement.value));
         var ref = this;
-        // console.log(this.canvases._results[0]);
-        this.canvases._results[1].wrapper.nativeElement.addEventListener("transitionend", function () { ref.navigate(['single/aquila_v/' + e]), 3000; });
-        this.canvases._results[1].wrapper.nativeElement.style.transform = "rotate(180deg)";
+        if (e == 1) {
+            this.canvases._results[1].wrapper.nativeElement.addEventListener("transitionend", function () { ref.navigate(['interaction/aquila_v/' + e]), 3000; });
+            this.canvases._results[1].wrapper.nativeElement.style.transform = "rotate(180deg)";
+        }
+        else {
+            ref.navigate(['interaction/aquila_v/' + e]);
+        }
     };
     InteractionComponent.prototype.navigate = function (r) {
         this.router.navigate(r);
@@ -1550,7 +1568,7 @@ var InteractionComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./interaction.component.html */ "./src/app/interaction/interaction.component.html"),
             styles: [__webpack_require__(/*! ./interaction.component.css */ "./src/app/interaction/interaction.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _services_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"], _services_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"], _services_navigation_service__WEBPACK_IMPORTED_MODULE_3__["NavigationService"]])
     ], InteractionComponent);
     return InteractionComponent;
 }());
@@ -1566,7 +1584,7 @@ var InteractionComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#container{\r\n    position:absolute;\r\nborder:4px outset black;\r\n    border-radius:0.2em;\r\n    background-color:transparent;\r\n    font-size:45px;\r\n    display:none;\r\n    z-index:2000;\r\n    padding:0;\r\n    margin:0;\r\n    -webkit-transform:scale(1.05,1.05);\r\n            transform:scale(1.05,1.05);\r\n    -webkit-transition: display 2s smooth;\r\n    transition: display 2s smooth;\r\n}\r\n\r\n#controls{\r\n    height: 25px;\r\n    position:absolute;\r\n    bottom: 0px;\r\n}\r\n\r\nspan.transcription{\r\n    color:navy;\r\n    font-weight:bold;\r\n    margin-right: 0.3em;\r\n}\r\n\r\nspan.translation{\r\n    color:darkred;\r\n    font-weight:bold;\r\n    margin-right: 0.3em;\r\n}\r\n\r\n.textBox{\r\n    display:-webkit-box;\r\n    display:flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: row wrap;\r\n    background-color: rgba(255,255,255,0.3);\r\n    margin:0;\r\n    padding:0;\r\n    width:100%;\r\n    height:100%;\r\n}\r\n\r\nbutton{\r\n    color:white;\r\n    background-color:black;\r\n    border-radius:0.5em;\r\n    font-weight:bold;\r\n}\r\n\r\n#hideButton{\r\n    margin:0;\r\n    position:absolute;\r\n    top:0;\r\n    right:0;\r\n}\r\n\r\n.iconButton{\r\n    border-radius: 0.2em;\r\n    border:2px outset rgb(20,20,20);\r\n    width:3em;\r\n    height:3em;\r\n    margin:0.25em;\r\n     background-size: 100% 100%;\r\n    -webkit-transition : background-image 1s ease-out;\r\n    transition : background-image 1s ease-out;\r\n  \r\n}\r\n\r\n.icon_close{\r\n    background-image:url(\"/assets/images/icons/close.png\");\r\n}\r\n\r\n.icon_translation{\r\n    background-image:url(\"/assets/images/icons/translate%20blue.png\");\r\n}\r\n\r\n.icon_translation:hover{\r\n    background-image:url(\"/assets/images/icons/translate%20yellow.png\");\r\n}\r\n\r\n.icon_transcription{\r\n    background-image:url(\"/assets/images/icons/transcribe%20blue.png\");\r\n}\r\n\r\n.icon_transcription:hover{\r\n    background-image:url(\"/assets/images/icons/transcribe%20yellow.png\");\r\n}\r\n\r\n.icon_layers{\r\n    background-image:url(\"/assets/images/icons/material%20blue.png\");\r\n}\r\n\r\n.icon_layers:hover{\r\n    background-image:url(\"/assets/images/icons/material%20yellow.png\");\r\n}\r\n\r\n.icon_map{\r\n    background-image:url(\"/assets/images/icons/map%20blue.png\");\r\n}\r\n\r\n.icon_map:hover{\r\n    background-image:url(\"/assets/images/icons/map%20yellow.png\");\r\n}\r\n\r\n.icon_more{\r\n    background-image:url(\"/assets/images/icons/text%20blue.png\");\r\n}\r\n\r\n.icon_more:hover{\r\n    background-image:url(\"/assets/images/icons/text%20yellow.png\");\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1hZ2ljLWdsYXNzL21hZ2ljLWdsYXNzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7QUFDckIsdUJBQXVCO0lBQ25CLG1CQUFtQjtJQUNuQiw0QkFBNEI7SUFDNUIsY0FBYztJQUNkLFlBQVk7SUFDWixZQUFZO0lBQ1osU0FBUztJQUNULFFBQVE7SUFDUixrQ0FBMEI7WUFBMUIsMEJBQTBCO0lBQzFCLHFDQUE2QjtJQUE3Qiw2QkFBNkI7QUFDakM7O0FBRUE7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLFdBQVc7QUFDZjs7QUFHQTtJQUNJLFVBQVU7SUFDVixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxtQkFBWTtJQUFaLFlBQVk7SUFDWiw4QkFBbUI7SUFBbkIsNkJBQW1CO1lBQW5CLG1CQUFtQjtJQUNuQix1Q0FBdUM7SUFDdkMsUUFBUTtJQUNSLFNBQVM7SUFDVCxVQUFVO0lBQ1YsV0FBVztBQUNmOztBQUVBO0lBQ0ksV0FBVztJQUNYLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksUUFBUTtJQUNSLGlCQUFpQjtJQUNqQixLQUFLO0lBQ0wsT0FBTztBQUNYOztBQUVBO0lBQ0ksb0JBQW9CO0lBQ3BCLCtCQUErQjtJQUMvQixTQUFTO0lBQ1QsVUFBVTtJQUNWLGFBQWE7S0FDWiwwQkFBMEI7SUFDM0IsaURBQXlDO0lBQXpDLHlDQUF5Qzs7QUFFN0M7O0FBRUE7SUFDSSxzREFBc0Q7QUFDMUQ7O0FBR0E7SUFDSSxpRUFBaUU7QUFDckU7O0FBRUE7SUFDSSxtRUFBbUU7QUFDdkU7O0FBRUE7SUFDSSxrRUFBa0U7QUFDdEU7O0FBRUE7SUFDSSxvRUFBb0U7QUFDeEU7O0FBRUE7SUFDSSxnRUFBZ0U7QUFDcEU7O0FBRUE7SUFDSSxrRUFBa0U7QUFDdEU7O0FBRUE7SUFDSSwyREFBMkQ7QUFDL0Q7O0FBRUE7SUFDSSw2REFBNkQ7QUFDakU7O0FBQ0E7SUFDSSw0REFBNEQ7QUFDaEU7O0FBRUE7SUFDSSw4REFBOEQ7QUFDbEUiLCJmaWxlIjoibWFnaWMtZ2xhc3MvbWFnaWMtZ2xhc3MuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250YWluZXJ7XHJcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuYm9yZGVyOjRweCBvdXRzZXQgYmxhY2s7XHJcbiAgICBib3JkZXItcmFkaXVzOjAuMmVtO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudDtcclxuICAgIGZvbnQtc2l6ZTo0NXB4O1xyXG4gICAgZGlzcGxheTpub25lO1xyXG4gICAgei1pbmRleDoyMDAwO1xyXG4gICAgcGFkZGluZzowO1xyXG4gICAgbWFyZ2luOjA7XHJcbiAgICB0cmFuc2Zvcm06c2NhbGUoMS4wNSwxLjA1KTtcclxuICAgIHRyYW5zaXRpb246IGRpc3BsYXkgMnMgc21vb3RoO1xyXG59XHJcblxyXG4jY29udHJvbHN7XHJcbiAgICBoZWlnaHQ6IDI1cHg7XHJcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuICAgIGJvdHRvbTogMHB4O1xyXG59XHJcblxyXG5cclxuc3Bhbi50cmFuc2NyaXB0aW9ue1xyXG4gICAgY29sb3I6bmF2eTtcclxuICAgIGZvbnQtd2VpZ2h0OmJvbGQ7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDAuM2VtO1xyXG59XHJcblxyXG5zcGFuLnRyYW5zbGF0aW9ue1xyXG4gICAgY29sb3I6ZGFya3JlZDtcclxuICAgIGZvbnQtd2VpZ2h0OmJvbGQ7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDAuM2VtO1xyXG59XHJcblxyXG4udGV4dEJveHtcclxuICAgIGRpc3BsYXk6ZmxleDtcclxuICAgIGZsZXgtZmxvdzogcm93IHdyYXA7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LDAuMyk7XHJcbiAgICBtYXJnaW46MDtcclxuICAgIHBhZGRpbmc6MDtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBoZWlnaHQ6MTAwJTtcclxufVxyXG5cclxuYnV0dG9ue1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czowLjVlbTtcclxuICAgIGZvbnQtd2VpZ2h0OmJvbGQ7XHJcbn1cclxuXHJcbiNoaWRlQnV0dG9ue1xyXG4gICAgbWFyZ2luOjA7XHJcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuICAgIHRvcDowO1xyXG4gICAgcmlnaHQ6MDtcclxufVxyXG5cclxuLmljb25CdXR0b257XHJcbiAgICBib3JkZXItcmFkaXVzOiAwLjJlbTtcclxuICAgIGJvcmRlcjoycHggb3V0c2V0IHJnYigyMCwyMCwyMCk7XHJcbiAgICB3aWR0aDozZW07XHJcbiAgICBoZWlnaHQ6M2VtO1xyXG4gICAgbWFyZ2luOjAuMjVlbTtcclxuICAgICBiYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTtcclxuICAgIHRyYW5zaXRpb24gOiBiYWNrZ3JvdW5kLWltYWdlIDFzIGVhc2Utb3V0O1xyXG4gIFxyXG59XHJcblxyXG4uaWNvbl9jbG9zZXtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvY2xvc2UucG5nXCIpO1xyXG59XHJcblxyXG5cclxuLmljb25fdHJhbnNsYXRpb257XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi9hc3NldHMvaW1hZ2VzL2ljb25zL3RyYW5zbGF0ZSUyMGJsdWUucG5nXCIpO1xyXG59XHJcblxyXG4uaWNvbl90cmFuc2xhdGlvbjpob3ZlcntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvdHJhbnNsYXRlJTIweWVsbG93LnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fdHJhbnNjcmlwdGlvbntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvdHJhbnNjcmliZSUyMGJsdWUucG5nXCIpO1xyXG59XHJcblxyXG4uaWNvbl90cmFuc2NyaXB0aW9uOmhvdmVye1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy90cmFuc2NyaWJlJTIweWVsbG93LnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fbGF5ZXJze1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9tYXRlcmlhbCUyMGJsdWUucG5nXCIpO1xyXG59XHJcblxyXG4uaWNvbl9sYXllcnM6aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi9hc3NldHMvaW1hZ2VzL2ljb25zL21hdGVyaWFsJTIweWVsbG93LnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fbWFwe1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9tYXAlMjBibHVlLnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fbWFwOmhvdmVye1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9tYXAlMjB5ZWxsb3cucG5nXCIpO1xyXG59XHJcbi5pY29uX21vcmV7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi9hc3NldHMvaW1hZ2VzL2ljb25zL3RleHQlMjBibHVlLnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fbW9yZTpob3ZlcntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvdGV4dCUyMHllbGxvdy5wbmdcIik7XHJcbn0iXX0= */"
+module.exports = "#container{\r\n    position:absolute;\r\nborder:4px outset black;\r\n    border-radius:0.2em;\r\n    background-color:transparent;\r\n    font-size:45px;\r\n    display:none;\r\n    z-index:2000;\r\n    padding:0;\r\n    margin:0;\r\n    -webkit-transform:scale(1.05,1.05);\r\n            transform:scale(1.05,1.05);\r\n    -webkit-transition: display 2s smooth;\r\n    transition: display 2s smooth;\r\n}\r\n\r\n#controls{\r\n    height: 25px;\r\n    position:absolute;\r\n    bottom: 0px;\r\n}\r\n\r\nspan.transcription{\r\n    color:navy;\r\n    font-weight:bold;\r\n    margin-right: 0.3em;\r\n}\r\n\r\nspan.translation{\r\n    color:darkred;\r\n    font-weight:bold;\r\n    margin-right: 0.3em;\r\n}\r\n\r\n.textBox{\r\n    display:-webkit-box;\r\n    display:flex;\r\n    -webkit-box-orient: horizontal;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: row wrap;\r\n    background-color: rgba(255,255,255,0.3);\r\n    margin:0;\r\n    padding:0;\r\n    width:100%;\r\n    height:100%;\r\n}\r\n\r\nbutton{\r\n    color:white;\r\n    background-color:black;\r\n    border-radius:0.5em;\r\n    font-weight:bold;\r\n}\r\n\r\n#hideButton{\r\n    margin:0;\r\n    position:absolute;\r\n    top:0;\r\n    right:0;\r\n}\r\n\r\n.iconButton{\r\n    border-radius: 0.2em;\r\n    border:2px outset rgb(20,20,20);\r\n    width:3em;\r\n    height:3em;\r\n    margin:0.25em;\r\n     background-size: 100% 100%;\r\n    -webkit-transition : background-image 1s ease-out;\r\n    transition : background-image 1s ease-out;\r\n  \r\n}\r\n\r\n.icon_close{\r\n    background-image:url(\"/assets/images/icons/close.png\");\r\n}\r\n\r\n.icon_translation{\r\n    background-image:url(\"/assets/images/icons/translate%20blue.png\");\r\n}\r\n\r\n.icon_translation:hover{\r\n    background-image:url(\"/assets/images/icons/translate%20yellow.png\");\r\n}\r\n\r\n.icon_transcription{\r\n    background-image:url(\"/assets/images/icons/transcribe%20blue.png\");\r\n}\r\n\r\n.icon_transcription:hover{\r\n    background-image:url(\"/assets/images/icons/transcribe%20yellow.png\");\r\n}\r\n\r\n.icon_layers{\r\n    background-image:url(\"/assets/images/icons/material%20blue.png\");\r\n}\r\n\r\n.icon_layers:hover{\r\n    background-image:url(\"/assets/images/icons/material%20yellow.png\");\r\n}\r\n\r\n.icon_map{\r\n    background-image:url(\"/assets/images/icons/map%20blue.png\");\r\n}\r\n\r\n.icon_map:hover{\r\n    background-image:url(\"/assets/images/icons/map%20yellow.png\");\r\n}\r\n\r\n.icon_more{\r\n    background-image:url(\"/assets/images/icons/text%20blue.png\");\r\n}\r\n\r\n.icon_more:hover{\r\n    background-image:url(\"/assets/images/icons/text%20yellow.png\");\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL21hZ2ljLWdsYXNzL21hZ2ljLWdsYXNzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7QUFDckIsdUJBQXVCO0lBQ25CLG1CQUFtQjtJQUNuQiw0QkFBNEI7SUFDNUIsY0FBYztJQUNkLFlBQVk7SUFDWixZQUFZO0lBQ1osU0FBUztJQUNULFFBQVE7SUFDUixrQ0FBMEI7WUFBMUIsMEJBQTBCO0lBQzFCLHFDQUE2QjtJQUE3Qiw2QkFBNkI7QUFDakM7O0FBRUE7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLFdBQVc7QUFDZjs7QUFHQTtJQUNJLFVBQVU7SUFDVixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxtQkFBWTtJQUFaLFlBQVk7SUFDWiw4QkFBbUI7SUFBbkIsNkJBQW1CO1lBQW5CLG1CQUFtQjtJQUNuQix1Q0FBdUM7SUFDdkMsUUFBUTtJQUNSLFNBQVM7SUFDVCxVQUFVO0lBQ1YsV0FBVztBQUNmOztBQUVBO0lBQ0ksV0FBVztJQUNYLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksUUFBUTtJQUNSLGlCQUFpQjtJQUNqQixLQUFLO0lBQ0wsT0FBTztBQUNYOztBQUVBO0lBQ0ksb0JBQW9CO0lBQ3BCLCtCQUErQjtJQUMvQixTQUFTO0lBQ1QsVUFBVTtJQUNWLGFBQWE7S0FDWiwwQkFBMEI7SUFDM0IsaURBQXlDO0lBQXpDLHlDQUF5Qzs7QUFFN0M7O0FBRUE7SUFDSSxzREFBc0Q7QUFDMUQ7O0FBR0E7SUFDSSxpRUFBaUU7QUFDckU7O0FBRUE7SUFDSSxtRUFBbUU7QUFDdkU7O0FBRUE7SUFDSSxrRUFBa0U7QUFDdEU7O0FBRUE7SUFDSSxvRUFBb0U7QUFDeEU7O0FBRUE7SUFDSSxnRUFBZ0U7QUFDcEU7O0FBRUE7SUFDSSxrRUFBa0U7QUFDdEU7O0FBRUE7SUFDSSwyREFBMkQ7QUFDL0Q7O0FBRUE7SUFDSSw2REFBNkQ7QUFDakU7O0FBQ0E7SUFDSSw0REFBNEQ7QUFDaEU7O0FBRUE7SUFDSSw4REFBOEQ7QUFDbEUiLCJmaWxlIjoiLi4vbWFnaWMtZ2xhc3MvbWFnaWMtZ2xhc3MuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNjb250YWluZXJ7XHJcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuYm9yZGVyOjRweCBvdXRzZXQgYmxhY2s7XHJcbiAgICBib3JkZXItcmFkaXVzOjAuMmVtO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudDtcclxuICAgIGZvbnQtc2l6ZTo0NXB4O1xyXG4gICAgZGlzcGxheTpub25lO1xyXG4gICAgei1pbmRleDoyMDAwO1xyXG4gICAgcGFkZGluZzowO1xyXG4gICAgbWFyZ2luOjA7XHJcbiAgICB0cmFuc2Zvcm06c2NhbGUoMS4wNSwxLjA1KTtcclxuICAgIHRyYW5zaXRpb246IGRpc3BsYXkgMnMgc21vb3RoO1xyXG59XHJcblxyXG4jY29udHJvbHN7XHJcbiAgICBoZWlnaHQ6IDI1cHg7XHJcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuICAgIGJvdHRvbTogMHB4O1xyXG59XHJcblxyXG5cclxuc3Bhbi50cmFuc2NyaXB0aW9ue1xyXG4gICAgY29sb3I6bmF2eTtcclxuICAgIGZvbnQtd2VpZ2h0OmJvbGQ7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDAuM2VtO1xyXG59XHJcblxyXG5zcGFuLnRyYW5zbGF0aW9ue1xyXG4gICAgY29sb3I6ZGFya3JlZDtcclxuICAgIGZvbnQtd2VpZ2h0OmJvbGQ7XHJcbiAgICBtYXJnaW4tcmlnaHQ6IDAuM2VtO1xyXG59XHJcblxyXG4udGV4dEJveHtcclxuICAgIGRpc3BsYXk6ZmxleDtcclxuICAgIGZsZXgtZmxvdzogcm93IHdyYXA7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LDAuMyk7XHJcbiAgICBtYXJnaW46MDtcclxuICAgIHBhZGRpbmc6MDtcclxuICAgIHdpZHRoOjEwMCU7XHJcbiAgICBoZWlnaHQ6MTAwJTtcclxufVxyXG5cclxuYnV0dG9ue1xyXG4gICAgY29sb3I6d2hpdGU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czowLjVlbTtcclxuICAgIGZvbnQtd2VpZ2h0OmJvbGQ7XHJcbn1cclxuXHJcbiNoaWRlQnV0dG9ue1xyXG4gICAgbWFyZ2luOjA7XHJcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcclxuICAgIHRvcDowO1xyXG4gICAgcmlnaHQ6MDtcclxufVxyXG5cclxuLmljb25CdXR0b257XHJcbiAgICBib3JkZXItcmFkaXVzOiAwLjJlbTtcclxuICAgIGJvcmRlcjoycHggb3V0c2V0IHJnYigyMCwyMCwyMCk7XHJcbiAgICB3aWR0aDozZW07XHJcbiAgICBoZWlnaHQ6M2VtO1xyXG4gICAgbWFyZ2luOjAuMjVlbTtcclxuICAgICBiYWNrZ3JvdW5kLXNpemU6IDEwMCUgMTAwJTtcclxuICAgIHRyYW5zaXRpb24gOiBiYWNrZ3JvdW5kLWltYWdlIDFzIGVhc2Utb3V0O1xyXG4gIFxyXG59XHJcblxyXG4uaWNvbl9jbG9zZXtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvY2xvc2UucG5nXCIpO1xyXG59XHJcblxyXG5cclxuLmljb25fdHJhbnNsYXRpb257XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi9hc3NldHMvaW1hZ2VzL2ljb25zL3RyYW5zbGF0ZSUyMGJsdWUucG5nXCIpO1xyXG59XHJcblxyXG4uaWNvbl90cmFuc2xhdGlvbjpob3ZlcntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvdHJhbnNsYXRlJTIweWVsbG93LnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fdHJhbnNjcmlwdGlvbntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvdHJhbnNjcmliZSUyMGJsdWUucG5nXCIpO1xyXG59XHJcblxyXG4uaWNvbl90cmFuc2NyaXB0aW9uOmhvdmVye1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy90cmFuc2NyaWJlJTIweWVsbG93LnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fbGF5ZXJze1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9tYXRlcmlhbCUyMGJsdWUucG5nXCIpO1xyXG59XHJcblxyXG4uaWNvbl9sYXllcnM6aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi9hc3NldHMvaW1hZ2VzL2ljb25zL21hdGVyaWFsJTIweWVsbG93LnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fbWFwe1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9tYXAlMjBibHVlLnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fbWFwOmhvdmVye1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCIvYXNzZXRzL2ltYWdlcy9pY29ucy9tYXAlMjB5ZWxsb3cucG5nXCIpO1xyXG59XHJcbi5pY29uX21vcmV7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcIi9hc3NldHMvaW1hZ2VzL2ljb25zL3RleHQlMjBibHVlLnBuZ1wiKTtcclxufVxyXG5cclxuLmljb25fbW9yZTpob3ZlcntcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiL2Fzc2V0cy9pbWFnZXMvaWNvbnMvdGV4dCUyMHllbGxvdy5wbmdcIik7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -1577,7 +1595,7 @@ module.exports = "#container{\r\n    position:absolute;\r\nborder:4px outset bla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"container\" #container >\n    \n    <button id=hideButton (click)=\"hideFrame()\" class=\"iconButton icon_close\"></button>\n    \n    <div *ngIf=\"mode=='transcription'\" class=textBox [style.font-size]=fontSize>\n        <span class=\"transcription\" *ngFor=\"let w of msText.transcription\" (click)=\"translate(w)\">{{w.transcript}}/{{w.translation}}</span>\n    </div>\n    \n     <div *ngIf=\"mode=='translation'\" class=textBox [style.font-size]=fontSize>\n        <span class=\"translation\" *ngFor=\"let w of msText.translation\" >{{w.transcript}}</span>\n    </div>\n    \n    <div id=\"controls\">\n    <button (click)=\"mode='transcription'\" *ngIf=\"msText.transcription\" class=\"iconButton icon_transcription\"></button>\n     <button (click)=\"mode='translation'\" *ngIf=\"msText.translation\" class=\"iconButton icon_translation\"></button>\n        <button (click)=\"layers()\" class=\"iconButton icon_layers\"></button>\n     <button  *ngIf=\"msText.link\" (click)=\"showInfo($event)\" class=\"iconButton icon_more\" [title]=\"msText.link\"></button>\n        <button *ngIf=\"msText.mapLink\" (click)=\"navigate('map',msText.map)\" class=\"iconButton icon_map\" [title]=\"msText.mapLink\"></button>\n             <button (click)=\"clear()\" class=\"iconButton icon_close\"></button>\n    </div>\n</div>"
+module.exports = "<div id=\"container\" #container>\n\n    <button id=hideButton (click)=\"hideFrame()\" class=\"iconButton icon_close\"></button>\n\n    <div *ngIf=\"mode=='transcription'\" class=textBox [style.font-size]=fontSize>\n        <span class=\"transcription\" *ngFor=\"let w of msText.transcription\" >{{w.transcript}}\n        <span class=translation>{{w.translation}}</span></span>\n    </div>\n\n    <div *ngIf=\"mode=='translation'\" class=textBox [style.font-size]=fontSize>\n        <span class=\"translation\" *ngFor=\"let w of msText.translation\">{{w.transcript}}</span>\n    </div>\n\n    <div id=\"controls\">\n        <button (click)=\"mode='transcription'\" *ngIf=\"msText.transcription\" class=\"iconButton icon_transcription\"></button>\n        <button (click)=\"mode='translation'\" *ngIf=\"msText.translation\" class=\"iconButton icon_translation\"></button>\n        <button (click)=\"layers()\" class=\"iconButton icon_layers\"></button>\n        <button (click)=\"showInfo($event)\" class=\"iconButton icon_more\" matTooltip=\"msText.link\"></button>\n        <button *ngIf=\"msText.mapLink\" (click)=\"navigate('map',msText.map)\" class=\"iconButton icon_map\" [title]=\"msText.mapLink\"></button>\n        <button (click)=\"clear()\" class=\"iconButton icon_close\"></button>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -1642,7 +1660,7 @@ var MagicGlassComponent = /** @class */ (function () {
     };
     MagicGlassComponent.prototype.navigate = function (set, part) {
         console.log("going to map");
-        this.router.navigate(['interaction/' + set + '/' + part + "/0w"]);
+        this.router.navigate(['interaction/' + set + '/' + part + "/0"]);
     };
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])("fontSize"),
@@ -1675,62 +1693,6 @@ var MagicGlassComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/portal/portal.component.css":
-/*!*********************************************!*\
-  !*** ./src/app/portal/portal.component.css ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "#wrapper{\r\n        width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: column nowrap;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n            justify-content: center;\r\n    background-size: cover;\r\n}\r\n\r\n#portalMenu{\r\n     background-image:url(\"https://www.draconica.net/ft2019/wp-content/uploads/sites/21/2019/02/bg3.jpg\");\r\nheight:80%;\r\n    width:50%;\r\n    box-shadow: 0 0 1em silver;\r\n    display: -webkit-box;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n            flex-flow: column nowrap;\r\n    -webkit-box-align: center;\r\n            align-items: center;\r\n    -webkit-box-pack: center;\r\n            justify-content: center;\r\n}\r\n\r\na{\r\n    font-size:16pt;\r\n    color:silver;\r\n    text-decoration:none;\r\n    margin:0.2em;\r\n    border-radius:0.2em;\r\n    border: 1px solid silver;\r\n    padding:0.2em;\r\n    -webkit-transition:background-color 0.5s;\r\n    transition:background-color 0.5s;\r\n}\r\n\r\na:hover{\r\n    background-color:rgba(0,0,0,0.6);\r\n}\r\n\r\nh2{\r\n    width:96%;\r\n    color:silver;\r\n    border-bottom:1px solid silver;\r\n    text-align:center;\r\n    padding:0.2em;\r\n}\r\n\r\nimg{\r\n    margin:1em;\r\n    height:40%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcnRhbC9wb3J0YWwuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtRQUNRLFdBQVc7SUFDZixZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLG9CQUFhO0lBQWIsYUFBYTtJQUNiLDRCQUF3QjtJQUF4Qiw2QkFBd0I7WUFBeEIsd0JBQXdCO0lBQ3hCLHlCQUFtQjtZQUFuQixtQkFBbUI7SUFDbkIsd0JBQXVCO1lBQXZCLHVCQUF1QjtJQUN2QixzQkFBc0I7QUFDMUI7O0FBRUE7S0FDSyxvR0FBb0c7QUFDekcsVUFBVTtJQUNOLFNBQVM7SUFDVCwwQkFBMEI7SUFDMUIsb0JBQWE7SUFBYixhQUFhO0lBQ2IsNEJBQXdCO0lBQXhCLDZCQUF3QjtZQUF4Qix3QkFBd0I7SUFDeEIseUJBQW1CO1lBQW5CLG1CQUFtQjtJQUNuQix3QkFBdUI7WUFBdkIsdUJBQXVCO0FBQzNCOztBQUVBO0lBQ0ksY0FBYztJQUNkLFlBQVk7SUFDWixvQkFBb0I7SUFDcEIsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQix3QkFBd0I7SUFDeEIsYUFBYTtJQUNiLHdDQUFnQztJQUFoQyxnQ0FBZ0M7QUFDcEM7O0FBRUE7SUFDSSxnQ0FBZ0M7QUFDcEM7O0FBRUE7SUFDSSxTQUFTO0lBQ1QsWUFBWTtJQUNaLDhCQUE4QjtJQUM5QixpQkFBaUI7SUFDakIsYUFBYTtBQUNqQjs7QUFHQTtJQUNJLFVBQVU7SUFDVixVQUFVO0FBQ2QiLCJmaWxlIjoicG9ydGFsL3BvcnRhbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI3dyYXBwZXJ7XHJcbiAgICAgICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1mbG93OiBjb2x1bW4gbm93cmFwO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxufVxyXG5cclxuI3BvcnRhbE1lbnV7XHJcbiAgICAgYmFja2dyb3VuZC1pbWFnZTp1cmwoXCJodHRwczovL3d3dy5kcmFjb25pY2EubmV0L2Z0MjAxOS93cC1jb250ZW50L3VwbG9hZHMvc2l0ZXMvMjEvMjAxOS8wMi9iZzMuanBnXCIpO1xyXG5oZWlnaHQ6ODAlO1xyXG4gICAgd2lkdGg6NTAlO1xyXG4gICAgYm94LXNoYWRvdzogMCAwIDFlbSBzaWx2ZXI7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1mbG93OiBjb2x1bW4gbm93cmFwO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG5he1xyXG4gICAgZm9udC1zaXplOjE2cHQ7XHJcbiAgICBjb2xvcjpzaWx2ZXI7XHJcbiAgICB0ZXh0LWRlY29yYXRpb246bm9uZTtcclxuICAgIG1hcmdpbjowLjJlbTtcclxuICAgIGJvcmRlci1yYWRpdXM6MC4yZW07XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCBzaWx2ZXI7XHJcbiAgICBwYWRkaW5nOjAuMmVtO1xyXG4gICAgdHJhbnNpdGlvbjpiYWNrZ3JvdW5kLWNvbG9yIDAuNXM7XHJcbn1cclxuXHJcbmE6aG92ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOnJnYmEoMCwwLDAsMC42KTtcclxufVxyXG5cclxuaDJ7XHJcbiAgICB3aWR0aDo5NiU7XHJcbiAgICBjb2xvcjpzaWx2ZXI7XHJcbiAgICBib3JkZXItYm90dG9tOjFweCBzb2xpZCBzaWx2ZXI7XHJcbiAgICB0ZXh0LWFsaWduOmNlbnRlcjtcclxuICAgIHBhZGRpbmc6MC4yZW07XHJcbn1cclxuXHJcblxyXG5pbWd7XHJcbiAgICBtYXJnaW46MWVtO1xyXG4gICAgaGVpZ2h0OjQwJTtcclxufSJdfQ== */"
-
-/***/ }),
-
-/***/ "./src/app/portal/portal.component.html":
-/*!**********************************************!*\
-  !*** ./src/app/portal/portal.component.html ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div id=wrapper>\n\n<div id=portalMenu>\n    \n    <img src=\"/assets/images/graphics/header5.png\" />\n    <h2>Mapy</h2>\n    <a [routerLink]=\"['../interaction','aritreia']\">Aritreia</a><br>\n    <a [routerLink]=\"['../interaction','ernavorn']\">Ernavorn</a>\n        <h2>Prezentace</h2>\n    <a [routerLink]=\"['../presentation','trailer']\">Úvod</a><br>\n</div>\n    \n    \n</div>\n"
-
-/***/ }),
-
-/***/ "./src/app/portal/portal.component.ts":
-/*!********************************************!*\
-  !*** ./src/app/portal/portal.component.ts ***!
-  \********************************************/
-/*! exports provided: PortalComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PortalComponent", function() { return PortalComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var PortalComponent = /** @class */ (function () {
-    function PortalComponent() {
-    }
-    PortalComponent.prototype.ngOnInit = function () {
-    };
-    PortalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-portal',
-            template: __webpack_require__(/*! ./portal.component.html */ "./src/app/portal/portal.component.html"),
-            styles: [__webpack_require__(/*! ./portal.component.css */ "./src/app/portal/portal.component.css")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], PortalComponent);
-    return PortalComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/qr-reader/qr-reader.component.css":
 /*!***************************************************!*\
   !*** ./src/app/qr-reader/qr-reader.component.css ***!
@@ -1738,7 +1700,7 @@ var PortalComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJxci1yZWFkZXIvcXItcmVhZGVyLmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuLi9xci1yZWFkZXIvcXItcmVhZGVyLmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
@@ -1948,6 +1910,7 @@ var DrawingSvc = /** @class */ (function () {
         this.animations = [];
         this.dynamics = [];
         this.animationStage = 0;
+        this.animating = true;
         this.drawingSettings.uzemi = { fillStyle: "transparent", strokeStyle: "red", lineWidth: 5, shadowColor: "transparent", shadowBlur: 0 };
         this.drawingSettings.Flora = { fillStyle: "rgba(0,255,0,0.5)", strokeStyle: "transparent", lineWidth: 1, shadowColor: "transparent", shadowBlur: 0 };
         this.drawingSettings.region_white = { fillStyle: "rgba(255,255,255,0.2)", strokeStyle: "black", lineWidth: 3, shadowColor: "transparent", shadowBlur: 0 };
@@ -1978,29 +1941,31 @@ var DrawingSvc = /** @class */ (function () {
         requestAnimationFrame(function () { ref.animate(ctx, animCtx, canvas, zoom, startTime, duration); });
     };
     DrawingSvc.prototype.animate = function (ctx, animCtx, canvas, zoom, startTime, duration) {
-        animCtx.clearRect(0, 0, canvas.nativeElement.width, canvas.nativeElement.height);
-        var ref = this;
-        this.animations.forEach(function (a, ai) {
-            var now = Date.now();
-            var runningTime = now - startTime;
-            // console.log("running: "+runningTime);
-            if (a.offset <= runningTime && a.offset + a.duration >= runningTime) {
-                a.animate(animCtx, ref.calcStage(startTime + a.offset, a.duration), canvas, zoom);
-            }
-        });
-        if (this.animationStage < 1) {
-            this.animationStage = this.calcStage(startTime, duration);
-            requestAnimationFrame(function () { ref.runAnimations(ctx, animCtx, canvas, zoom, startTime, duration); });
-        }
-        else {
-            //  console.log("animation finished");
+        if (this.animating) {
             animCtx.clearRect(0, 0, canvas.nativeElement.width, canvas.nativeElement.height);
-            this.animations.filter(function (a) { return a.fixed; }).forEach(function (a) {
-                console.log("fixing ");
-                console.log(a);
-                a.draw(ctx);
+            var ref_1 = this;
+            this.animations.forEach(function (a, ai) {
+                var now = Date.now();
+                var runningTime = now - startTime;
+                // console.log("running: "+runningTime);
+                if (a.offset <= runningTime && a.offset + a.duration >= runningTime) {
+                    a.animate(animCtx, ref_1.calcStage(startTime + a.offset, a.duration), canvas, zoom);
+                }
             });
-            //    console.log(this.animations);
+            if (this.animationStage < 1) {
+                this.animationStage = this.calcStage(startTime, duration);
+                requestAnimationFrame(function () { ref_1.runAnimations(ctx, animCtx, canvas, zoom, startTime, duration); });
+            }
+            else {
+                //  console.log("animation finished");
+                animCtx.clearRect(0, 0, canvas.nativeElement.width, canvas.nativeElement.height);
+                this.animationStage = 0;
+                this.runAnimations(ctx, animCtx, canvas, zoom, Date.now(), 5000);
+                this.animations.filter(function (a) { return a.fixed; }).forEach(function (a) {
+                    a.draw(ctx);
+                });
+                //    console.log(this.animations);
+            }
         }
     };
     DrawingSvc.prototype.calcStage = function (startTime, duration) {
@@ -2245,56 +2210,43 @@ var DrawingSvc = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/split-screen/split-screen.component.css":
-/*!*********************************************************!*\
-  !*** ./src/app/split-screen/split-screen.component.css ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcGxpdC1zY3JlZW4vc3BsaXQtc2NyZWVuLmNvbXBvbmVudC5jc3MifQ== */"
-
-/***/ }),
-
-/***/ "./src/app/split-screen/split-screen.component.html":
-/*!**********************************************************!*\
-  !*** ./src/app/split-screen/split-screen.component.html ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  split-screen works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/split-screen/split-screen.component.ts":
-/*!********************************************************!*\
-  !*** ./src/app/split-screen/split-screen.component.ts ***!
-  \********************************************************/
-/*! exports provided: SplitScreenComponent */
+/***/ "./src/app/services/navigation.service.ts":
+/*!************************************************!*\
+  !*** ./src/app/services/navigation.service.ts ***!
+  \************************************************/
+/*! exports provided: NavigationService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SplitScreenComponent", function() { return SplitScreenComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationService", function() { return NavigationService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 
 
-var SplitScreenComponent = /** @class */ (function () {
-    function SplitScreenComponent() {
+
+var NavigationService = /** @class */ (function () {
+    function NavigationService(router) {
+        this.router = router;
+        this.previousRoutes = [];
+        this.previousRoutes = [];
     }
-    SplitScreenComponent.prototype.ngOnInit = function () {
+    NavigationService.prototype.goBack = function (i) {
+        console.log(this.previousRoutes);
+        var path = "interaction/" + this.previousRoutes[i].join("/");
+        this.navigate([path]);
     };
-    SplitScreenComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-split-screen',
-            template: __webpack_require__(/*! ./split-screen.component.html */ "./src/app/split-screen/split-screen.component.html"),
-            styles: [__webpack_require__(/*! ./split-screen.component.css */ "./src/app/split-screen/split-screen.component.css")]
+    NavigationService.prototype.navigate = function (r) {
+        this.router.navigate(r);
+    };
+    NavigationService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], SplitScreenComponent);
-    return SplitScreenComponent;
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], NavigationService);
+    return NavigationService;
 }());
 
 

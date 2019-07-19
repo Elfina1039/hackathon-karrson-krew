@@ -13,7 +13,7 @@ const routes: Routes = [
      {path:'interaction/:source/:canvases', component: InteractionComponent},
     {path:'interaction/:map', component: InteractionComponent},
      {path:'home', component: QrReaderComponent}, 
-    {path:'./', component: QrReaderComponent} 
+    {path:'', redirectTo: "/interaction/aquila_v/0,2", pathMatch:"full"} 
    
 ];
 
