@@ -1,17 +1,18 @@
 {
-    "name":"Interface",
+    "name": "Interface",
     "imgData": {
         "url": "/assets/images/app/screen.png",
         "url2": "/assets/images/app/screenHtml.png",
         "width": "1056px",
-        "height": "980px"
+        "height": "980px",
+        "fontSize": "20px"
     },
-    "annts": [
+    "slides": [
         {
             "word": "Annotation",
             "color": "#ffffff",
             "shape": " 399,199  984,199  984,618  399,618 ",
-            "cat": "default",
+            "cat": "Script",
             "fields": {
                 "title": {
                     "name": "title",
@@ -55,7 +56,7 @@
             "word": "Extra info",
             "color": "#ffffff",
             "shape": " 326,631  1042,631  1042,898  326,898 ",
-            "cat": "default",
+            "cat": "Script",
             "fields": {
                 "title": {
                     "name": "title",
@@ -99,7 +100,7 @@
             "word": "URL",
             "color": "#ffffff",
             "shape": " 7,8  337,11  338,42  7,44 ",
-            "cat": "default",
+            "cat": "Script",
             "fields": {
                 "title": {
                     "name": "title",
@@ -135,10 +136,9 @@
                 },
                 "map_link": {
                     "name": "map_link",
-                    "value": ""
+                    "value": "more about routing"
                 }
             }
         }
-    ]
     ]
 }
