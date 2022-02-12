@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "@zxing/ngx-scanner": "^1.7.1",
-    "ajv": "^6.10.1",
+    "ajv": "^6.12.3",
     "angular-animate": "^1.7.8",
     "angular-aria": "^1.7.8",
     "angular-material": "^1.1.19",
